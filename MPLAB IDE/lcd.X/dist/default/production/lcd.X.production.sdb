@@ -1,0 +1,846 @@
+[p LITE_MODE AUTOSTATIC LFSROK EMI_WORD ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 18F4550 ]
+[d frameptr 4065 ]
+"8 /opt/microchip/xc8/v1.37/sources/common/awdiv.c
+[v ___awdiv __awdiv `(i  1 e 2 0 ]
+"8 /opt/microchip/xc8/v1.37/sources/common/awmod.c
+[v ___awmod __awmod `(i  1 e 2 0 ]
+"32 /opt/microchip/xc8/v1.37/sources/common/awtoft.c
+[v ___awtoft __awtoft `(f  1 e 3 0 ]
+"409 /opt/microchip/xc8/v1.37/sources/common/doprnt.c
+[v _fround fround `(d  1 s 3 fround ]
+"425
+[v _scale scale `(d  1 s 3 scale ]
+"492
+[v _sprintf sprintf `(i  1 e 2 0 ]
+"60 /opt/microchip/xc8/v1.37/sources/common/fldivl.c
+[v __div_to_l_ _div_to_l_ `(ul  1 e 4 0 ]
+"62 /opt/microchip/xc8/v1.37/sources/common/float.c
+[v ___ftpack __ftpack `(f  1 e 3 0 ]
+"86 /opt/microchip/xc8/v1.37/sources/common/ftadd.c
+[v ___ftadd __ftadd `(f  1 e 3 0 ]
+"54 /opt/microchip/xc8/v1.37/sources/common/ftdiv.c
+[v ___ftdiv __ftdiv `(f  1 e 3 0 ]
+"60 /opt/microchip/xc8/v1.37/sources/common/ftdivl.c
+[v __tdiv_to_l_ _tdiv_to_l_ `(ul  1 e 4 0 ]
+"4 /opt/microchip/xc8/v1.37/sources/common/ftge.c
+[v ___ftge __ftge `(b  1 e 0 0 ]
+"62 /opt/microchip/xc8/v1.37/sources/common/ftmul.c
+[v ___ftmul __ftmul `(f  1 e 3 0 ]
+"15 /opt/microchip/xc8/v1.37/sources/common/ftneg.c
+[v ___ftneg __ftneg `(f  1 e 3 0 ]
+"20 /opt/microchip/xc8/v1.37/sources/common/ftsub.c
+[v ___ftsub __ftsub `(f  1 e 3 0 ]
+"44 /opt/microchip/xc8/v1.37/sources/common/fttol.c
+[v ___fttol __fttol `(l  1 e 4 0 ]
+"8 /opt/microchip/xc8/v1.37/sources/common/isdigit.c
+[v _isdigit isdigit `(b  1 e 0 0 ]
+"8 /opt/microchip/xc8/v1.37/sources/common/lldiv.c
+[v ___lldiv __lldiv `(ul  1 e 4 0 ]
+"8 /opt/microchip/xc8/v1.37/sources/common/llmod.c
+[v ___llmod __llmod `(ul  1 e 4 0 ]
+"35 /opt/microchip/xc8/v1.37/sources/common/lltoft.c
+[v ___lltoft __lltoft `(f  1 e 3 0 ]
+"28 /opt/microchip/xc8/v1.37/sources/common/lwtoft.c
+[v ___lwtoft __lwtoft `(f  1 e 3 0 ]
+"10 /opt/microchip/xc8/v1.37/sources/common/sprcadd.c
+[v ___fladd __fladd `(d  1 e 3 0 ]
+"245
+[v ___flsub __flsub `(d  1 e 3 0 ]
+"11 /opt/microchip/xc8/v1.37/sources/common/sprcdiv.c
+[v ___fldiv __fldiv `(d  1 e 3 0 ]
+"8 /opt/microchip/xc8/v1.37/sources/common/sprcmul.c
+[v ___flmul __flmul `(d  1 e 3 0 ]
+"8 /opt/microchip/xc8/v1.37/sources/common/strcat.c
+[v _strcat strcat `(*.39uc  1 e 2 0 ]
+"4 /opt/microchip/xc8/v1.37/sources/common/strlen.c
+[v _strlen strlen `(ui  1 e 2 0 ]
+"15 /opt/microchip/xc8/v1.37/sources/common/Umul16.c
+[v ___wmul __wmul `(ui  1 e 2 0 ]
+"15 /opt/microchip/xc8/v1.37/sources/common/Umul32.c
+[v ___lmul __lmul `(ul  1 e 4 0 ]
+"157 /home/david/Documents/college/lab informatica/TSINA/kmk/MPLAB IDE/lcd.X/LCDgraphic.c
+[v __lcd_enable _lcd_enable `(v  1 e 1 0 ]
+"176
+[v _LCDinit LCDinit `(v  1 e 1 0 ]
+"209
+[v __lcd_status _lcd_status `(uc  1 e 1 0 ]
+"259
+[v _LCDcmd LCDcmd `(v  1 e 1 0 ]
+"280
+[v _LCDreset LCDreset `(v  1 e 1 0 ]
+"306
+[v __lcd_waitbusy _lcd_waitbusy `(v  1 e 1 0 ]
+"329
+[v _LCDpage LCDpage `(uc  1 e 1 0 ]
+"376
+[v _LCDon LCDon `(v  1 e 1 0 ]
+"410
+[v _LCDy LCDy `(uc  1 e 1 0 ]
+"455
+[v _emptycolumn emptycolumn `(v  1 e 1 0 ]
+"494
+[v _LCDchar LCDchar `(uc  1 e 1 0 ]
+"600
+[v _LCDclear LCDclear `(v  1 e 1 0 ]
+"636
+[v _LCDstring LCDstring `(uc  1 e 1 0 ]
+"830
+[v _lcdplotpixel2 lcdplotpixel2 `(uc  1 e 1 0 ]
+"883
+[v _xyaxis xyaxis `(v  1 e 1 0 ]
+"1017
+[v _write_image write_image `(v  1 e 1 0 ]
+"36 /home/david/Documents/college/lab informatica/TSINA/kmk/MPLAB IDE/lcd.X/main.c
+[v _abs abs `(i  1 e 2 0 ]
+"118
+[v _main main `(v  1 e 1 0 ]
+[s S123 . 1 `uc 1 RB0 1 0 :1:0 
+`uc 1 RB1 1 0 :1:1 
+`uc 1 RB2 1 0 :1:2 
+`uc 1 RB3 1 0 :1:3 
+`uc 1 RB4 1 0 :1:4 
+`uc 1 RB5 1 0 :1:5 
+`uc 1 RB6 1 0 :1:6 
+`uc 1 RB7 1 0 :1:7 
+]
+"2739 /opt/microchip/xc8/v1.37/include/pic18f4550.h
+[s S132 . 1 `uc 1 INT0 1 0 :1:0 
+`uc 1 INT1 1 0 :1:1 
+`uc 1 INT2 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 PGM 1 0 :1:5 
+`uc 1 PGC 1 0 :1:6 
+`uc 1 PGD 1 0 :1:7 
+]
+[s S140 . 1 `uc 1 . 1 0 :3:0 
+`uc 1 CCP2_PA2 1 0 :1:3 
+]
+[u S143 . 1 `S123 1 . 1 0 `S132 1 . 1 0 `S140 1 . 1 0 ]
+[v _PORTBbits PORTBbits `VES143  1 e 1 @3969 ]
+"2818
+[v _PORTC PORTC `VEuc  1 e 1 @3970 ]
+"2962
+[v _PORTD PORTD `VEuc  1 e 1 @3971 ]
+"3082
+[v _PORTE PORTE `VEuc  1 e 1 @3972 ]
+[s S365 . 1 `uc 1 LATC0 1 0 :1:0 
+`uc 1 LATC1 1 0 :1:1 
+`uc 1 LATC2 1 0 :1:2 
+`uc 1 . 1 0 :3:3 
+`uc 1 LATC6 1 0 :1:6 
+`uc 1 LATC7 1 0 :1:7 
+]
+"3535
+[s S372 . 1 `uc 1 LC0 1 0 :1:0 
+]
+[s S374 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 LC1 1 0 :1:1 
+]
+[s S377 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 LC2 1 0 :1:2 
+]
+[s S380 . 1 `uc 1 . 1 0 :6:0 
+`uc 1 LC6 1 0 :1:6 
+]
+[s S383 . 1 `uc 1 . 1 0 :7:0 
+`uc 1 LC7 1 0 :1:7 
+]
+[u S386 . 1 `S365 1 . 1 0 `S372 1 . 1 0 `S374 1 . 1 0 `S377 1 . 1 0 `S380 1 . 1 0 `S383 1 . 1 0 ]
+[v _LATCbits LATCbits `VES386  1 e 1 @3979 ]
+[s S431 . 1 `uc 1 LATE0 1 0 :1:0 
+`uc 1 LATE1 1 0 :1:1 
+`uc 1 LATE2 1 0 :1:2 
+]
+"3744
+[s S435 . 1 `uc 1 LE0 1 0 :1:0 
+]
+[s S437 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 LE1 1 0 :1:1 
+]
+[s S440 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 LE2 1 0 :1:2 
+]
+[u S443 . 1 `S431 1 . 1 0 `S435 1 . 1 0 `S437 1 . 1 0 `S440 1 . 1 0 ]
+[v _LATEbits LATEbits `VES443  1 e 1 @3981 ]
+"3778
+[v _TRISA TRISA `VEuc  1 e 1 @3986 ]
+"3975
+[v _TRISB TRISB `VEuc  1 e 1 @3987 ]
+"4196
+[v _TRISC TRISC `VEuc  1 e 1 @3988 ]
+"4349
+[v _TRISD TRISD `VEuc  1 e 1 @3989 ]
+"4570
+[v _TRISE TRISE `VEuc  1 e 1 @3990 ]
+[s S74 . 1 `uc 1 ADCS 1 0 :3:0 
+`uc 1 ACQT 1 0 :3:3 
+`uc 1 . 1 0 :1:6 
+`uc 1 ADFM 1 0 :1:7 
+]
+"6908
+[s S79 . 1 `uc 1 ADCS0 1 0 :1:0 
+`uc 1 ADCS1 1 0 :1:1 
+`uc 1 ADCS2 1 0 :1:2 
+`uc 1 ACQT0 1 0 :1:3 
+`uc 1 ACQT1 1 0 :1:4 
+`uc 1 ACQT2 1 0 :1:5 
+]
+[u S86 . 1 `S74 1 . 1 0 `S79 1 . 1 0 ]
+[v _ADCON2bits ADCON2bits `VES86  1 e 1 @4032 ]
+[s S29 . 1 `uc 1 PCFG 1 0 :4:0 
+`uc 1 VCFG 1 0 :2:4 
+]
+"6988
+[s S32 . 1 `uc 1 PCFG0 1 0 :1:0 
+`uc 1 PCFG1 1 0 :1:1 
+`uc 1 PCFG2 1 0 :1:2 
+`uc 1 PCFG3 1 0 :1:3 
+`uc 1 VCFG0 1 0 :1:4 
+`uc 1 VCFG1 1 0 :1:5 
+]
+[s S39 . 1 `uc 1 . 1 0 :3:0 
+`uc 1 CHSN3 1 0 :1:3 
+]
+[s S42 . 1 `uc 1 . 1 0 :4:0 
+`uc 1 VCFG01 1 0 :1:4 
+]
+[s S45 . 1 `uc 1 . 1 0 :5:0 
+`uc 1 VCFG11 1 0 :1:5 
+]
+[u S48 . 1 `S29 1 . 1 0 `S32 1 . 1 0 `S39 1 . 1 0 `S42 1 . 1 0 `S45 1 . 1 0 ]
+[v _ADCON1bits ADCON1bits `VES48  1 e 1 @4033 ]
+"7047
+[v _ADCON0 ADCON0 `VEuc  1 e 1 @4034 ]
+[s S175 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 GO_NOT_DONE 1 0 :1:1 
+]
+"7091
+[s S178 . 1 `uc 1 ADON 1 0 :1:0 
+`uc 1 GO_nDONE 1 0 :1:1 
+`uc 1 CHS 1 0 :4:2 
+]
+[s S182 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 GO_DONE 1 0 :1:1 
+`uc 1 CHS0 1 0 :1:2 
+`uc 1 CHS1 1 0 :1:3 
+`uc 1 CHS2 1 0 :1:4 
+`uc 1 CHS3 1 0 :1:5 
+]
+[s S189 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 DONE 1 0 :1:1 
+]
+[s S192 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 GO 1 0 :1:1 
+]
+[s S195 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 NOT_DONE 1 0 :1:1 
+]
+[s S198 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 nDONE 1 0 :1:1 
+]
+[s S201 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 GODONE 1 0 :1:1 
+]
+[u S204 . 1 `S175 1 . 1 0 `S178 1 . 1 0 `S182 1 . 1 0 `S189 1 . 1 0 `S192 1 . 1 0 `S195 1 . 1 0 `S198 1 . 1 0 `S201 1 . 1 0 ]
+[v _ADCON0bits ADCON0bits `VES204  1 e 1 @4034 ]
+"7171
+[v _ADRESL ADRESL `VEuc  1 e 1 @4035 ]
+"7177
+[v _ADRESH ADRESH `VEuc  1 e 1 @4036 ]
+"354 /opt/microchip/xc8/v1.37/sources/common/doprnt.c
+[v _dpowers dpowers `C[10]ul  1 s 40 dpowers ]
+"7 /opt/microchip/xc8/v1.37/sources/common/powers.c
+[v __powers_ _powers_ `C[13]d  1 e 39 0 ]
+"39
+[v __npowers_ _npowers_ `C[13]d  1 e 39 0 ]
+"37 /home/david/Documents/college/lab informatica/TSINA/kmk/MPLAB IDE/lcd.X/LCDgraphic.c
+[v _selected_side selected_side `i  1 s 2 selected_side ]
+"39
+[v _curr_page curr_page `i  1 s 2 curr_page ]
+"41
+[v _curr_column curr_column `i  1 s 2 curr_column ]
+"43
+[v _pixels pixels `[1025]uc  1 s 1025 pixels ]
+"46
+[v _pic pic `C[95][5]uc  1 e 475 0 ]
+"42 /home/david/Documents/college/lab informatica/TSINA/kmk/MPLAB IDE/lcd.X/main.c
+[v _image image `C[1024]uc  1 e 1024 0 ]
+"118
+[v _main main `(v  1 e 1 0 ]
+{
+"330
+[v main@y_333 y `i  1 a 2 114 ]
+"288
+[v main@y_325 y `i  1 a 2 102 ]
+"250
+[v main@y y `i  1 a 2 100 ]
+"411
+[v main@i_342 i `i  1 a 2 0 ]
+"399
+[v main@i_341 i `i  1 a 2 16 ]
+"376
+[v main@i_339 i `i  1 a 2 158 ]
+"365
+[v main@i_338 i `i  1 a 2 14 ]
+"327
+[v main@i_332 i `i  1 a 2 18 ]
+"299
+[v main@i_326 i `i  1 a 2 152 ]
+"286
+[v main@a a `i  1 a 2 12 ]
+"264
+[v main@i_323 i `i  1 a 2 150 ]
+"248
+[v main@i_321 i `i  1 a 2 10 ]
+"214
+[v main@i_315 i `i  1 a 2 25 ]
+"398
+[v main@y_340 y `i  1 a 2 106 ]
+"364
+[v main@y_337 y `i  1 a 2 104 ]
+"212
+[v main@y2 y2 `i  1 a 2 98 ]
+"211
+[v main@y1 y1 `i  1 a 2 96 ]
+"480
+[v main@j j `i  1 a 2 108 ]
+"432
+[v main@i_347 i `i  1 a 2 130 ]
+"419
+[v main@buf_344 buf `[10]uc  1 a 10 86 ]
+"418
+[v main@delta_343 delta `f  1 a 3 141 ]
+"345
+[v main@cur2_x_new cur2_x_new `i  1 a 2 156 ]
+"344
+[v main@cur1_x_new cur1_x_new `i  1 a 2 154 ]
+"356
+[v main@s_val_336 s_val `i  1 a 2 128 ]
+"307
+[v main@buf buf `[10]uc  1 a 10 76 ]
+"306
+[v main@delta delta `f  1 a 3 138 ]
+"230
+[v main@cur2_y_new cur2_y_new `i  1 a 2 148 ]
+"229
+[v main@cur1_y_new cur1_y_new `i  1 a 2 146 ]
+"241
+[v main@s_val s_val `i  1 a 2 126 ]
+"561
+[v main@i_364 i `i  1 a 2 136 ]
+"515
+[v main@y_359 y `i  1 a 2 144 ]
+"471
+[v main@i_349 i `i  1 a 2 2 ]
+"200
+[v main@cur2_x cur2_x `i  1 a 2 33 ]
+"199
+[v main@cur1_x cur1_x `i  1 a 2 31 ]
+"198
+[v main@cur2_y cur2_y `i  1 a 2 29 ]
+"197
+[v main@cur1_y cur1_y `i  1 a 2 27 ]
+"486
+[v main@bottom_buf bottom_buf `[40]uc  1 a 40 23 ]
+"542
+[v main@buf_360 buf `[13]uc  1 a 13 63 ]
+"506
+[v main@i_354 i `i  1 a 2 20 ]
+"509
+[v main@max max `ui  1 a 2 134 ]
+"508
+[v main@min min `ui  1 a 2 132 ]
+"460
+[v main@s_time_pot_348 s_time_pot `i  1 a 2 116 ]
+"512
+[v main@max_y max_y `uc  1 a 1 113 ]
+"511
+[v main@min_y min_y `uc  1 a 1 112 ]
+"178
+[v main@i i `i  1 a 2 124 ]
+"163
+[v main@data data `[128]ui  1 a 256 0 ]
+"167
+[v main@amplitude amplitude `f  1 a 3 22 ]
+"168
+[v main@s_time s_time `f  1 a 3 7 ]
+[v main@y_div y_div `f  1 a 3 4 ]
+"165
+[v main@Vpp Vpp `f  1 a 3 118 ]
+"170
+[v main@freeze freeze `i  1 a 2 110 ]
+"566
+} 0
+"883 /home/david/Documents/college/lab informatica/TSINA/kmk/MPLAB IDE/lcd.X/LCDgraphic.c
+[v _xyaxis xyaxis `(v  1 e 1 0 ]
+{
+"890
+[v xyaxis@i_553 i `i  1 a 2 38 ]
+"885
+[v xyaxis@i i `i  1 a 2 36 ]
+"911
+} 0
+"830
+[v _lcdplotpixel2 lcdplotpixel2 `(uc  1 e 1 0 ]
+{
+[v lcdplotpixel2@rx rx `uc  1 a 1 wreg ]
+"834
+[v lcdplotpixel2@data data `C[9]uc  1 a 9 21 ]
+"833
+[v lcdplotpixel2@index index `i  1 a 2 33 ]
+[v lcdplotpixel2@value value `i  1 a 2 31 ]
+"832
+[v lcdplotpixel2@pixel pixel `uc  1 a 1 30 ]
+"830
+[v lcdplotpixel2@rx rx `uc  1 a 1 wreg ]
+[v lcdplotpixel2@ry ry `uc  1 p 1 16 ]
+[v lcdplotpixel2@blank blank `i  1 p 2 17 ]
+"833
+[v lcdplotpixel2@F4454 F4454 `C[9]uc  1 s 9 F4454 ]
+[v lcdplotpixel2@rx rx `uc  1 a 1 35 ]
+"872
+} 0
+"1017
+[v _write_image write_image `(v  1 e 1 0 ]
+{
+"1059
+[v write_image@j_570 j `i  1 a 2 33 ]
+"1035
+[v write_image@j j `i  1 a 2 31 ]
+"1051
+[v write_image@val_568 val `uc  1 a 1 42 ]
+"1052
+[v write_image@n_val_569 n_val `uc  1 a 1 30 ]
+"1027
+[v write_image@val val `uc  1 a 1 41 ]
+"1028
+[v write_image@n_val n_val `uc  1 a 1 29 ]
+"1049
+[v write_image@i_567 i `i  1 a 2 37 ]
+"1025
+[v write_image@i i `i  1 a 2 35 ]
+"1019
+[v write_image@page page `i  1 a 2 39 ]
+"1017
+[v write_image@image image `*.25Cuc  1 p 2 16 ]
+[v write_image@top_to_bottom top_to_bottom `uc  1 p 1 18 ]
+"1070
+} 0
+"8 /opt/microchip/xc8/v1.37/sources/common/strcat.c
+[v _strcat strcat `(*.39uc  1 e 2 0 ]
+{
+"15
+[v strcat@cp cp `*.39uc  1 a 2 4 ]
+"8
+[v strcat@to to `*.39uc  1 p 2 0 ]
+[v strcat@from from `*.39Cuc  1 p 2 2 ]
+"26
+} 0
+"492 /opt/microchip/xc8/v1.37/sources/common/doprnt.c
+[v _sprintf sprintf `(i  1 e 2 0 ]
+{
+[u S615 . 4 `ul 1 vd 4 0 `d 1 integ 3 0 ]
+"526
+[v sprintf@tmpval tmpval `S615  1 a 4 13 ]
+"528
+[v sprintf@val val `ul  1 a 4 7 ]
+"516
+[v sprintf@fval fval `d  1 a 3 19 ]
+"504
+[v sprintf@prec prec `i  1 a 2 17 ]
+"516
+[v sprintf@exp exp `i  1 a 2 11 ]
+"508
+[v sprintf@flag flag `us  1 a 2 5 ]
+"494
+[v sprintf@ap ap `[1]*.39v  1 a 2 3 ]
+"499
+[v sprintf@c c `c  1 a 1 22 ]
+"492
+[v sprintf@sp sp `*.39uc  1 p 2 76 ]
+[v sprintf@f f `*.25Cuc  1 p 2 78 ]
+"1541
+} 0
+"425
+[v _scale scale `(d  1 s 3 scale ]
+{
+[v scale@scl scl `c  1 a 1 wreg ]
+[v scale@scl scl `c  1 a 1 wreg ]
+"428
+[v scale@scl scl `c  1 a 1 45 ]
+"441
+} 0
+"8 /opt/microchip/xc8/v1.37/sources/common/isdigit.c
+[v _isdigit isdigit `(b  1 e 0 0 ]
+{
+[v isdigit@c c `uc  1 a 1 wreg ]
+[v isdigit@c c `uc  1 a 1 wreg ]
+"14
+[v isdigit@c c `uc  1 a 1 2 ]
+"15
+} 0
+"409 /opt/microchip/xc8/v1.37/sources/common/doprnt.c
+[v _fround fround `(d  1 s 3 fround ]
+{
+[v fround@prec prec `uc  1 a 1 wreg ]
+[v fround@prec prec `uc  1 a 1 wreg ]
+"413
+[v fround@prec prec `uc  1 a 1 48 ]
+"418
+} 0
+"62 /opt/microchip/xc8/v1.37/sources/common/ftmul.c
+[v ___ftmul __ftmul `(f  1 e 3 0 ]
+{
+"65
+[v ___ftmul@f3_as_product f3_as_product `um  1 a 3 34 ]
+"64
+[v ___ftmul@sign sign `uc  1 a 1 38 ]
+[v ___ftmul@cntr cntr `uc  1 a 1 37 ]
+[v ___ftmul@exp exp `uc  1 a 1 33 ]
+"62
+[v ___ftmul@f1 f1 `f  1 p 3 24 ]
+[v ___ftmul@f2 f2 `f  1 p 3 27 ]
+"157
+} 0
+"8 /opt/microchip/xc8/v1.37/sources/common/awmod.c
+[v ___awmod __awmod `(i  1 e 2 0 ]
+{
+"11
+[v ___awmod@sign sign `uc  1 a 1 5 ]
+[v ___awmod@counter counter `uc  1 a 1 4 ]
+"8
+[v ___awmod@dividend dividend `i  1 p 2 0 ]
+[v ___awmod@divisor divisor `i  1 p 2 2 ]
+"35
+} 0
+"60 /opt/microchip/xc8/v1.37/sources/common/ftdivl.c
+[v __tdiv_to_l_ _tdiv_to_l_ `(ul  1 e 4 0 ]
+{
+"63
+[v __tdiv_to_l_@quot quot `ul  1 a 4 9 ]
+"62
+[v __tdiv_to_l_@exp1 exp1 `uc  1 a 1 14 ]
+[v __tdiv_to_l_@cntr cntr `uc  1 a 1 13 ]
+"60
+[v __tdiv_to_l_@f1 f1 `f  1 p 3 0 ]
+[v __tdiv_to_l_@f2 f2 `f  1 p 3 3 ]
+"101
+} 0
+"60 /opt/microchip/xc8/v1.37/sources/common/fldivl.c
+[v __div_to_l_ _div_to_l_ `(ul  1 e 4 0 ]
+{
+"63
+[v __div_to_l_@quot quot `ul  1 a 4 6 ]
+"62
+[v __div_to_l_@exp1 exp1 `uc  1 a 1 11 ]
+[v __div_to_l_@cntr cntr `uc  1 a 1 10 ]
+"60
+[v __div_to_l_@f1 f1 `d  1 p 3 0 ]
+[v __div_to_l_@f2 f2 `d  1 p 3 3 ]
+"101
+} 0
+"35 /opt/microchip/xc8/v1.37/sources/common/lltoft.c
+[v ___lltoft __lltoft `(f  1 e 3 0 ]
+{
+"37
+[v ___lltoft@exp exp `uc  1 a 1 16 ]
+"35
+[v ___lltoft@c c `ul  1 p 4 8 ]
+"46
+} 0
+"8 /opt/microchip/xc8/v1.37/sources/common/llmod.c
+[v ___llmod __llmod `(ul  1 e 4 0 ]
+{
+"11
+[v ___llmod@counter counter `uc  1 a 1 8 ]
+"8
+[v ___llmod@dividend dividend `ul  1 p 4 0 ]
+[v ___llmod@divisor divisor `ul  1 p 4 4 ]
+"26
+} 0
+"8 /opt/microchip/xc8/v1.37/sources/common/lldiv.c
+[v ___lldiv __lldiv `(ul  1 e 4 0 ]
+{
+"11
+[v ___lldiv@quotient quotient `ul  1 a 4 8 ]
+"12
+[v ___lldiv@counter counter `uc  1 a 1 12 ]
+"8
+[v ___lldiv@dividend dividend `ul  1 p 4 0 ]
+[v ___lldiv@divisor divisor `ul  1 p 4 4 ]
+"31
+} 0
+"44 /opt/microchip/xc8/v1.37/sources/common/fttol.c
+[v ___fttol __fttol `(l  1 e 4 0 ]
+{
+"47
+[v ___fttol@lval lval `ul  1 a 4 71 ]
+"46
+[v ___fttol@exp1 exp1 `uc  1 a 1 75 ]
+[v ___fttol@sign1 sign1 `uc  1 a 1 70 ]
+"44
+[v ___fttol@f1 f1 `f  1 p 3 61 ]
+"73
+} 0
+"20 /opt/microchip/xc8/v1.37/sources/common/ftsub.c
+[v ___ftsub __ftsub `(f  1 e 3 0 ]
+{
+[v ___ftsub@f1 f1 `f  1 p 3 61 ]
+[v ___ftsub@f2 f2 `f  1 p 3 64 ]
+"27
+} 0
+"86 /opt/microchip/xc8/v1.37/sources/common/ftadd.c
+[v ___ftadd __ftadd `(f  1 e 3 0 ]
+{
+"88
+[v ___ftadd@exp1 exp1 `uc  1 a 1 60 ]
+[v ___ftadd@exp2 exp2 `uc  1 a 1 59 ]
+[v ___ftadd@sign sign `uc  1 a 1 58 ]
+"86
+[v ___ftadd@f1 f1 `f  1 p 3 49 ]
+[v ___ftadd@f2 f2 `f  1 p 3 52 ]
+"148
+} 0
+"15 /opt/microchip/xc8/v1.37/sources/common/ftneg.c
+[v ___ftneg __ftneg `(f  1 e 3 0 ]
+{
+[v ___ftneg@f1 f1 `f  1 p 3 0 ]
+"20
+} 0
+"4 /opt/microchip/xc8/v1.37/sources/common/ftge.c
+[v ___ftge __ftge `(b  1 e 0 0 ]
+{
+[v ___ftge@ff1 ff1 `f  1 p 3 0 ]
+[v ___ftge@ff2 ff2 `f  1 p 3 3 ]
+"13
+} 0
+"36 /home/david/Documents/college/lab informatica/TSINA/kmk/MPLAB IDE/lcd.X/main.c
+[v _abs abs `(i  1 e 2 0 ]
+{
+[v abs@a a `i  1 p 2 0 ]
+"39
+} 0
+"28 /opt/microchip/xc8/v1.37/sources/common/lwtoft.c
+[v ___lwtoft __lwtoft `(f  1 e 3 0 ]
+{
+[v ___lwtoft@c c `ui  1 p 2 8 ]
+"31
+} 0
+"54 /opt/microchip/xc8/v1.37/sources/common/ftdiv.c
+[v ___ftdiv __ftdiv `(f  1 e 3 0 ]
+{
+"60
+[v ___ftdiv@f3 f3 `f  1 a 3 34 ]
+"59
+[v ___ftdiv@sign sign `uc  1 a 1 38 ]
+[v ___ftdiv@exp exp `uc  1 a 1 37 ]
+[v ___ftdiv@cntr cntr `uc  1 a 1 33 ]
+"54
+[v ___ftdiv@f1 f1 `f  1 p 3 24 ]
+[v ___ftdiv@f2 f2 `f  1 p 3 27 ]
+"86
+} 0
+"32 /opt/microchip/xc8/v1.37/sources/common/awtoft.c
+[v ___awtoft __awtoft `(f  1 e 3 0 ]
+{
+"34
+[v ___awtoft@sign sign `uc  1 a 1 23 ]
+"32
+[v ___awtoft@c c `i  1 p 2 20 ]
+"42
+} 0
+"62 /opt/microchip/xc8/v1.37/sources/common/float.c
+[v ___ftpack __ftpack `(f  1 e 3 0 ]
+{
+[v ___ftpack@arg arg `um  1 p 3 0 ]
+[v ___ftpack@exp exp `uc  1 p 1 3 ]
+[v ___ftpack@sign sign `uc  1 p 1 4 ]
+"86
+} 0
+"636 /home/david/Documents/college/lab informatica/TSINA/kmk/MPLAB IDE/lcd.X/LCDgraphic.c
+[v _LCDstring LCDstring `(uc  1 e 1 0 ]
+{
+[v LCDstring@p p `uc  1 a 1 wreg ]
+"806
+[v LCDstring@i_541 i `i  1 a 2 67 ]
+"795
+[v LCDstring@i_540 i `i  1 a 2 65 ]
+"782
+[v LCDstring@i_539 i `i  1 a 2 71 ]
+"764
+[v LCDstring@i_538 i `i  1 a 2 63 ]
+"746
+[v LCDstring@i_537 i `i  1 a 2 61 ]
+"731
+[v LCDstring@i_536 i `i  1 a 2 59 ]
+"717
+[v LCDstring@i_535 i `i  1 a 2 57 ]
+"708
+[v LCDstring@i_534 i `i  1 a 2 55 ]
+"689
+[v LCDstring@i_532 i `i  1 a 2 53 ]
+"677
+[v LCDstring@i_531 i `i  1 a 2 69 ]
+"666
+[v LCDstring@i i `i  1 a 2 51 ]
+"700
+[v LCDstring@l1 l1 `i  1 a 2 74 ]
+"645
+[v LCDstring@length length `i  1 a 2 76 ]
+"636
+[v LCDstring@p p `uc  1 a 1 wreg ]
+[v LCDstring@buffer buffer `*.39Cuc  1 p 2 44 ]
+"638
+[v LCDstring@p p `uc  1 a 1 73 ]
+"815
+} 0
+"4 /opt/microchip/xc8/v1.37/sources/common/strlen.c
+[v _strlen strlen `(ui  1 e 2 0 ]
+{
+"6
+[v strlen@cp cp `*.39Cuc  1 a 2 4 ]
+"4
+[v strlen@s s `*.39Cuc  1 p 2 0 ]
+"13
+} 0
+"455 /home/david/Documents/college/lab informatica/TSINA/kmk/MPLAB IDE/lcd.X/LCDgraphic.c
+[v _emptycolumn emptycolumn `(v  1 e 1 0 ]
+{
+"457
+[v emptycolumn@char_index char_index `i  1 a 2 3 ]
+"476
+} 0
+"8 /opt/microchip/xc8/v1.37/sources/common/awdiv.c
+[v ___awdiv __awdiv `(i  1 e 2 0 ]
+{
+"11
+[v ___awdiv@quotient quotient `i  1 a 2 12 ]
+"12
+[v ___awdiv@sign sign `uc  1 a 1 11 ]
+[v ___awdiv@counter counter `uc  1 a 1 10 ]
+"8
+[v ___awdiv@dividend dividend `i  1 p 2 6 ]
+[v ___awdiv@divisor divisor `i  1 p 2 8 ]
+"42
+} 0
+"176 /home/david/Documents/college/lab informatica/TSINA/kmk/MPLAB IDE/lcd.X/LCDgraphic.c
+[v _LCDinit LCDinit `(v  1 e 1 0 ]
+{
+"179
+[v LCDinit@i i `i  1 a 2 51 ]
+"193
+} 0
+"280
+[v _LCDreset LCDreset `(v  1 e 1 0 ]
+{
+"292
+} 0
+"376
+[v _LCDon LCDon `(v  1 e 1 0 ]
+{
+[v LCDon@on on `uc  1 a 1 wreg ]
+[v LCDon@on on `uc  1 a 1 wreg ]
+"379
+[v LCDon@on on `uc  1 a 1 4 ]
+"393
+} 0
+"600
+[v _LCDclear LCDclear `(v  1 e 1 0 ]
+{
+"613
+[v LCDclear@j j `i  1 a 2 48 ]
+"610
+[v LCDclear@i_521 i `i  1 a 2 46 ]
+"605
+[v LCDclear@i i `i  1 a 2 44 ]
+"619
+} 0
+"494
+[v _LCDchar LCDchar `(uc  1 e 1 0 ]
+{
+[v LCDchar@c c `uc  1 a 1 wreg ]
+"581
+[v LCDchar@i_518 i `i  1 a 2 39 ]
+"565
+[v LCDchar@i_517 i `i  1 a 2 37 ]
+"553
+[v LCDchar@i_516 i `i  1 a 2 35 ]
+"538
+[v LCDchar@i_515 i `i  1 a 2 33 ]
+"522
+[v LCDchar@i i `i  1 a 2 31 ]
+"502
+[v LCDchar@char_index char_index `i  1 a 2 42 ]
+"501
+[v LCDchar@index index `i  1 a 2 29 ]
+"503
+[v LCDchar@tmp tmp `uc  1 a 1 41 ]
+"494
+[v LCDchar@c c `uc  1 a 1 wreg ]
+[v LCDchar@position position `uc  1 p 1 20 ]
+"496
+[v LCDchar@c c `uc  1 a 1 28 ]
+"589
+} 0
+"15 /opt/microchip/xc8/v1.37/sources/common/Umul16.c
+[v ___wmul __wmul `(ui  1 e 2 0 ]
+{
+"17
+[v ___wmul@product product `ui  1 a 2 18 ]
+"15
+[v ___wmul@multiplier multiplier `ui  1 p 2 14 ]
+[v ___wmul@multiplicand multiplicand `ui  1 p 2 16 ]
+"53
+} 0
+"410 /home/david/Documents/college/lab informatica/TSINA/kmk/MPLAB IDE/lcd.X/LCDgraphic.c
+[v _LCDy LCDy `(uc  1 e 1 0 ]
+{
+[v LCDy@side side `uc  1 a 1 wreg ]
+[v LCDy@side side `uc  1 a 1 wreg ]
+[v LCDy@value value `uc  1 p 1 4 ]
+"412
+[v LCDy@side side `uc  1 a 1 5 ]
+"442
+} 0
+"329
+[v _LCDpage LCDpage `(uc  1 e 1 0 ]
+{
+[v LCDpage@side side `uc  1 a 1 wreg ]
+[v LCDpage@side side `uc  1 a 1 wreg ]
+[v LCDpage@page page `uc  1 p 1 14 ]
+"331
+[v LCDpage@side side `uc  1 a 1 15 ]
+"364
+} 0
+"306
+[v __lcd_waitbusy _lcd_waitbusy `(v  1 e 1 0 ]
+{
+"310
+} 0
+"209
+[v __lcd_status _lcd_status `(uc  1 e 1 0 ]
+{
+"213
+[v __lcd_status@cs2 cs2 `uc  1 a 1 2 ]
+[v __lcd_status@cs1 cs1 `uc  1 a 1 1 ]
+"211
+[v __lcd_status@status status `uc  1 a 1 0 ]
+"243
+} 0
+"259
+[v _LCDcmd LCDcmd `(v  1 e 1 0 ]
+{
+[v LCDcmd@data data `uc  1 a 1 wreg ]
+[v LCDcmd@data data `uc  1 a 1 wreg ]
+"262
+[v LCDcmd@data data `uc  1 a 1 0 ]
+"265
+} 0
+"157
+[v __lcd_enable _lcd_enable `(v  1 e 1 0 ]
+{
+"162
+} 0

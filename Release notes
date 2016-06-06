@@ -1,0 +1,5 @@
+Il programma può essere compilato in due modi: attraverso l'IDE MPLAB o usando il comando make. In entrambi i casi è necessario aver installato sia l'IDE che il compilatore XC8, infatti a causa della particolare architettura del chip un normale compilatore per C non può essere usato. 
+Per compilare tramite IDE usare la funzionalità Open Project e selezionare la cartella MPLAB IDE/lcd.X Una volta compilato il codice, il file d'uscita è MPLAB IDE/lcd.X/dist/default/production/lcd.X.production.hex
+
+Per compilare da riga di comando entrare nella cartella Oscilloscope e dopo aver aggiornato il file nbproject/Makefile-local-default.mk con i path corretti, eseguire il comando make -f nbproject/Makefile-default.mk
+Il file d'uscita è bin/lcd.X.production.hex

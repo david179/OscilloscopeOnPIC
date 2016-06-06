@@ -1,0 +1,5 @@
+Viste le particolarità dell'architettura Microchip il programma non può essere compilato con un normale compilatore per C ma è necessario usare il software rilasciato da Microchip. Ciò significa che è necessario aver installato MPLAB IDE e il compilatore XC8 e prima di compilare deve essere aggiornato il file nbproject/Makefile-local-default.mk con i path corretti. Una volta fatto ciò si può compilare con il comando:
+
+make -f nbproject/Makefile-default.mk
+
+

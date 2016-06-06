@@ -1,0 +1,1861 @@
+%CMF
+# %PSECTS Section
+# For each object file, details of its psects are enumerated here.
+# The begining of the section is indicated by %PSECTS.  The first
+# line indicates the name of the first object file, e.g.
+#    $foo.obj
+# Each line that follows describes a psect in that object file, until
+# the next object file.  The lines that describe a psect have the
+# format:
+#    <psect name> <class name> <space> <link address> <load addresses> <length> <delta>
+# All addresses and the length are given in unqualified hexadecimal
+# in delta units.  Any other numeric values are decimal.
+%PSECTS
+$dist/default/debug/lcd.X.debug.obj
+cinit CODE 0 37CC 37CC 2A 1
+text0 CODE 0 6380 6380 15C2 1
+text1 CODE 0 453E 453E 14C 1
+text2 CODE 0 43FE 43FE 140 1
+text3 CODE 0 38A8 38A8 42 1
+text4 CODE 0 58B0 58B0 AD0 1
+text5 CODE 0 4A7C 4A7C 3F0 1
+text6 CODE 0 36D4 36D4 1E 1
+text7 CODE 0 4836 4836 246 1
+text8 CODE 0 40B0 40B0 F4 1
+text9 CODE 0 3AF6 3AF6 70 1
+text10 CODE 0 42CC 42CC 132 1
+text11 CODE 0 41A4 41A4 128 1
+text12 CODE 0 3A34 3A34 5C 1
+text13 CODE 0 3A90 3A90 66 1
+text14 CODE 0 3B66 3B66 82 1
+text15 CODE 0 3FBC 3FBC F4 1
+text16 CODE 0 3868 3868 40 1
+text17 CODE 0 468A 468A 1AC 1
+text18 CODE 0 375A 375A 24 1
+text19 CODE 0 3CFC 3CFC 90 1
+text20 CODE 0 37A4 37A4 28 1
+text21 CODE 0 3736 3736 24 1
+text22 CODE 0 3ED6 3ED6 E6 1
+text23 CODE 0 37F6 37F6 38 1
+text24 CODE 0 3E28 3E28 AE 1
+text25 CODE 0 532C 532C 584 1
+text26 CODE 0 382E 382E 3A 1
+text27 CODE 0 3D8C 3D8C 9C 1
+text28 CODE 0 3BE8 3BE8 84 1
+text29 CODE 0 38EA 38EA 4A 1
+text30 CODE 0 36F2 36F2 20 1
+text31 CODE 0 3712 3712 24 1
+text32 CODE 0 3C6C 3C6C 90 1
+text33 CODE 0 4E6C 4E6C 4C0 1
+text34 CODE 0 377E 377E 26 1
+text35 CODE 0 39DC 39DC 58 1
+text36 CODE 0 3934 3934 50 1
+text37 CODE 0 36C4 36C4 10 1
+text38 CODE 0 3984 3984 58 1
+text39 CODE 0 36AA 36AA C 1
+text40 CODE 0 36B6 36B6 E 1
+cstackCOMRAM COMRAM 1 1 1 5F 1
+cstackBANK0 BANK0 1 60 60 A0 1
+cstackBANK1 BANK1 1 100 100 100 1
+cstackBANK2 BANK2 1 200 200 41 1
+bssBANK2 BANK2 1 241 241 8 1
+bssBIGRAM BIGRAM 1 3FF 3FF 401 1
+mediumconst MEDIUMCONST 0 7942 7942 6BE 1
+$/tmp/xcXJfpqUK.obj
+idloc IDLOC 0 200000 200000 8 1
+end_init CODE 0 0 0 4 1
+config CONFIG 0 300000 300000 E 1
+# %UNUSED Section
+# This section enumerates the unused ranges of each CLASS. Each entry
+# is described on a single line as follows:
+#    <class name> <range> <delta>
+# Addresses given in the range are in hexadecimal and units of delta.
+%UNUSED
+RAM 249-3FE 1
+SFR F60-FFF 1
+BANK2 249-2FF 1
+BANK3 300-3FE 1
+CONST 4-36A9 1
+STACK 249-3FE 1
+SMALLCONST 800-36A9 1
+CODE 4-36A9 1
+BIGRAM 249-3FE 1
+EEDATA F00000-F000FF 1
+MEDIUMCONST 800-36A9 1
+# %LINETAB Section
+# This section enumerates the file/line to address mappings.
+# The beginning of the section is indicated by %LINETAB.
+# The first line indicates the name of the first object file, e.g.
+#   $foo.obj
+# Each line that follows describes a single mapping until the next
+# object file.  Mappings have the following format:
+#    <address> <psect name> <class name> ><line number>:<file name>
+# The address is absolute and given given in unqualified hex 
+# in delta units of the psect. All mappings within an object file
+# are in ascending order of addresses.
+# All other numeric values are in decimal.
+%LINETAB
+$dist/default/debug/lcd.X.debug.obj
+36B6 text40 CODE >1195:/home/david/MPLABXProjects/lcd.X/LCDgraphic.c
+36B6 text40 CODE >1197:/home/david/MPLABXProjects/lcd.X/LCDgraphic.c
+36B8 text40 CODE >1198:/home/david/MPLABXProjects/lcd.X/LCDgraphic.c
+36C0 text40 CODE >1199:/home/david/MPLABXProjects/lcd.X/LCDgraphic.c
+36C2 text40 CODE >1200:/home/david/MPLABXProjects/lcd.X/LCDgraphic.c
+36AA text39 CODE >1340:/home/david/MPLABXProjects/lcd.X/LCDgraphic.c
+36AC text39 CODE >1343:/home/david/MPLABXProjects/lcd.X/LCDgraphic.c
+36B0 text39 CODE >1345:/home/david/MPLABXProjects/lcd.X/LCDgraphic.c
+36B4 text39 CODE >1346:/home/david/MPLABXProjects/lcd.X/LCDgraphic.c
+3984 text38 CODE >1289:/home/david/MPLABXProjects/lcd.X/LCDgraphic.c
+3984 text38 CODE >1294:/home/david/MPLABXProjects/lcd.X/LCDgraphic.c
+398C text38 CODE >1295:/home/david/MPLABXProjects/lcd.X/LCDgraphic.c
+3994 text38 CODE >1298:/home/david/MPLABXProjects/lcd.X/LCDgraphic.c
+3998 text38 CODE >1300:/home/david/MPLABXProjects/lcd.X/LCDgraphic.c
+399A text38 CODE >1303:/home/david/MPLABXProjects/lcd.X/LCDgraphic.c
+39A2 text38 CODE >1304:/home/david/MPLABXProjects/lcd.X/LCDgraphic.c
+39AA text38 CODE >1307:/home/david/MPLABXProjects/lcd.X/LCDgraphic.c
+39AE text38 CODE >1308:/home/david/MPLABXProjects/lcd.X/LCDgraphic.c
+39B2 text38 CODE >1311:/home/david/MPLABXProjects/lcd.X/LCDgraphic.c
+39B6 text38 CODE >1314:/home/david/MPLABXProjects/lcd.X/LCDgraphic.c
+39CC text38 CODE >1318:/home/david/MPLABXProjects/lcd.X/LCDgraphic.c
+39D4 text38 CODE >1321:/home/david/MPLABXProjects/lcd.X/LCDgraphic.c
+39D8 text38 CODE >1323:/home/david/MPLABXProjects/lcd.X/LCDgraphic.c
+36C4 text37 CODE >1387:/home/david/MPLABXProjects/lcd.X/LCDgraphic.c
+36C4 text37 CODE >1390:/home/david/MPLABXProjects/lcd.X/LCDgraphic.c
+3934 text36 CODE >1410:/home/david/MPLABXProjects/lcd.X/LCDgraphic.c
+3936 text36 CODE >1412:/home/david/MPLABXProjects/lcd.X/LCDgraphic.c
+3944 text36 CODE >1416:/home/david/MPLABXProjects/lcd.X/LCDgraphic.c
+3948 text36 CODE >1419:/home/david/MPLABXProjects/lcd.X/LCDgraphic.c
+3950 text36 CODE >1421:/home/david/MPLABXProjects/lcd.X/LCDgraphic.c
+3952 text36 CODE >1422:/home/david/MPLABXProjects/lcd.X/LCDgraphic.c
+3954 text36 CODE >1424:/home/david/MPLABXProjects/lcd.X/LCDgraphic.c
+3956 text36 CODE >1426:/home/david/MPLABXProjects/lcd.X/LCDgraphic.c
+3956 text36 CODE >1427:/home/david/MPLABXProjects/lcd.X/LCDgraphic.c
+3958 text36 CODE >1428:/home/david/MPLABXProjects/lcd.X/LCDgraphic.c
+395A text36 CODE >1429:/home/david/MPLABXProjects/lcd.X/LCDgraphic.c
+395C text36 CODE >1431:/home/david/MPLABXProjects/lcd.X/LCDgraphic.c
+395C text36 CODE >1432:/home/david/MPLABXProjects/lcd.X/LCDgraphic.c
+3960 text36 CODE >1436:/home/david/MPLABXProjects/lcd.X/LCDgraphic.c
+3960 text36 CODE >1437:/home/david/MPLABXProjects/lcd.X/LCDgraphic.c
+3962 text36 CODE >1438:/home/david/MPLABXProjects/lcd.X/LCDgraphic.c
+3964 text36 CODE >1440:/home/david/MPLABXProjects/lcd.X/LCDgraphic.c
+3966 text36 CODE >1424:/home/david/MPLABXProjects/lcd.X/LCDgraphic.c
+397A text36 CODE >1442:/home/david/MPLABXProjects/lcd.X/LCDgraphic.c
+39DC text35 CODE >1492:/home/david/MPLABXProjects/lcd.X/LCDgraphic.c
+39DE text35 CODE >1494:/home/david/MPLABXProjects/lcd.X/LCDgraphic.c
+39EC text35 CODE >1495:/home/david/MPLABXProjects/lcd.X/LCDgraphic.c
+39EC text35 CODE >1498:/home/david/MPLABXProjects/lcd.X/LCDgraphic.c
+39F4 text35 CODE >1500:/home/david/MPLABXProjects/lcd.X/LCDgraphic.c
+39FC text35 CODE >1502:/home/david/MPLABXProjects/lcd.X/LCDgraphic.c
+3A00 text35 CODE >1504:/home/david/MPLABXProjects/lcd.X/LCDgraphic.c
+3A02 text35 CODE >1505:/home/david/MPLABXProjects/lcd.X/LCDgraphic.c
+3A04 text35 CODE >1507:/home/david/MPLABXProjects/lcd.X/LCDgraphic.c
+3A06 text35 CODE >1509:/home/david/MPLABXProjects/lcd.X/LCDgraphic.c
+3A06 text35 CODE >1510:/home/david/MPLABXProjects/lcd.X/LCDgraphic.c
+3A08 text35 CODE >1511:/home/david/MPLABXProjects/lcd.X/LCDgraphic.c
+3A0A text35 CODE >1512:/home/david/MPLABXProjects/lcd.X/LCDgraphic.c
+3A0C text35 CODE >1513:/home/david/MPLABXProjects/lcd.X/LCDgraphic.c
+3A0C text35 CODE >1514:/home/david/MPLABXProjects/lcd.X/LCDgraphic.c
+3A10 text35 CODE >1517:/home/david/MPLABXProjects/lcd.X/LCDgraphic.c
+3A10 text35 CODE >1518:/home/david/MPLABXProjects/lcd.X/LCDgraphic.c
+3A12 text35 CODE >1519:/home/david/MPLABXProjects/lcd.X/LCDgraphic.c
+3A14 text35 CODE >1521:/home/david/MPLABXProjects/lcd.X/LCDgraphic.c
+3A16 text35 CODE >1507:/home/david/MPLABXProjects/lcd.X/LCDgraphic.c
+3A2A text35 CODE >1523:/home/david/MPLABXProjects/lcd.X/LCDgraphic.c
+377E text34 CODE >15:/opt/microchip/xc8/v1.37/sources/common/Umul16.c
+377E text34 CODE >37:/opt/microchip/xc8/v1.37/sources/common/Umul16.c
+378A text34 CODE >38:/opt/microchip/xc8/v1.37/sources/common/Umul16.c
+3792 text34 CODE >39:/opt/microchip/xc8/v1.37/sources/common/Umul16.c
+379A text34 CODE >52:/opt/microchip/xc8/v1.37/sources/common/Umul16.c
+4E6C text33 CODE >1576:/home/david/MPLABXProjects/lcd.X/LCDgraphic.c
+4E6E text33 CODE >1581:/home/david/MPLABXProjects/lcd.X/LCDgraphic.c
+4E72 text33 CODE >1583:/home/david/MPLABXProjects/lcd.X/LCDgraphic.c
+4E7E text33 CODE >1585:/home/david/MPLABXProjects/lcd.X/LCDgraphic.c
+4E80 text33 CODE >1588:/home/david/MPLABXProjects/lcd.X/LCDgraphic.c
+4E8C text33 CODE >1590:/home/david/MPLABXProjects/lcd.X/LCDgraphic.c
+4EB0 text33 CODE >1595:/home/david/MPLABXProjects/lcd.X/LCDgraphic.c
+4EE0 text33 CODE >1598:/home/david/MPLABXProjects/lcd.X/LCDgraphic.c
+4EE2 text33 CODE >1599:/home/david/MPLABXProjects/lcd.X/LCDgraphic.c
+4EE4 text33 CODE >1600:/home/david/MPLABXProjects/lcd.X/LCDgraphic.c
+4F00 text33 CODE >1602:/home/david/MPLABXProjects/lcd.X/LCDgraphic.c
+4F5C text33 CODE >1603:/home/david/MPLABXProjects/lcd.X/LCDgraphic.c
+4F62 text33 CODE >1604:/home/david/MPLABXProjects/lcd.X/LCDgraphic.c
+4F82 text33 CODE >1600:/home/david/MPLABXProjects/lcd.X/LCDgraphic.c
+4F90 text33 CODE >1607:/home/david/MPLABXProjects/lcd.X/LCDgraphic.c
+4F92 text33 CODE >1610:/home/david/MPLABXProjects/lcd.X/LCDgraphic.c
+4F9C text33 CODE >1611:/home/david/MPLABXProjects/lcd.X/LCDgraphic.c
+4FA6 text33 CODE >1613:/home/david/MPLABXProjects/lcd.X/LCDgraphic.c
+4FCE text33 CODE >1615:/home/david/MPLABXProjects/lcd.X/LCDgraphic.c
+4FD0 text33 CODE >1616:/home/david/MPLABXProjects/lcd.X/LCDgraphic.c
+4FD2 text33 CODE >1617:/home/david/MPLABXProjects/lcd.X/LCDgraphic.c
+4FEE text33 CODE >1619:/home/david/MPLABXProjects/lcd.X/LCDgraphic.c
+504A text33 CODE >1620:/home/david/MPLABXProjects/lcd.X/LCDgraphic.c
+5050 text33 CODE >1621:/home/david/MPLABXProjects/lcd.X/LCDgraphic.c
+5070 text33 CODE >1617:/home/david/MPLABXProjects/lcd.X/LCDgraphic.c
+507E text33 CODE >1623:/home/david/MPLABXProjects/lcd.X/LCDgraphic.c
+5080 text33 CODE >1626:/home/david/MPLABXProjects/lcd.X/LCDgraphic.c
+508A text33 CODE >1627:/home/david/MPLABXProjects/lcd.X/LCDgraphic.c
+5094 text33 CODE >1629:/home/david/MPLABXProjects/lcd.X/LCDgraphic.c
+50BC text33 CODE >1631:/home/david/MPLABXProjects/lcd.X/LCDgraphic.c
+50BE text33 CODE >1632:/home/david/MPLABXProjects/lcd.X/LCDgraphic.c
+50C0 text33 CODE >1633:/home/david/MPLABXProjects/lcd.X/LCDgraphic.c
+50D8 text33 CODE >1635:/home/david/MPLABXProjects/lcd.X/LCDgraphic.c
+5134 text33 CODE >1636:/home/david/MPLABXProjects/lcd.X/LCDgraphic.c
+513A text33 CODE >1637:/home/david/MPLABXProjects/lcd.X/LCDgraphic.c
+515A text33 CODE >1633:/home/david/MPLABXProjects/lcd.X/LCDgraphic.c
+5160 text33 CODE >1640:/home/david/MPLABXProjects/lcd.X/LCDgraphic.c
+516A text33 CODE >1641:/home/david/MPLABXProjects/lcd.X/LCDgraphic.c
+5174 text33 CODE >1644:/home/david/MPLABXProjects/lcd.X/LCDgraphic.c
+5176 text33 CODE >1645:/home/david/MPLABXProjects/lcd.X/LCDgraphic.c
+5178 text33 CODE >1646:/home/david/MPLABXProjects/lcd.X/LCDgraphic.c
+5194 text33 CODE >1648:/home/david/MPLABXProjects/lcd.X/LCDgraphic.c
+51F0 text33 CODE >1649:/home/david/MPLABXProjects/lcd.X/LCDgraphic.c
+51F6 text33 CODE >1650:/home/david/MPLABXProjects/lcd.X/LCDgraphic.c
+5216 text33 CODE >1646:/home/david/MPLABXProjects/lcd.X/LCDgraphic.c
+5224 text33 CODE >1653:/home/david/MPLABXProjects/lcd.X/LCDgraphic.c
+5226 text33 CODE >1656:/home/david/MPLABXProjects/lcd.X/LCDgraphic.c
+5230 text33 CODE >1657:/home/david/MPLABXProjects/lcd.X/LCDgraphic.c
+523A text33 CODE >1659:/home/david/MPLABXProjects/lcd.X/LCDgraphic.c
+526A text33 CODE >1661:/home/david/MPLABXProjects/lcd.X/LCDgraphic.c
+526C text33 CODE >1662:/home/david/MPLABXProjects/lcd.X/LCDgraphic.c
+526E text33 CODE >1663:/home/david/MPLABXProjects/lcd.X/LCDgraphic.c
+5286 text33 CODE >1665:/home/david/MPLABXProjects/lcd.X/LCDgraphic.c
+52E2 text33 CODE >1666:/home/david/MPLABXProjects/lcd.X/LCDgraphic.c
+52E8 text33 CODE >1667:/home/david/MPLABXProjects/lcd.X/LCDgraphic.c
+5308 text33 CODE >1663:/home/david/MPLABXProjects/lcd.X/LCDgraphic.c
+530E text33 CODE >1585:/home/david/MPLABXProjects/lcd.X/LCDgraphic.c
+532A text33 CODE >1672:/home/david/MPLABXProjects/lcd.X/LCDgraphic.c
+3C6C text32 CODE >1683:/home/david/MPLABXProjects/lcd.X/LCDgraphic.c
+3C6C text32 CODE >1685:/home/david/MPLABXProjects/lcd.X/LCDgraphic.c
+3C70 text32 CODE >1687:/home/david/MPLABXProjects/lcd.X/LCDgraphic.c
+3C86 text32 CODE >1689:/home/david/MPLABXProjects/lcd.X/LCDgraphic.c
+3C96 text32 CODE >1687:/home/david/MPLABXProjects/lcd.X/LCDgraphic.c
+3C9C text32 CODE >1692:/home/david/MPLABXProjects/lcd.X/LCDgraphic.c
+3CB4 text32 CODE >1694:/home/david/MPLABXProjects/lcd.X/LCDgraphic.c
+3CBE text32 CODE >1695:/home/david/MPLABXProjects/lcd.X/LCDgraphic.c
+3CD6 text32 CODE >1697:/home/david/MPLABXProjects/lcd.X/LCDgraphic.c
+3CE4 text32 CODE >1698:/home/david/MPLABXProjects/lcd.X/LCDgraphic.c
+3CEE text32 CODE >1695:/home/david/MPLABXProjects/lcd.X/LCDgraphic.c
+3CF4 text32 CODE >1692:/home/david/MPLABXProjects/lcd.X/LCDgraphic.c
+3CFA text32 CODE >1701:/home/david/MPLABXProjects/lcd.X/LCDgraphic.c
+3712 text31 CODE >1458:/home/david/MPLABXProjects/lcd.X/LCDgraphic.c
+3714 text31 CODE >1461:/home/david/MPLABXProjects/lcd.X/LCDgraphic.c
+3718 text31 CODE >1463:/home/david/MPLABXProjects/lcd.X/LCDgraphic.c
+371A text31 CODE >1464:/home/david/MPLABXProjects/lcd.X/LCDgraphic.c
+371C text31 CODE >1465:/home/david/MPLABXProjects/lcd.X/LCDgraphic.c
+371E text31 CODE >1466:/home/david/MPLABXProjects/lcd.X/LCDgraphic.c
+3720 text31 CODE >1467:/home/david/MPLABXProjects/lcd.X/LCDgraphic.c
+3726 text31 CODE >1469:/home/david/MPLABXProjects/lcd.X/LCDgraphic.c
+372C text31 CODE >1470:/home/david/MPLABXProjects/lcd.X/LCDgraphic.c
+372E text31 CODE >1473:/home/david/MPLABXProjects/lcd.X/LCDgraphic.c
+36F2 text30 CODE >1361:/home/david/MPLABXProjects/lcd.X/LCDgraphic.c
+36F2 text30 CODE >1364:/home/david/MPLABXProjects/lcd.X/LCDgraphic.c
+36F6 text30 CODE >1367:/home/david/MPLABXProjects/lcd.X/LCDgraphic.c
+36F8 text30 CODE >1368:/home/david/MPLABXProjects/lcd.X/LCDgraphic.c
+3700 text30 CODE >1369:/home/david/MPLABXProjects/lcd.X/LCDgraphic.c
+3702 text30 CODE >1372:/home/david/MPLABXProjects/lcd.X/LCDgraphic.c
+38EA text29 CODE >1214:/home/david/MPLABXProjects/lcd.X/LCDgraphic.c
+38EA text29 CODE >1217:/home/david/MPLABXProjects/lcd.X/LCDgraphic.c
+3902 text29 CODE >1219:/home/david/MPLABXProjects/lcd.X/LCDgraphic.c
+3910 text29 CODE >1217:/home/david/MPLABXProjects/lcd.X/LCDgraphic.c
+3916 text29 CODE >1223:/home/david/MPLABXProjects/lcd.X/LCDgraphic.c
+3924 text29 CODE >1226:/home/david/MPLABXProjects/lcd.X/LCDgraphic.c
+3928 text29 CODE >1228:/home/david/MPLABXProjects/lcd.X/LCDgraphic.c
+392E text29 CODE >1230:/home/david/MPLABXProjects/lcd.X/LCDgraphic.c
+3932 text29 CODE >1231:/home/david/MPLABXProjects/lcd.X/LCDgraphic.c
+3BE8 text28 CODE >8:/opt/microchip/xc8/v1.37/sources/common/awdiv.c
+3BE8 text28 CODE >14:/opt/microchip/xc8/v1.37/sources/common/awdiv.c
+3BEC text28 CODE >15:/opt/microchip/xc8/v1.37/sources/common/awdiv.c
+3BF0 text28 CODE >16:/opt/microchip/xc8/v1.37/sources/common/awdiv.c
+3BF8 text28 CODE >17:/opt/microchip/xc8/v1.37/sources/common/awdiv.c
+3BFC text28 CODE >19:/opt/microchip/xc8/v1.37/sources/common/awdiv.c
+3C00 text28 CODE >20:/opt/microchip/xc8/v1.37/sources/common/awdiv.c
+3C08 text28 CODE >21:/opt/microchip/xc8/v1.37/sources/common/awdiv.c
+3C0C text28 CODE >23:/opt/microchip/xc8/v1.37/sources/common/awdiv.c
+3C14 text28 CODE >24:/opt/microchip/xc8/v1.37/sources/common/awdiv.c
+3C1C text28 CODE >25:/opt/microchip/xc8/v1.37/sources/common/awdiv.c
+3C20 text28 CODE >26:/opt/microchip/xc8/v1.37/sources/common/awdiv.c
+3C22 text28 CODE >27:/opt/microchip/xc8/v1.37/sources/common/awdiv.c
+3C28 text28 CODE >28:/opt/microchip/xc8/v1.37/sources/common/awdiv.c
+3C2A text28 CODE >26:/opt/microchip/xc8/v1.37/sources/common/awdiv.c
+3C2E text28 CODE >31:/opt/microchip/xc8/v1.37/sources/common/awdiv.c
+3C34 text28 CODE >32:/opt/microchip/xc8/v1.37/sources/common/awdiv.c
+3C40 text28 CODE >33:/opt/microchip/xc8/v1.37/sources/common/awdiv.c
+3C48 text28 CODE >34:/opt/microchip/xc8/v1.37/sources/common/awdiv.c
+3C4A text28 CODE >36:/opt/microchip/xc8/v1.37/sources/common/awdiv.c
+3C50 text28 CODE >37:/opt/microchip/xc8/v1.37/sources/common/awdiv.c
+3C54 text28 CODE >39:/opt/microchip/xc8/v1.37/sources/common/awdiv.c
+3C5A text28 CODE >40:/opt/microchip/xc8/v1.37/sources/common/awdiv.c
+3C62 text28 CODE >41:/opt/microchip/xc8/v1.37/sources/common/awdiv.c
+3D8C text27 CODE >1538:/home/david/MPLABXProjects/lcd.X/LCDgraphic.c
+3D8C text27 CODE >1540:/home/david/MPLABXProjects/lcd.X/LCDgraphic.c
+3D8E text27 CODE >1541:/home/david/MPLABXProjects/lcd.X/LCDgraphic.c
+3D90 text27 CODE >1543:/home/david/MPLABXProjects/lcd.X/LCDgraphic.c
+3D9C text27 CODE >1545:/home/david/MPLABXProjects/lcd.X/LCDgraphic.c
+3DC0 text27 CODE >1550:/home/david/MPLABXProjects/lcd.X/LCDgraphic.c
+3DF0 text27 CODE >1554:/home/david/MPLABXProjects/lcd.X/LCDgraphic.c
+3E12 text27 CODE >1556:/home/david/MPLABXProjects/lcd.X/LCDgraphic.c
+3E26 text27 CODE >1557:/home/david/MPLABXProjects/lcd.X/LCDgraphic.c
+382E text26 CODE >4:/opt/microchip/xc8/v1.37/sources/common/strlen.c
+382E text26 CODE >8:/opt/microchip/xc8/v1.37/sources/common/strlen.c
+3836 text26 CODE >9:/opt/microchip/xc8/v1.37/sources/common/strlen.c
+3838 text26 CODE >10:/opt/microchip/xc8/v1.37/sources/common/strlen.c
+383C text26 CODE >9:/opt/microchip/xc8/v1.37/sources/common/strlen.c
+384A text26 CODE >12:/opt/microchip/xc8/v1.37/sources/common/strlen.c
+532C text25 CODE >1718:/home/david/MPLABXProjects/lcd.X/LCDgraphic.c
+532E text25 CODE >1719:/home/david/MPLABXProjects/lcd.X/LCDgraphic.c
+5336 text25 CODE >1721:/home/david/MPLABXProjects/lcd.X/LCDgraphic.c
+533A text25 CODE >1723:/home/david/MPLABXProjects/lcd.X/LCDgraphic.c
+534E text25 CODE >1726:/home/david/MPLABXProjects/lcd.X/LCDgraphic.c
+5354 text25 CODE >1729:/home/david/MPLABXProjects/lcd.X/LCDgraphic.c
+535E text25 CODE >1730:/home/david/MPLABXProjects/lcd.X/LCDgraphic.c
+5368 text25 CODE >1732:/home/david/MPLABXProjects/lcd.X/LCDgraphic.c
+5378 text25 CODE >1735:/home/david/MPLABXProjects/lcd.X/LCDgraphic.c
+5382 text25 CODE >1737:/home/david/MPLABXProjects/lcd.X/LCDgraphic.c
+5398 text25 CODE >1739:/home/david/MPLABXProjects/lcd.X/LCDgraphic.c
+539C text25 CODE >1735:/home/david/MPLABXProjects/lcd.X/LCDgraphic.c
+53B6 text25 CODE >1746:/home/david/MPLABXProjects/lcd.X/LCDgraphic.c
+53CE text25 CODE >1748:/home/david/MPLABXProjects/lcd.X/LCDgraphic.c
+53E4 text25 CODE >1749:/home/david/MPLABXProjects/lcd.X/LCDgraphic.c
+53E8 text25 CODE >1746:/home/david/MPLABXProjects/lcd.X/LCDgraphic.c
+53EE text25 CODE >1752:/home/david/MPLABXProjects/lcd.X/LCDgraphic.c
+53F8 text25 CODE >1753:/home/david/MPLABXProjects/lcd.X/LCDgraphic.c
+540E text25 CODE >1756:/home/david/MPLABXProjects/lcd.X/LCDgraphic.c
+5418 text25 CODE >1757:/home/david/MPLABXProjects/lcd.X/LCDgraphic.c
+5422 text25 CODE >1759:/home/david/MPLABXProjects/lcd.X/LCDgraphic.c
+542C text25 CODE >1761:/home/david/MPLABXProjects/lcd.X/LCDgraphic.c
+543E text25 CODE >1762:/home/david/MPLABXProjects/lcd.X/LCDgraphic.c
+5442 text25 CODE >1764:/home/david/MPLABXProjects/lcd.X/LCDgraphic.c
+5446 text25 CODE >1759:/home/david/MPLABXProjects/lcd.X/LCDgraphic.c
+545E text25 CODE >1770:/home/david/MPLABXProjects/lcd.X/LCDgraphic.c
+5466 text25 CODE >1773:/home/david/MPLABXProjects/lcd.X/LCDgraphic.c
+5482 text25 CODE >1774:/home/david/MPLABXProjects/lcd.X/LCDgraphic.c
+549E text25 CODE >1777:/home/david/MPLABXProjects/lcd.X/LCDgraphic.c
+54AC text25 CODE >1780:/home/david/MPLABXProjects/lcd.X/LCDgraphic.c
+54D4 text25 CODE >1781:/home/david/MPLABXProjects/lcd.X/LCDgraphic.c
+54DE text25 CODE >1782:/home/david/MPLABXProjects/lcd.X/LCDgraphic.c
+54E8 text25 CODE >1784:/home/david/MPLABXProjects/lcd.X/LCDgraphic.c
+54F2 text25 CODE >1787:/home/david/MPLABXProjects/lcd.X/LCDgraphic.c
+5508 text25 CODE >1788:/home/david/MPLABXProjects/lcd.X/LCDgraphic.c
+550C text25 CODE >1784:/home/david/MPLABXProjects/lcd.X/LCDgraphic.c
+5524 text25 CODE >1791:/home/david/MPLABXProjects/lcd.X/LCDgraphic.c
+552E text25 CODE >1792:/home/david/MPLABXProjects/lcd.X/LCDgraphic.c
+5538 text25 CODE >1793:/home/david/MPLABXProjects/lcd.X/LCDgraphic.c
+5542 text25 CODE >1796:/home/david/MPLABXProjects/lcd.X/LCDgraphic.c
+5558 text25 CODE >1797:/home/david/MPLABXProjects/lcd.X/LCDgraphic.c
+555C text25 CODE >1793:/home/david/MPLABXProjects/lcd.X/LCDgraphic.c
+5576 text25 CODE >1805:/home/david/MPLABXProjects/lcd.X/LCDgraphic.c
+559E text25 CODE >1806:/home/david/MPLABXProjects/lcd.X/LCDgraphic.c
+55A8 text25 CODE >1807:/home/david/MPLABXProjects/lcd.X/LCDgraphic.c
+55B2 text25 CODE >1809:/home/david/MPLABXProjects/lcd.X/LCDgraphic.c
+55BC text25 CODE >1812:/home/david/MPLABXProjects/lcd.X/LCDgraphic.c
+55D2 text25 CODE >1813:/home/david/MPLABXProjects/lcd.X/LCDgraphic.c
+55D6 text25 CODE >1809:/home/david/MPLABXProjects/lcd.X/LCDgraphic.c
+55EE text25 CODE >1817:/home/david/MPLABXProjects/lcd.X/LCDgraphic.c
+55F8 text25 CODE >1818:/home/david/MPLABXProjects/lcd.X/LCDgraphic.c
+560E text25 CODE >1821:/home/david/MPLABXProjects/lcd.X/LCDgraphic.c
+5618 text25 CODE >1822:/home/david/MPLABXProjects/lcd.X/LCDgraphic.c
+5622 text25 CODE >1824:/home/david/MPLABXProjects/lcd.X/LCDgraphic.c
+5630 text25 CODE >1827:/home/david/MPLABXProjects/lcd.X/LCDgraphic.c
+5646 text25 CODE >1828:/home/david/MPLABXProjects/lcd.X/LCDgraphic.c
+564A text25 CODE >1824:/home/david/MPLABXProjects/lcd.X/LCDgraphic.c
+5662 text25 CODE >1835:/home/david/MPLABXProjects/lcd.X/LCDgraphic.c
+566A text25 CODE >1838:/home/david/MPLABXProjects/lcd.X/LCDgraphic.c
+567A text25 CODE >1840:/home/david/MPLABXProjects/lcd.X/LCDgraphic.c
+56A2 text25 CODE >1842:/home/david/MPLABXProjects/lcd.X/LCDgraphic.c
+56AC text25 CODE >1843:/home/david/MPLABXProjects/lcd.X/LCDgraphic.c
+56B6 text25 CODE >1846:/home/david/MPLABXProjects/lcd.X/LCDgraphic.c
+56C0 text25 CODE >1848:/home/david/MPLABXProjects/lcd.X/LCDgraphic.c
+56D2 text25 CODE >1849:/home/david/MPLABXProjects/lcd.X/LCDgraphic.c
+56D6 text25 CODE >1851:/home/david/MPLABXProjects/lcd.X/LCDgraphic.c
+56DA text25 CODE >1846:/home/david/MPLABXProjects/lcd.X/LCDgraphic.c
+56F4 text25 CODE >1858:/home/david/MPLABXProjects/lcd.X/LCDgraphic.c
+56FE text25 CODE >1861:/home/david/MPLABXProjects/lcd.X/LCDgraphic.c
+5708 text25 CODE >1862:/home/david/MPLABXProjects/lcd.X/LCDgraphic.c
+571E text25 CODE >1863:/home/david/MPLABXProjects/lcd.X/LCDgraphic.c
+5728 text25 CODE >1864:/home/david/MPLABXProjects/lcd.X/LCDgraphic.c
+5732 text25 CODE >1866:/home/david/MPLABXProjects/lcd.X/LCDgraphic.c
+574A text25 CODE >1868:/home/david/MPLABXProjects/lcd.X/LCDgraphic.c
+5760 text25 CODE >1869:/home/david/MPLABXProjects/lcd.X/LCDgraphic.c
+5764 text25 CODE >1866:/home/david/MPLABXProjects/lcd.X/LCDgraphic.c
+576A text25 CODE >1874:/home/david/MPLABXProjects/lcd.X/LCDgraphic.c
+577A text25 CODE >1876:/home/david/MPLABXProjects/lcd.X/LCDgraphic.c
+57A2 text25 CODE >1878:/home/david/MPLABXProjects/lcd.X/LCDgraphic.c
+57AC text25 CODE >1879:/home/david/MPLABXProjects/lcd.X/LCDgraphic.c
+57B6 text25 CODE >1881:/home/david/MPLABXProjects/lcd.X/LCDgraphic.c
+57C0 text25 CODE >1883:/home/david/MPLABXProjects/lcd.X/LCDgraphic.c
+57D6 text25 CODE >1884:/home/david/MPLABXProjects/lcd.X/LCDgraphic.c
+57DA text25 CODE >1881:/home/david/MPLABXProjects/lcd.X/LCDgraphic.c
+580A text25 CODE >1887:/home/david/MPLABXProjects/lcd.X/LCDgraphic.c
+5814 text25 CODE >1888:/home/david/MPLABXProjects/lcd.X/LCDgraphic.c
+582A text25 CODE >1889:/home/david/MPLABXProjects/lcd.X/LCDgraphic.c
+5834 text25 CODE >1890:/home/david/MPLABXProjects/lcd.X/LCDgraphic.c
+583E text25 CODE >1892:/home/david/MPLABXProjects/lcd.X/LCDgraphic.c
+584C text25 CODE >1894:/home/david/MPLABXProjects/lcd.X/LCDgraphic.c
+5862 text25 CODE >1895:/home/david/MPLABXProjects/lcd.X/LCDgraphic.c
+5866 text25 CODE >1892:/home/david/MPLABXProjects/lcd.X/LCDgraphic.c
+587E text25 CODE >1901:/home/david/MPLABXProjects/lcd.X/LCDgraphic.c
+5886 text25 CODE >1907:/home/david/MPLABXProjects/lcd.X/LCDgraphic.c
+589C text25 CODE >1908:/home/david/MPLABXProjects/lcd.X/LCDgraphic.c
+58A0 text25 CODE >1904:/home/david/MPLABXProjects/lcd.X/LCDgraphic.c
+3E28 text24 CODE >62:/opt/microchip/xc8/v1.37/sources/common/float.c
+3E28 text24 CODE >64:/opt/microchip/xc8/v1.37/sources/common/float.c
+3E38 text24 CODE >65:/opt/microchip/xc8/v1.37/sources/common/float.c
+3E46 text24 CODE >67:/opt/microchip/xc8/v1.37/sources/common/float.c
+3E48 text24 CODE >68:/opt/microchip/xc8/v1.37/sources/common/float.c
+3E50 text24 CODE >66:/opt/microchip/xc8/v1.37/sources/common/float.c
+3E6E text24 CODE >71:/opt/microchip/xc8/v1.37/sources/common/float.c
+3E70 text24 CODE >72:/opt/microchip/xc8/v1.37/sources/common/float.c
+3E7C text24 CODE >73:/opt/microchip/xc8/v1.37/sources/common/float.c
+3E84 text24 CODE >70:/opt/microchip/xc8/v1.37/sources/common/float.c
+3EA2 text24 CODE >76:/opt/microchip/xc8/v1.37/sources/common/float.c
+3EA4 text24 CODE >77:/opt/microchip/xc8/v1.37/sources/common/float.c
+3EAC text24 CODE >75:/opt/microchip/xc8/v1.37/sources/common/float.c
+3EB6 text24 CODE >79:/opt/microchip/xc8/v1.37/sources/common/float.c
+3EB8 text24 CODE >80:/opt/microchip/xc8/v1.37/sources/common/float.c
+3EBA text24 CODE >81:/opt/microchip/xc8/v1.37/sources/common/float.c
+3EBE text24 CODE >82:/opt/microchip/xc8/v1.37/sources/common/float.c
+3EC2 text24 CODE >83:/opt/microchip/xc8/v1.37/sources/common/float.c
+3EC6 text24 CODE >84:/opt/microchip/xc8/v1.37/sources/common/float.c
+3EC8 text24 CODE >85:/opt/microchip/xc8/v1.37/sources/common/float.c
+37F6 text23 CODE >32:/opt/microchip/xc8/v1.37/sources/common/awtoft.c
+37F6 text23 CODE >36:/opt/microchip/xc8/v1.37/sources/common/awtoft.c
+37FA text23 CODE >37:/opt/microchip/xc8/v1.37/sources/common/awtoft.c
+37FE text23 CODE >38:/opt/microchip/xc8/v1.37/sources/common/awtoft.c
+3806 text23 CODE >39:/opt/microchip/xc8/v1.37/sources/common/awtoft.c
+380A text23 CODE >41:/opt/microchip/xc8/v1.37/sources/common/awtoft.c
+3ED6 text22 CODE >54:/opt/microchip/xc8/v1.37/sources/common/ftdiv.c
+3ED6 text22 CODE >63:/opt/microchip/xc8/v1.37/sources/common/ftdiv.c
+3EF0 text22 CODE >64:/opt/microchip/xc8/v1.37/sources/common/ftdiv.c
+3EFE text22 CODE >65:/opt/microchip/xc8/v1.37/sources/common/ftdiv.c
+3F18 text22 CODE >66:/opt/microchip/xc8/v1.37/sources/common/ftdiv.c
+3F26 text22 CODE >67:/opt/microchip/xc8/v1.37/sources/common/ftdiv.c
+3F32 text22 CODE >68:/opt/microchip/xc8/v1.37/sources/common/ftdiv.c
+3F38 text22 CODE >69:/opt/microchip/xc8/v1.37/sources/common/ftdiv.c
+3F3C text22 CODE >70:/opt/microchip/xc8/v1.37/sources/common/ftdiv.c
+3F40 text22 CODE >71:/opt/microchip/xc8/v1.37/sources/common/ftdiv.c
+3F44 text22 CODE >72:/opt/microchip/xc8/v1.37/sources/common/ftdiv.c
+3F46 text22 CODE >73:/opt/microchip/xc8/v1.37/sources/common/ftdiv.c
+3F52 text22 CODE >74:/opt/microchip/xc8/v1.37/sources/common/ftdiv.c
+3F54 text22 CODE >75:/opt/microchip/xc8/v1.37/sources/common/ftdiv.c
+3F60 text22 CODE >76:/opt/microchip/xc8/v1.37/sources/common/ftdiv.c
+3F64 text22 CODE >78:/opt/microchip/xc8/v1.37/sources/common/ftdiv.c
+3F6C text22 CODE >79:/opt/microchip/xc8/v1.37/sources/common/ftdiv.c
+3F7C text22 CODE >80:/opt/microchip/xc8/v1.37/sources/common/ftdiv.c
+3F88 text22 CODE >81:/opt/microchip/xc8/v1.37/sources/common/ftdiv.c
+3F8A text22 CODE >82:/opt/microchip/xc8/v1.37/sources/common/ftdiv.c
+3F8A text22 CODE >83:/opt/microchip/xc8/v1.37/sources/common/ftdiv.c
+3F92 text22 CODE >84:/opt/microchip/xc8/v1.37/sources/common/ftdiv.c
+3F96 text22 CODE >85:/opt/microchip/xc8/v1.37/sources/common/ftdiv.c
+3736 text21 CODE >28:/opt/microchip/xc8/v1.37/sources/common/lwtoft.c
+3736 text21 CODE >30:/opt/microchip/xc8/v1.37/sources/common/lwtoft.c
+37A4 text20 CODE >21:/home/david/MPLABXProjects/lcd.X/main.c
+37A4 text20 CODE >23:/home/david/MPLABXProjects/lcd.X/main.c
+3CFC text19 CODE >4:/opt/microchip/xc8/v1.37/sources/common/ftge.c
+3CFC text19 CODE >6:/opt/microchip/xc8/v1.37/sources/common/ftge.c
+3D00 text19 CODE >7:/opt/microchip/xc8/v1.37/sources/common/ftge.c
+3D2C text19 CODE >8:/opt/microchip/xc8/v1.37/sources/common/ftge.c
+3D30 text19 CODE >9:/opt/microchip/xc8/v1.37/sources/common/ftge.c
+3D5C text19 CODE >10:/opt/microchip/xc8/v1.37/sources/common/ftge.c
+3D68 text19 CODE >11:/opt/microchip/xc8/v1.37/sources/common/ftge.c
+3D74 text19 CODE >12:/opt/microchip/xc8/v1.37/sources/common/ftge.c
+375A text18 CODE >15:/opt/microchip/xc8/v1.37/sources/common/ftneg.c
+375A text18 CODE >17:/opt/microchip/xc8/v1.37/sources/common/ftneg.c
+3764 text18 CODE >18:/opt/microchip/xc8/v1.37/sources/common/ftneg.c
+3770 text18 CODE >19:/opt/microchip/xc8/v1.37/sources/common/ftneg.c
+377C text18 CODE >20:/opt/microchip/xc8/v1.37/sources/common/ftneg.c
+468A text17 CODE >86:/opt/microchip/xc8/v1.37/sources/common/ftadd.c
+468A text17 CODE >90:/opt/microchip/xc8/v1.37/sources/common/ftadd.c
+469E text17 CODE >91:/opt/microchip/xc8/v1.37/sources/common/ftadd.c
+46B2 text17 CODE >92:/opt/microchip/xc8/v1.37/sources/common/ftadd.c
+46CE text17 CODE >93:/opt/microchip/xc8/v1.37/sources/common/ftadd.c
+46DC text17 CODE >94:/opt/microchip/xc8/v1.37/sources/common/ftadd.c
+46F8 text17 CODE >95:/opt/microchip/xc8/v1.37/sources/common/ftadd.c
+4706 text17 CODE >96:/opt/microchip/xc8/v1.37/sources/common/ftadd.c
+470A text17 CODE >97:/opt/microchip/xc8/v1.37/sources/common/ftadd.c
+470C text17 CODE >98:/opt/microchip/xc8/v1.37/sources/common/ftadd.c
+470E text17 CODE >99:/opt/microchip/xc8/v1.37/sources/common/ftadd.c
+4710 text17 CODE >100:/opt/microchip/xc8/v1.37/sources/common/ftadd.c
+4712 text17 CODE >101:/opt/microchip/xc8/v1.37/sources/common/ftadd.c
+4714 text17 CODE >102:/opt/microchip/xc8/v1.37/sources/common/ftadd.c
+4720 text17 CODE >103:/opt/microchip/xc8/v1.37/sources/common/ftadd.c
+4722 text17 CODE >104:/opt/microchip/xc8/v1.37/sources/common/ftadd.c
+472E text17 CODE >106:/opt/microchip/xc8/v1.37/sources/common/ftadd.c
+4736 text17 CODE >110:/opt/microchip/xc8/v1.37/sources/common/ftadd.c
+473E text17 CODE >111:/opt/microchip/xc8/v1.37/sources/common/ftadd.c
+4740 text17 CODE >112:/opt/microchip/xc8/v1.37/sources/common/ftadd.c
+4758 text17 CODE >114:/opt/microchip/xc8/v1.37/sources/common/ftadd.c
+4760 text17 CODE >115:/opt/microchip/xc8/v1.37/sources/common/ftadd.c
+4762 text17 CODE >113:/opt/microchip/xc8/v1.37/sources/common/ftadd.c
+476C text17 CODE >117:/opt/microchip/xc8/v1.37/sources/common/ftadd.c
+4774 text17 CODE >121:/opt/microchip/xc8/v1.37/sources/common/ftadd.c
+477C text17 CODE >122:/opt/microchip/xc8/v1.37/sources/common/ftadd.c
+477E text17 CODE >123:/opt/microchip/xc8/v1.37/sources/common/ftadd.c
+4796 text17 CODE >125:/opt/microchip/xc8/v1.37/sources/common/ftadd.c
+479E text17 CODE >126:/opt/microchip/xc8/v1.37/sources/common/ftadd.c
+47A0 text17 CODE >124:/opt/microchip/xc8/v1.37/sources/common/ftadd.c
+47A8 text17 CODE >129:/opt/microchip/xc8/v1.37/sources/common/ftadd.c
+47AC text17 CODE >131:/opt/microchip/xc8/v1.37/sources/common/ftadd.c
+47B8 text17 CODE >132:/opt/microchip/xc8/v1.37/sources/common/ftadd.c
+47C4 text17 CODE >133:/opt/microchip/xc8/v1.37/sources/common/ftadd.c
+47C4 text17 CODE >134:/opt/microchip/xc8/v1.37/sources/common/ftadd.c
+47C8 text17 CODE >136:/opt/microchip/xc8/v1.37/sources/common/ftadd.c
+47D4 text17 CODE >137:/opt/microchip/xc8/v1.37/sources/common/ftadd.c
+47E0 text17 CODE >139:/opt/microchip/xc8/v1.37/sources/common/ftadd.c
+47E4 text17 CODE >140:/opt/microchip/xc8/v1.37/sources/common/ftadd.c
+47F0 text17 CODE >141:/opt/microchip/xc8/v1.37/sources/common/ftadd.c
+47F4 text17 CODE >142:/opt/microchip/xc8/v1.37/sources/common/ftadd.c
+4800 text17 CODE >143:/opt/microchip/xc8/v1.37/sources/common/ftadd.c
+480C text17 CODE >144:/opt/microchip/xc8/v1.37/sources/common/ftadd.c
+4810 text17 CODE >146:/opt/microchip/xc8/v1.37/sources/common/ftadd.c
+3868 text16 CODE >20:/opt/microchip/xc8/v1.37/sources/common/ftsub.c
+3868 text16 CODE >23:/opt/microchip/xc8/v1.37/sources/common/ftsub.c
+3872 text16 CODE >24:/opt/microchip/xc8/v1.37/sources/common/ftsub.c
+387E text16 CODE >26:/opt/microchip/xc8/v1.37/sources/common/ftsub.c
+3FBC text15 CODE >44:/opt/microchip/xc8/v1.37/sources/common/fttol.c
+3FBC text15 CODE >49:/opt/microchip/xc8/v1.37/sources/common/fttol.c
+3FD6 text15 CODE >50:/opt/microchip/xc8/v1.37/sources/common/fttol.c
+3FE8 text15 CODE >51:/opt/microchip/xc8/v1.37/sources/common/fttol.c
+400E text15 CODE >52:/opt/microchip/xc8/v1.37/sources/common/fttol.c
+4010 text15 CODE >53:/opt/microchip/xc8/v1.37/sources/common/fttol.c
+401C text15 CODE >54:/opt/microchip/xc8/v1.37/sources/common/fttol.c
+402A text15 CODE >55:/opt/microchip/xc8/v1.37/sources/common/fttol.c
+402E text15 CODE >56:/opt/microchip/xc8/v1.37/sources/common/fttol.c
+4032 text15 CODE >57:/opt/microchip/xc8/v1.37/sources/common/fttol.c
+403C text15 CODE >58:/opt/microchip/xc8/v1.37/sources/common/fttol.c
+404E text15 CODE >60:/opt/microchip/xc8/v1.37/sources/common/fttol.c
+4058 text15 CODE >61:/opt/microchip/xc8/v1.37/sources/common/fttol.c
+405C text15 CODE >62:/opt/microchip/xc8/v1.37/sources/common/fttol.c
+405E text15 CODE >63:/opt/microchip/xc8/v1.37/sources/common/fttol.c
+4064 text15 CODE >64:/opt/microchip/xc8/v1.37/sources/common/fttol.c
+4076 text15 CODE >66:/opt/microchip/xc8/v1.37/sources/common/fttol.c
+4080 text15 CODE >67:/opt/microchip/xc8/v1.37/sources/common/fttol.c
+4082 text15 CODE >65:/opt/microchip/xc8/v1.37/sources/common/fttol.c
+4088 text15 CODE >70:/opt/microchip/xc8/v1.37/sources/common/fttol.c
+408E text15 CODE >71:/opt/microchip/xc8/v1.37/sources/common/fttol.c
+409E text15 CODE >72:/opt/microchip/xc8/v1.37/sources/common/fttol.c
+3B66 text14 CODE >8:/opt/microchip/xc8/v1.37/sources/common/lldiv.c
+3B66 text14 CODE >14:/opt/microchip/xc8/v1.37/sources/common/lldiv.c
+3B76 text14 CODE >15:/opt/microchip/xc8/v1.37/sources/common/lldiv.c
+3B82 text14 CODE >16:/opt/microchip/xc8/v1.37/sources/common/lldiv.c
+3B86 text14 CODE >17:/opt/microchip/xc8/v1.37/sources/common/lldiv.c
+3B88 text14 CODE >18:/opt/microchip/xc8/v1.37/sources/common/lldiv.c
+3B92 text14 CODE >19:/opt/microchip/xc8/v1.37/sources/common/lldiv.c
+3B94 text14 CODE >17:/opt/microchip/xc8/v1.37/sources/common/lldiv.c
+3B98 text14 CODE >22:/opt/microchip/xc8/v1.37/sources/common/lldiv.c
+3BA2 text14 CODE >23:/opt/microchip/xc8/v1.37/sources/common/lldiv.c
+3BB6 text14 CODE >24:/opt/microchip/xc8/v1.37/sources/common/lldiv.c
+3BC6 text14 CODE >25:/opt/microchip/xc8/v1.37/sources/common/lldiv.c
+3BC8 text14 CODE >27:/opt/microchip/xc8/v1.37/sources/common/lldiv.c
+3BD2 text14 CODE >28:/opt/microchip/xc8/v1.37/sources/common/lldiv.c
+3BD6 text14 CODE >29:/opt/microchip/xc8/v1.37/sources/common/lldiv.c
+3BD6 text14 CODE >30:/opt/microchip/xc8/v1.37/sources/common/lldiv.c
+3BE6 text14 CODE >31:/opt/microchip/xc8/v1.37/sources/common/lldiv.c
+3A90 text13 CODE >8:/opt/microchip/xc8/v1.37/sources/common/llmod.c
+3A90 text13 CODE >13:/opt/microchip/xc8/v1.37/sources/common/llmod.c
+3A9C text13 CODE >14:/opt/microchip/xc8/v1.37/sources/common/llmod.c
+3AA0 text13 CODE >15:/opt/microchip/xc8/v1.37/sources/common/llmod.c
+3AA2 text13 CODE >16:/opt/microchip/xc8/v1.37/sources/common/llmod.c
+3AAC text13 CODE >17:/opt/microchip/xc8/v1.37/sources/common/llmod.c
+3AAE text13 CODE >15:/opt/microchip/xc8/v1.37/sources/common/llmod.c
+3AB2 text13 CODE >20:/opt/microchip/xc8/v1.37/sources/common/llmod.c
+3AC6 text13 CODE >21:/opt/microchip/xc8/v1.37/sources/common/llmod.c
+3AD6 text13 CODE >22:/opt/microchip/xc8/v1.37/sources/common/llmod.c
+3AE0 text13 CODE >23:/opt/microchip/xc8/v1.37/sources/common/llmod.c
+3AE4 text13 CODE >24:/opt/microchip/xc8/v1.37/sources/common/llmod.c
+3AE4 text13 CODE >25:/opt/microchip/xc8/v1.37/sources/common/llmod.c
+3AF4 text13 CODE >26:/opt/microchip/xc8/v1.37/sources/common/llmod.c
+3A34 text12 CODE >35:/opt/microchip/xc8/v1.37/sources/common/lltoft.c
+3A34 text12 CODE >38:/opt/microchip/xc8/v1.37/sources/common/lltoft.c
+3A38 text12 CODE >41:/opt/microchip/xc8/v1.37/sources/common/lltoft.c
+3A3A text12 CODE >42:/opt/microchip/xc8/v1.37/sources/common/lltoft.c
+3A44 text12 CODE >43:/opt/microchip/xc8/v1.37/sources/common/lltoft.c
+3A46 text12 CODE >41:/opt/microchip/xc8/v1.37/sources/common/lltoft.c
+3A6A text12 CODE >45:/opt/microchip/xc8/v1.37/sources/common/lltoft.c
+41A4 text11 CODE >60:/opt/microchip/xc8/v1.37/sources/common/fldivl.c
+41A4 text11 CODE >66:/opt/microchip/xc8/v1.37/sources/common/fldivl.c
+41B0 text11 CODE >67:/opt/microchip/xc8/v1.37/sources/common/fldivl.c
+41C2 text11 CODE >68:/opt/microchip/xc8/v1.37/sources/common/fldivl.c
+41CE text11 CODE >69:/opt/microchip/xc8/v1.37/sources/common/fldivl.c
+41E0 text11 CODE >70:/opt/microchip/xc8/v1.37/sources/common/fldivl.c
+41E2 text11 CODE >71:/opt/microchip/xc8/v1.37/sources/common/fldivl.c
+41F2 text11 CODE >72:/opt/microchip/xc8/v1.37/sources/common/fldivl.c
+41F4 text11 CODE >73:/opt/microchip/xc8/v1.37/sources/common/fldivl.c
+4204 text11 CODE >74:/opt/microchip/xc8/v1.37/sources/common/fldivl.c
+4214 text11 CODE >75:/opt/microchip/xc8/v1.37/sources/common/fldivl.c
+4218 text11 CODE >76:/opt/microchip/xc8/v1.37/sources/common/fldivl.c
+421E text11 CODE >77:/opt/microchip/xc8/v1.37/sources/common/fldivl.c
+4222 text11 CODE >79:/opt/microchip/xc8/v1.37/sources/common/fldivl.c
+422C text11 CODE >80:/opt/microchip/xc8/v1.37/sources/common/fldivl.c
+4240 text11 CODE >81:/opt/microchip/xc8/v1.37/sources/common/fldivl.c
+4250 text11 CODE >82:/opt/microchip/xc8/v1.37/sources/common/fldivl.c
+4252 text11 CODE >84:/opt/microchip/xc8/v1.37/sources/common/fldivl.c
+425C text11 CODE >85:/opt/microchip/xc8/v1.37/sources/common/fldivl.c
+4260 text11 CODE >86:/opt/microchip/xc8/v1.37/sources/common/fldivl.c
+4264 text11 CODE >87:/opt/microchip/xc8/v1.37/sources/common/fldivl.c
+426E text11 CODE >88:/opt/microchip/xc8/v1.37/sources/common/fldivl.c
+4280 text11 CODE >90:/opt/microchip/xc8/v1.37/sources/common/fldivl.c
+428A text11 CODE >91:/opt/microchip/xc8/v1.37/sources/common/fldivl.c
+428E text11 CODE >92:/opt/microchip/xc8/v1.37/sources/common/fldivl.c
+4290 text11 CODE >93:/opt/microchip/xc8/v1.37/sources/common/fldivl.c
+4296 text11 CODE >94:/opt/microchip/xc8/v1.37/sources/common/fldivl.c
+42A8 text11 CODE >96:/opt/microchip/xc8/v1.37/sources/common/fldivl.c
+42B2 text11 CODE >97:/opt/microchip/xc8/v1.37/sources/common/fldivl.c
+42B4 text11 CODE >95:/opt/microchip/xc8/v1.37/sources/common/fldivl.c
+42BA text11 CODE >99:/opt/microchip/xc8/v1.37/sources/common/fldivl.c
+42BA text11 CODE >100:/opt/microchip/xc8/v1.37/sources/common/fldivl.c
+42CA text11 CODE >101:/opt/microchip/xc8/v1.37/sources/common/fldivl.c
+42CC text10 CODE >60:/opt/microchip/xc8/v1.37/sources/common/ftdivl.c
+42CC text10 CODE >66:/opt/microchip/xc8/v1.37/sources/common/ftdivl.c
+42E6 text10 CODE >67:/opt/microchip/xc8/v1.37/sources/common/ftdivl.c
+42F8 text10 CODE >68:/opt/microchip/xc8/v1.37/sources/common/ftdivl.c
+4312 text10 CODE >69:/opt/microchip/xc8/v1.37/sources/common/ftdivl.c
+4324 text10 CODE >70:/opt/microchip/xc8/v1.37/sources/common/ftdivl.c
+4326 text10 CODE >71:/opt/microchip/xc8/v1.37/sources/common/ftdivl.c
+4332 text10 CODE >72:/opt/microchip/xc8/v1.37/sources/common/ftdivl.c
+4334 text10 CODE >73:/opt/microchip/xc8/v1.37/sources/common/ftdivl.c
+4340 text10 CODE >74:/opt/microchip/xc8/v1.37/sources/common/ftdivl.c
+4350 text10 CODE >75:/opt/microchip/xc8/v1.37/sources/common/ftdivl.c
+4354 text10 CODE >76:/opt/microchip/xc8/v1.37/sources/common/ftdivl.c
+435A text10 CODE >77:/opt/microchip/xc8/v1.37/sources/common/ftdivl.c
+435E text10 CODE >78:/opt/microchip/xc8/v1.37/sources/common/ftdivl.c
+435E text10 CODE >79:/opt/microchip/xc8/v1.37/sources/common/ftdivl.c
+4368 text10 CODE >80:/opt/microchip/xc8/v1.37/sources/common/ftdivl.c
+4378 text10 CODE >81:/opt/microchip/xc8/v1.37/sources/common/ftdivl.c
+4384 text10 CODE >82:/opt/microchip/xc8/v1.37/sources/common/ftdivl.c
+4386 text10 CODE >83:/opt/microchip/xc8/v1.37/sources/common/ftdivl.c
+4386 text10 CODE >84:/opt/microchip/xc8/v1.37/sources/common/ftdivl.c
+438E text10 CODE >85:/opt/microchip/xc8/v1.37/sources/common/ftdivl.c
+4392 text10 CODE >86:/opt/microchip/xc8/v1.37/sources/common/ftdivl.c
+4396 text10 CODE >87:/opt/microchip/xc8/v1.37/sources/common/ftdivl.c
+43A0 text10 CODE >88:/opt/microchip/xc8/v1.37/sources/common/ftdivl.c
+43B2 text10 CODE >90:/opt/microchip/xc8/v1.37/sources/common/ftdivl.c
+43BC text10 CODE >91:/opt/microchip/xc8/v1.37/sources/common/ftdivl.c
+43C0 text10 CODE >92:/opt/microchip/xc8/v1.37/sources/common/ftdivl.c
+43C2 text10 CODE >93:/opt/microchip/xc8/v1.37/sources/common/ftdivl.c
+43C8 text10 CODE >94:/opt/microchip/xc8/v1.37/sources/common/ftdivl.c
+43DA text10 CODE >96:/opt/microchip/xc8/v1.37/sources/common/ftdivl.c
+43E4 text10 CODE >97:/opt/microchip/xc8/v1.37/sources/common/ftdivl.c
+43E6 text10 CODE >95:/opt/microchip/xc8/v1.37/sources/common/ftdivl.c
+43EC text10 CODE >99:/opt/microchip/xc8/v1.37/sources/common/ftdivl.c
+43EC text10 CODE >100:/opt/microchip/xc8/v1.37/sources/common/ftdivl.c
+43FC text10 CODE >101:/opt/microchip/xc8/v1.37/sources/common/ftdivl.c
+3AF6 text9 CODE >8:/opt/microchip/xc8/v1.37/sources/common/awmod.c
+3AF6 text9 CODE >13:/opt/microchip/xc8/v1.37/sources/common/awmod.c
+3AFA text9 CODE >14:/opt/microchip/xc8/v1.37/sources/common/awmod.c
+3AFE text9 CODE >15:/opt/microchip/xc8/v1.37/sources/common/awmod.c
+3B06 text9 CODE >16:/opt/microchip/xc8/v1.37/sources/common/awmod.c
+3B0A text9 CODE >18:/opt/microchip/xc8/v1.37/sources/common/awmod.c
+3B0E text9 CODE >19:/opt/microchip/xc8/v1.37/sources/common/awmod.c
+3B16 text9 CODE >20:/opt/microchip/xc8/v1.37/sources/common/awmod.c
+3B1E text9 CODE >21:/opt/microchip/xc8/v1.37/sources/common/awmod.c
+3B22 text9 CODE >22:/opt/microchip/xc8/v1.37/sources/common/awmod.c
+3B24 text9 CODE >23:/opt/microchip/xc8/v1.37/sources/common/awmod.c
+3B2A text9 CODE >24:/opt/microchip/xc8/v1.37/sources/common/awmod.c
+3B2C text9 CODE >22:/opt/microchip/xc8/v1.37/sources/common/awmod.c
+3B30 text9 CODE >27:/opt/microchip/xc8/v1.37/sources/common/awmod.c
+3B3C text9 CODE >28:/opt/microchip/xc8/v1.37/sources/common/awmod.c
+3B44 text9 CODE >29:/opt/microchip/xc8/v1.37/sources/common/awmod.c
+3B4A text9 CODE >30:/opt/microchip/xc8/v1.37/sources/common/awmod.c
+3B4E text9 CODE >32:/opt/microchip/xc8/v1.37/sources/common/awmod.c
+3B54 text9 CODE >33:/opt/microchip/xc8/v1.37/sources/common/awmod.c
+3B5C text9 CODE >34:/opt/microchip/xc8/v1.37/sources/common/awmod.c
+40B0 text8 CODE >62:/opt/microchip/xc8/v1.37/sources/common/ftmul.c
+40B0 text8 CODE >67:/opt/microchip/xc8/v1.37/sources/common/ftmul.c
+40CA text8 CODE >68:/opt/microchip/xc8/v1.37/sources/common/ftmul.c
+40D8 text8 CODE >69:/opt/microchip/xc8/v1.37/sources/common/ftmul.c
+40F2 text8 CODE >70:/opt/microchip/xc8/v1.37/sources/common/ftmul.c
+4100 text8 CODE >71:/opt/microchip/xc8/v1.37/sources/common/ftmul.c
+4106 text8 CODE >72:/opt/microchip/xc8/v1.37/sources/common/ftmul.c
+410A text8 CODE >73:/opt/microchip/xc8/v1.37/sources/common/ftmul.c
+410E text8 CODE >74:/opt/microchip/xc8/v1.37/sources/common/ftmul.c
+4112 text8 CODE >75:/opt/microchip/xc8/v1.37/sources/common/ftmul.c
+4114 text8 CODE >77:/opt/microchip/xc8/v1.37/sources/common/ftmul.c
+4116 text8 CODE >78:/opt/microchip/xc8/v1.37/sources/common/ftmul.c
+4122 text8 CODE >79:/opt/microchip/xc8/v1.37/sources/common/ftmul.c
+412E text8 CODE >134:/opt/microchip/xc8/v1.37/sources/common/ftmul.c
+4132 text8 CODE >136:/opt/microchip/xc8/v1.37/sources/common/ftmul.c
+4136 text8 CODE >137:/opt/microchip/xc8/v1.37/sources/common/ftmul.c
+4142 text8 CODE >138:/opt/microchip/xc8/v1.37/sources/common/ftmul.c
+414A text8 CODE >139:/opt/microchip/xc8/v1.37/sources/common/ftmul.c
+4152 text8 CODE >140:/opt/microchip/xc8/v1.37/sources/common/ftmul.c
+4156 text8 CODE >143:/opt/microchip/xc8/v1.37/sources/common/ftmul.c
+415A text8 CODE >145:/opt/microchip/xc8/v1.37/sources/common/ftmul.c
+415E text8 CODE >146:/opt/microchip/xc8/v1.37/sources/common/ftmul.c
+416A text8 CODE >147:/opt/microchip/xc8/v1.37/sources/common/ftmul.c
+4172 text8 CODE >148:/opt/microchip/xc8/v1.37/sources/common/ftmul.c
+417A text8 CODE >149:/opt/microchip/xc8/v1.37/sources/common/ftmul.c
+417E text8 CODE >156:/opt/microchip/xc8/v1.37/sources/common/ftmul.c
+4836 text7 CODE >409:/opt/microchip/xc8/v1.37/sources/common/doprnt.c
+4838 text7 CODE >413:/opt/microchip/xc8/v1.37/sources/common/doprnt.c
+483E text7 CODE >414:/opt/microchip/xc8/v1.37/sources/common/doprnt.c
+497C text7 CODE >415:/opt/microchip/xc8/v1.37/sources/common/doprnt.c
+4982 text7 CODE >416:/opt/microchip/xc8/v1.37/sources/common/doprnt.c
+4A3C text7 CODE >417:/opt/microchip/xc8/v1.37/sources/common/doprnt.c
+36D4 text6 CODE >8:/opt/microchip/xc8/v1.37/sources/common/isdigit.c
+36D6 text6 CODE >14:/opt/microchip/xc8/v1.37/sources/common/isdigit.c
+4A7C text5 CODE >425:/opt/microchip/xc8/v1.37/sources/common/doprnt.c
+4A7E text5 CODE >428:/opt/microchip/xc8/v1.37/sources/common/doprnt.c
+4A82 text5 CODE >429:/opt/microchip/xc8/v1.37/sources/common/doprnt.c
+4A84 text5 CODE >430:/opt/microchip/xc8/v1.37/sources/common/doprnt.c
+4A8E text5 CODE >431:/opt/microchip/xc8/v1.37/sources/common/doprnt.c
+4BB0 text5 CODE >432:/opt/microchip/xc8/v1.37/sources/common/doprnt.c
+4BBA text5 CODE >433:/opt/microchip/xc8/v1.37/sources/common/doprnt.c
+4C54 text5 CODE >434:/opt/microchip/xc8/v1.37/sources/common/doprnt.c
+4C78 text5 CODE >436:/opt/microchip/xc8/v1.37/sources/common/doprnt.c
+4C82 text5 CODE >437:/opt/microchip/xc8/v1.37/sources/common/doprnt.c
+4DA4 text5 CODE >438:/opt/microchip/xc8/v1.37/sources/common/doprnt.c
+4DAE text5 CODE >439:/opt/microchip/xc8/v1.37/sources/common/doprnt.c
+4E48 text5 CODE >440:/opt/microchip/xc8/v1.37/sources/common/doprnt.c
+58B0 text4 CODE >492:/opt/microchip/xc8/v1.37/sources/common/doprnt.c
+58B0 text4 CODE >533:/opt/microchip/xc8/v1.37/sources/common/doprnt.c
+58BC text4 CODE >536:/opt/microchip/xc8/v1.37/sources/common/doprnt.c
+58C0 text4 CODE >538:/opt/microchip/xc8/v1.37/sources/common/doprnt.c
+58CA text4 CODE >541:/opt/microchip/xc8/v1.37/sources/common/doprnt.c
+58DA text4 CODE >542:/opt/microchip/xc8/v1.37/sources/common/doprnt.c
+58DE text4 CODE >546:/opt/microchip/xc8/v1.37/sources/common/doprnt.c
+58E8 text4 CODE >548:/opt/microchip/xc8/v1.37/sources/common/doprnt.c
+58F2 text4 CODE >597:/opt/microchip/xc8/v1.37/sources/common/doprnt.c
+5906 text4 CODE >598:/opt/microchip/xc8/v1.37/sources/common/doprnt.c
+5910 text4 CODE >600:/opt/microchip/xc8/v1.37/sources/common/doprnt.c
+592C text4 CODE >601:/opt/microchip/xc8/v1.37/sources/common/doprnt.c
+595C text4 CODE >602:/opt/microchip/xc8/v1.37/sources/common/doprnt.c
+5970 text4 CODE >611:/opt/microchip/xc8/v1.37/sources/common/doprnt.c
+5982 text4 CODE >612:/opt/microchip/xc8/v1.37/sources/common/doprnt.c
+5986 text4 CODE >613:/opt/microchip/xc8/v1.37/sources/common/doprnt.c
+598A text4 CODE >621:/opt/microchip/xc8/v1.37/sources/common/doprnt.c
+5994 text4 CODE >622:/opt/microchip/xc8/v1.37/sources/common/doprnt.c
+5996 text4 CODE >623:/opt/microchip/xc8/v1.37/sources/common/doprnt.c
+59D0 text4 CODE >622:/opt/microchip/xc8/v1.37/sources/common/doprnt.c
+59E6 text4 CODE >626:/opt/microchip/xc8/v1.37/sources/common/doprnt.c
+59F0 text4 CODE >628:/opt/microchip/xc8/v1.37/sources/common/doprnt.c
+59F4 text4 CODE >635:/opt/microchip/xc8/v1.37/sources/common/doprnt.c
+59F6 text4 CODE >663:/opt/microchip/xc8/v1.37/sources/common/doprnt.c
+59FA text4 CODE >664:/opt/microchip/xc8/v1.37/sources/common/doprnt.c
+59FC text4 CODE >818:/opt/microchip/xc8/v1.37/sources/common/doprnt.c
+5A02 text4 CODE >822:/opt/microchip/xc8/v1.37/sources/common/doprnt.c
+5A04 text4 CODE >635:/opt/microchip/xc8/v1.37/sources/common/doprnt.c
+5A32 text4 CODE >825:/opt/microchip/xc8/v1.37/sources/common/doprnt.c
+5A3C text4 CODE >827:/opt/microchip/xc8/v1.37/sources/common/doprnt.c
+5A42 text4 CODE >829:/opt/microchip/xc8/v1.37/sources/common/doprnt.c
+5A4C text4 CODE >830:/opt/microchip/xc8/v1.37/sources/common/doprnt.c
+5A6A text4 CODE >831:/opt/microchip/xc8/v1.37/sources/common/doprnt.c
+5A70 text4 CODE >832:/opt/microchip/xc8/v1.37/sources/common/doprnt.c
+5A8C text4 CODE >833:/opt/microchip/xc8/v1.37/sources/common/doprnt.c
+5A92 text4 CODE >835:/opt/microchip/xc8/v1.37/sources/common/doprnt.c
+5A9C text4 CODE >836:/opt/microchip/xc8/v1.37/sources/common/doprnt.c
+5AAC text4 CODE >837:/opt/microchip/xc8/v1.37/sources/common/doprnt.c
+5AE6 text4 CODE >838:/opt/microchip/xc8/v1.37/sources/common/doprnt.c
+5AEE text4 CODE >839:/opt/microchip/xc8/v1.37/sources/common/doprnt.c
+5B0A text4 CODE >840:/opt/microchip/xc8/v1.37/sources/common/doprnt.c
+5B26 text4 CODE >841:/opt/microchip/xc8/v1.37/sources/common/doprnt.c
+5B2C text4 CODE >842:/opt/microchip/xc8/v1.37/sources/common/doprnt.c
+5B34 text4 CODE >846:/opt/microchip/xc8/v1.37/sources/common/doprnt.c
+5B4A text4 CODE >847:/opt/microchip/xc8/v1.37/sources/common/doprnt.c
+5B72 text4 CODE >848:/opt/microchip/xc8/v1.37/sources/common/doprnt.c
+5B92 text4 CODE >849:/opt/microchip/xc8/v1.37/sources/common/doprnt.c
+5B9C text4 CODE >850:/opt/microchip/xc8/v1.37/sources/common/doprnt.c
+5BBC text4 CODE >851:/opt/microchip/xc8/v1.37/sources/common/doprnt.c
+5BC2 text4 CODE >1112:/opt/microchip/xc8/v1.37/sources/common/doprnt.c
+5BD8 text4 CODE >1113:/opt/microchip/xc8/v1.37/sources/common/doprnt.c
+5C08 text4 CODE >1116:/opt/microchip/xc8/v1.37/sources/common/doprnt.c
+5C60 text4 CODE >1120:/opt/microchip/xc8/v1.37/sources/common/doprnt.c
+5C80 text4 CODE >1121:/opt/microchip/xc8/v1.37/sources/common/doprnt.c
+5C86 text4 CODE >1123:/opt/microchip/xc8/v1.37/sources/common/doprnt.c
+5C90 text4 CODE >1125:/opt/microchip/xc8/v1.37/sources/common/doprnt.c
+5CA4 text4 CODE >1126:/opt/microchip/xc8/v1.37/sources/common/doprnt.c
+5CD0 text4 CODE >1129:/opt/microchip/xc8/v1.37/sources/common/doprnt.c
+5CE2 text4 CODE >1130:/opt/microchip/xc8/v1.37/sources/common/doprnt.c
+5CE4 text4 CODE >1131:/opt/microchip/xc8/v1.37/sources/common/doprnt.c
+5D04 text4 CODE >1132:/opt/microchip/xc8/v1.37/sources/common/doprnt.c
+5D40 text4 CODE >1133:/opt/microchip/xc8/v1.37/sources/common/doprnt.c
+5D4A text4 CODE >1136:/opt/microchip/xc8/v1.37/sources/common/doprnt.c
+5D5A text4 CODE >1137:/opt/microchip/xc8/v1.37/sources/common/doprnt.c
+5D90 text4 CODE >1136:/opt/microchip/xc8/v1.37/sources/common/doprnt.c
+5D96 text4 CODE >1142:/opt/microchip/xc8/v1.37/sources/common/doprnt.c
+5DC4 text4 CODE >1147:/opt/microchip/xc8/v1.37/sources/common/doprnt.c
+5DD0 text4 CODE >1148:/opt/microchip/xc8/v1.37/sources/common/doprnt.c
+5DD8 text4 CODE >1149:/opt/microchip/xc8/v1.37/sources/common/doprnt.c
+5DF0 text4 CODE >1150:/opt/microchip/xc8/v1.37/sources/common/doprnt.c
+5DF2 text4 CODE >1181:/opt/microchip/xc8/v1.37/sources/common/doprnt.c
+5E02 text4 CODE >1182:/opt/microchip/xc8/v1.37/sources/common/doprnt.c
+5E0A text4 CODE >1180:/opt/microchip/xc8/v1.37/sources/common/doprnt.c
+5E1E text4 CODE >1188:/opt/microchip/xc8/v1.37/sources/common/doprnt.c
+5E36 text4 CODE >1190:/opt/microchip/xc8/v1.37/sources/common/doprnt.c
+5E46 text4 CODE >1196:/opt/microchip/xc8/v1.37/sources/common/doprnt.c
+5E48 text4 CODE >1201:/opt/microchip/xc8/v1.37/sources/common/doprnt.c
+5E96 text4 CODE >1202:/opt/microchip/xc8/v1.37/sources/common/doprnt.c
+5ECA text4 CODE >1203:/opt/microchip/xc8/v1.37/sources/common/doprnt.c
+5EDC text4 CODE >1196:/opt/microchip/xc8/v1.37/sources/common/doprnt.c
+5EEA text4 CODE >1208:/opt/microchip/xc8/v1.37/sources/common/doprnt.c
+5EFA text4 CODE >1209:/opt/microchip/xc8/v1.37/sources/common/doprnt.c
+5F02 text4 CODE >1207:/opt/microchip/xc8/v1.37/sources/common/doprnt.c
+5F16 text4 CODE >1211:/opt/microchip/xc8/v1.37/sources/common/doprnt.c
+5F2C text4 CODE >1212:/opt/microchip/xc8/v1.37/sources/common/doprnt.c
+5F34 text4 CODE >1213:/opt/microchip/xc8/v1.37/sources/common/doprnt.c
+5F34 text4 CODE >1214:/opt/microchip/xc8/v1.37/sources/common/doprnt.c
+5F38 text4 CODE >1215:/opt/microchip/xc8/v1.37/sources/common/doprnt.c
+5F4C text4 CODE >1219:/opt/microchip/xc8/v1.37/sources/common/doprnt.c
+5F56 text4 CODE >1221:/opt/microchip/xc8/v1.37/sources/common/doprnt.c
+5F66 text4 CODE >1227:/opt/microchip/xc8/v1.37/sources/common/doprnt.c
+5FB6 text4 CODE >1228:/opt/microchip/xc8/v1.37/sources/common/doprnt.c
+5FB8 text4 CODE >1229:/opt/microchip/xc8/v1.37/sources/common/doprnt.c
+6006 text4 CODE >1230:/opt/microchip/xc8/v1.37/sources/common/doprnt.c
+603A text4 CODE >1231:/opt/microchip/xc8/v1.37/sources/common/doprnt.c
+604E text4 CODE >1232:/opt/microchip/xc8/v1.37/sources/common/doprnt.c
+609C text4 CODE >1228:/opt/microchip/xc8/v1.37/sources/common/doprnt.c
+60AA text4 CODE >1236:/opt/microchip/xc8/v1.37/sources/common/doprnt.c
+60BA text4 CODE >1237:/opt/microchip/xc8/v1.37/sources/common/doprnt.c
+60C2 text4 CODE >1235:/opt/microchip/xc8/v1.37/sources/common/doprnt.c
+60D0 text4 CODE >1286:/opt/microchip/xc8/v1.37/sources/common/doprnt.c
+60F8 text4 CODE >1290:/opt/microchip/xc8/v1.37/sources/common/doprnt.c
+6118 text4 CODE >1291:/opt/microchip/xc8/v1.37/sources/common/doprnt.c
+611E text4 CODE >1305:/opt/microchip/xc8/v1.37/sources/common/doprnt.c
+612E text4 CODE >1306:/opt/microchip/xc8/v1.37/sources/common/doprnt.c
+6164 text4 CODE >1305:/opt/microchip/xc8/v1.37/sources/common/doprnt.c
+616A text4 CODE >1339:/opt/microchip/xc8/v1.37/sources/common/doprnt.c
+6188 text4 CODE >1340:/opt/microchip/xc8/v1.37/sources/common/doprnt.c
+618E text4 CODE >1341:/opt/microchip/xc8/v1.37/sources/common/doprnt.c
+61AC text4 CODE >1342:/opt/microchip/xc8/v1.37/sources/common/doprnt.c
+61BA text4 CODE >1345:/opt/microchip/xc8/v1.37/sources/common/doprnt.c
+61DE text4 CODE >1346:/opt/microchip/xc8/v1.37/sources/common/doprnt.c
+61E6 text4 CODE >1348:/opt/microchip/xc8/v1.37/sources/common/doprnt.c
+61EC text4 CODE >1349:/opt/microchip/xc8/v1.37/sources/common/doprnt.c
+6208 text4 CODE >1350:/opt/microchip/xc8/v1.37/sources/common/doprnt.c
+621A text4 CODE >1352:/opt/microchip/xc8/v1.37/sources/common/doprnt.c
+6224 text4 CODE >1381:/opt/microchip/xc8/v1.37/sources/common/doprnt.c
+6242 text4 CODE >1382:/opt/microchip/xc8/v1.37/sources/common/doprnt.c
+6258 text4 CODE >1384:/opt/microchip/xc8/v1.37/sources/common/doprnt.c
+6262 text4 CODE >1428:/opt/microchip/xc8/v1.37/sources/common/doprnt.c
+626E text4 CODE >1430:/opt/microchip/xc8/v1.37/sources/common/doprnt.c
+627E text4 CODE >1431:/opt/microchip/xc8/v1.37/sources/common/doprnt.c
+6292 text4 CODE >1438:/opt/microchip/xc8/v1.37/sources/common/doprnt.c
+62AA text4 CODE >1439:/opt/microchip/xc8/v1.37/sources/common/doprnt.c
+62B8 text4 CODE >1489:/opt/microchip/xc8/v1.37/sources/common/doprnt.c
+6330 text4 CODE >1524:/opt/microchip/xc8/v1.37/sources/common/doprnt.c
+6340 text4 CODE >1474:/opt/microchip/xc8/v1.37/sources/common/doprnt.c
+6356 text4 CODE >536:/opt/microchip/xc8/v1.37/sources/common/doprnt.c
+6372 text4 CODE >1538:/opt/microchip/xc8/v1.37/sources/common/doprnt.c
+38A8 text3 CODE >8:/opt/microchip/xc8/v1.37/sources/common/strcat.c
+38A8 text3 CODE >18:/opt/microchip/xc8/v1.37/sources/common/strcat.c
+38B0 text3 CODE >19:/opt/microchip/xc8/v1.37/sources/common/strcat.c
+38B2 text3 CODE >20:/opt/microchip/xc8/v1.37/sources/common/strcat.c
+38B6 text3 CODE >19:/opt/microchip/xc8/v1.37/sources/common/strcat.c
+38C6 text3 CODE >22:/opt/microchip/xc8/v1.37/sources/common/strcat.c
+38CA text3 CODE >23:/opt/microchip/xc8/v1.37/sources/common/strcat.c
+38CE text3 CODE >21:/opt/microchip/xc8/v1.37/sources/common/strcat.c
+43FE text2 CODE >1930:/home/david/MPLABXProjects/lcd.X/LCDgraphic.c
+4400 text2 CODE >1934:/home/david/MPLABXProjects/lcd.X/LCDgraphic.c
+4418 text2 CODE >1938:/home/david/MPLABXProjects/lcd.X/LCDgraphic.c
+441E text2 CODE >1940:/home/david/MPLABXProjects/lcd.X/LCDgraphic.c
+4422 text2 CODE >1941:/home/david/MPLABXProjects/lcd.X/LCDgraphic.c
+4426 text2 CODE >1945:/home/david/MPLABXProjects/lcd.X/LCDgraphic.c
+442C text2 CODE >1946:/home/david/MPLABXProjects/lcd.X/LCDgraphic.c
+4430 text2 CODE >1950:/home/david/MPLABXProjects/lcd.X/LCDgraphic.c
+4446 text2 CODE >1952:/home/david/MPLABXProjects/lcd.X/LCDgraphic.c
+4450 text2 CODE >1953:/home/david/MPLABXProjects/lcd.X/LCDgraphic.c
+445A text2 CODE >1956:/home/david/MPLABXProjects/lcd.X/LCDgraphic.c
+447E text2 CODE >1957:/home/david/MPLABXProjects/lcd.X/LCDgraphic.c
+44A8 text2 CODE >1959:/home/david/MPLABXProjects/lcd.X/LCDgraphic.c
+44B6 text2 CODE >1961:/home/david/MPLABXProjects/lcd.X/LCDgraphic.c
+44DC text2 CODE >1963:/home/david/MPLABXProjects/lcd.X/LCDgraphic.c
+44E0 text2 CODE >1965:/home/david/MPLABXProjects/lcd.X/LCDgraphic.c
+44F6 text2 CODE >1969:/home/david/MPLABXProjects/lcd.X/LCDgraphic.c
+4522 text2 CODE >1972:/home/david/MPLABXProjects/lcd.X/LCDgraphic.c
+4524 text2 CODE >1973:/home/david/MPLABXProjects/lcd.X/LCDgraphic.c
+4526 text2 CODE >1975:/home/david/MPLABXProjects/lcd.X/LCDgraphic.c
+452C text2 CODE >1977:/home/david/MPLABXProjects/lcd.X/LCDgraphic.c
+453E text1 CODE >1990:/home/david/MPLABXProjects/lcd.X/LCDgraphic.c
+453E text1 CODE >1992:/home/david/MPLABXProjects/lcd.X/LCDgraphic.c
+4556 text1 CODE >1994:/home/david/MPLABXProjects/lcd.X/LCDgraphic.c
+4568 text1 CODE >1992:/home/david/MPLABXProjects/lcd.X/LCDgraphic.c
+456E text1 CODE >1997:/home/david/MPLABXProjects/lcd.X/LCDgraphic.c
+4586 text1 CODE >1999:/home/david/MPLABXProjects/lcd.X/LCDgraphic.c
+4598 text1 CODE >1997:/home/david/MPLABXProjects/lcd.X/LCDgraphic.c
+459E text1 CODE >2005:/home/david/MPLABXProjects/lcd.X/LCDgraphic.c
+45B0 text1 CODE >2006:/home/david/MPLABXProjects/lcd.X/LCDgraphic.c
+45C2 text1 CODE >2007:/home/david/MPLABXProjects/lcd.X/LCDgraphic.c
+45D4 text1 CODE >2008:/home/david/MPLABXProjects/lcd.X/LCDgraphic.c
+45E6 text1 CODE >2009:/home/david/MPLABXProjects/lcd.X/LCDgraphic.c
+45F8 text1 CODE >2010:/home/david/MPLABXProjects/lcd.X/LCDgraphic.c
+460A text1 CODE >2013:/home/david/MPLABXProjects/lcd.X/LCDgraphic.c
+461C text1 CODE >2014:/home/david/MPLABXProjects/lcd.X/LCDgraphic.c
+462E text1 CODE >2015:/home/david/MPLABXProjects/lcd.X/LCDgraphic.c
+4640 text1 CODE >2016:/home/david/MPLABXProjects/lcd.X/LCDgraphic.c
+4652 text1 CODE >2017:/home/david/MPLABXProjects/lcd.X/LCDgraphic.c
+4664 text1 CODE >2018:/home/david/MPLABXProjects/lcd.X/LCDgraphic.c
+4676 text1 CODE >2019:/home/david/MPLABXProjects/lcd.X/LCDgraphic.c
+4688 text1 CODE >2020:/home/david/MPLABXProjects/lcd.X/LCDgraphic.c
+6380 text0 CODE >26:/home/david/MPLABXProjects/lcd.X/main.c
+6380 text0 CODE >28:/home/david/MPLABXProjects/lcd.X/main.c
+6382 text0 CODE >29:/home/david/MPLABXProjects/lcd.X/main.c
+6384 text0 CODE >30:/home/david/MPLABXProjects/lcd.X/main.c
+6388 text0 CODE >31:/home/david/MPLABXProjects/lcd.X/main.c
+638C text0 CODE >32:/home/david/MPLABXProjects/lcd.X/main.c
+6390 text0 CODE >34:/home/david/MPLABXProjects/lcd.X/main.c
+6394 text0 CODE >35:/home/david/MPLABXProjects/lcd.X/main.c
+6398 text0 CODE >36:/home/david/MPLABXProjects/lcd.X/main.c
+639C text0 CODE >45:/home/david/MPLABXProjects/lcd.X/main.c
+639E text0 CODE >46:/home/david/MPLABXProjects/lcd.X/main.c
+63A0 text0 CODE >49:/home/david/MPLABXProjects/lcd.X/main.c
+63A2 text0 CODE >50:/home/david/MPLABXProjects/lcd.X/main.c
+63A4 text0 CODE >51:/home/david/MPLABXProjects/lcd.X/main.c
+63A6 text0 CODE >52:/home/david/MPLABXProjects/lcd.X/main.c
+63A8 text0 CODE >54:/home/david/MPLABXProjects/lcd.X/main.c
+63AA text0 CODE >56:/home/david/MPLABXProjects/lcd.X/main.c
+63AE text0 CODE >59:/home/david/MPLABXProjects/lcd.X/main.c
+63B0 text0 CODE >60:/home/david/MPLABXProjects/lcd.X/main.c
+63B2 text0 CODE >61:/home/david/MPLABXProjects/lcd.X/main.c
+63B4 text0 CODE >64:/home/david/MPLABXProjects/lcd.X/main.c
+63B6 text0 CODE >65:/home/david/MPLABXProjects/lcd.X/main.c
+63B8 text0 CODE >66:/home/david/MPLABXProjects/lcd.X/main.c
+63BA text0 CODE >69:/home/david/MPLABXProjects/lcd.X/main.c
+63BC text0 CODE >74:/home/david/MPLABXProjects/lcd.X/main.c
+63CE text0 CODE >77:/home/david/MPLABXProjects/lcd.X/main.c
+63E0 text0 CODE >78:/home/david/MPLABXProjects/lcd.X/main.c
+63F2 text0 CODE >81:/home/david/MPLABXProjects/lcd.X/main.c
+63FC text0 CODE >84:/home/david/MPLABXProjects/lcd.X/main.c
+6400 text0 CODE >90:/home/david/MPLABXProjects/lcd.X/main.c
+6406 text0 CODE >92:/home/david/MPLABXProjects/lcd.X/main.c
+6410 text0 CODE >94:/home/david/MPLABXProjects/lcd.X/main.c
+641A text0 CODE >95:/home/david/MPLABXProjects/lcd.X/main.c
+6424 text0 CODE >96:/home/david/MPLABXProjects/lcd.X/main.c
+642E text0 CODE >97:/home/david/MPLABXProjects/lcd.X/main.c
+6438 text0 CODE >98:/home/david/MPLABXProjects/lcd.X/main.c
+643C text0 CODE >101:/home/david/MPLABXProjects/lcd.X/main.c
+6440 text0 CODE >104:/home/david/MPLABXProjects/lcd.X/main.c
+6458 text0 CODE >106:/home/david/MPLABXProjects/lcd.X/main.c
+652E text0 CODE >107:/home/david/MPLABXProjects/lcd.X/main.c
+6604 text0 CODE >108:/home/david/MPLABXProjects/lcd.X/main.c
+6624 text0 CODE >111:/home/david/MPLABXProjects/lcd.X/main.c
+665C text0 CODE >113:/home/david/MPLABXProjects/lcd.X/main.c
+6674 text0 CODE >115:/home/david/MPLABXProjects/lcd.X/main.c
+66AC text0 CODE >117:/home/david/MPLABXProjects/lcd.X/main.c
+66C4 text0 CODE >108:/home/david/MPLABXProjects/lcd.X/main.c
+66CC text0 CODE >120:/home/david/MPLABXProjects/lcd.X/main.c
+66DE text0 CODE >121:/home/david/MPLABXProjects/lcd.X/main.c
+66DE text0 CODE >122:/home/david/MPLABXProjects/lcd.X/main.c
+66E8 text0 CODE >123:/home/david/MPLABXProjects/lcd.X/main.c
+66F2 text0 CODE >126:/home/david/MPLABXProjects/lcd.X/main.c
+66F6 text0 CODE >128:/home/david/MPLABXProjects/lcd.X/main.c
+66F8 text0 CODE >130:/home/david/MPLABXProjects/lcd.X/main.c
+66FC text0 CODE >132:/home/david/MPLABXProjects/lcd.X/main.c
+670A text0 CODE >133:/home/david/MPLABXProjects/lcd.X/main.c
+673A text0 CODE >136:/home/david/MPLABXProjects/lcd.X/main.c
+6750 text0 CODE >139:/home/david/MPLABXProjects/lcd.X/main.c
+6774 text0 CODE >141:/home/david/MPLABXProjects/lcd.X/main.c
+6836 text0 CODE >143:/home/david/MPLABXProjects/lcd.X/main.c
+6870 text0 CODE >145:/home/david/MPLABXProjects/lcd.X/main.c
+688A text0 CODE >146:/home/david/MPLABXProjects/lcd.X/main.c
+688A text0 CODE >148:/home/david/MPLABXProjects/lcd.X/main.c
+68A4 text0 CODE >139:/home/david/MPLABXProjects/lcd.X/main.c
+68B8 text0 CODE >151:/home/david/MPLABXProjects/lcd.X/main.c
+68C0 text0 CODE >153:/home/david/MPLABXProjects/lcd.X/main.c
+68E0 text0 CODE >155:/home/david/MPLABXProjects/lcd.X/main.c
+68F2 text0 CODE >153:/home/david/MPLABXProjects/lcd.X/main.c
+68FA text0 CODE >160:/home/david/MPLABXProjects/lcd.X/main.c
+68FE text0 CODE >162:/home/david/MPLABXProjects/lcd.X/main.c
+6900 text0 CODE >164:/home/david/MPLABXProjects/lcd.X/main.c
+6904 text0 CODE >165:/home/david/MPLABXProjects/lcd.X/main.c
+6912 text0 CODE >166:/home/david/MPLABXProjects/lcd.X/main.c
+6942 text0 CODE >168:/home/david/MPLABXProjects/lcd.X/main.c
+6958 text0 CODE >171:/home/david/MPLABXProjects/lcd.X/main.c
+697C text0 CODE >173:/home/david/MPLABXProjects/lcd.X/main.c
+6A3E text0 CODE >174:/home/david/MPLABXProjects/lcd.X/main.c
+6A78 text0 CODE >176:/home/david/MPLABXProjects/lcd.X/main.c
+6A92 text0 CODE >177:/home/david/MPLABXProjects/lcd.X/main.c
+6A92 text0 CODE >179:/home/david/MPLABXProjects/lcd.X/main.c
+6AAC text0 CODE >171:/home/david/MPLABXProjects/lcd.X/main.c
+6AC0 text0 CODE >181:/home/david/MPLABXProjects/lcd.X/main.c
+6AC8 text0 CODE >183:/home/david/MPLABXProjects/lcd.X/main.c
+6AE8 text0 CODE >185:/home/david/MPLABXProjects/lcd.X/main.c
+6AFA text0 CODE >183:/home/david/MPLABXProjects/lcd.X/main.c
+6B02 text0 CODE >187:/home/david/MPLABXProjects/lcd.X/main.c
+6B06 text0 CODE >190:/home/david/MPLABXProjects/lcd.X/main.c
+6B5E text0 CODE >192:/home/david/MPLABXProjects/lcd.X/main.c
+6B7E text0 CODE >194:/home/david/MPLABXProjects/lcd.X/main.c
+6B9E text0 CODE >195:/home/david/MPLABXProjects/lcd.X/main.c
+6BA0 text0 CODE >198:/home/david/MPLABXProjects/lcd.X/main.c
+6BE8 text0 CODE >200:/home/david/MPLABXProjects/lcd.X/main.c
+6BF2 text0 CODE >201:/home/david/MPLABXProjects/lcd.X/main.c
+6C00 text0 CODE >207:/home/david/MPLABXProjects/lcd.X/main.c
+6C02 text0 CODE >213:/home/david/MPLABXProjects/lcd.X/main.c
+6C1A text0 CODE >215:/home/david/MPLABXProjects/lcd.X/main.c
+6C3E text0 CODE >218:/home/david/MPLABXProjects/lcd.X/main.c
+6D00 text0 CODE >219:/home/david/MPLABXProjects/lcd.X/main.c
+6D24 text0 CODE >221:/home/david/MPLABXProjects/lcd.X/main.c
+6D3E text0 CODE >223:/home/david/MPLABXProjects/lcd.X/main.c
+6D62 text0 CODE >225:/home/david/MPLABXProjects/lcd.X/main.c
+6D7C text0 CODE >215:/home/david/MPLABXProjects/lcd.X/main.c
+6D90 text0 CODE >228:/home/david/MPLABXProjects/lcd.X/main.c
+6DA2 text0 CODE >229:/home/david/MPLABXProjects/lcd.X/main.c
+6DA6 text0 CODE >231:/home/david/MPLABXProjects/lcd.X/main.c
+6DB0 text0 CODE >232:/home/david/MPLABXProjects/lcd.X/main.c
+6DBA text0 CODE >235:/home/david/MPLABXProjects/lcd.X/main.c
+6DBE text0 CODE >237:/home/david/MPLABXProjects/lcd.X/main.c
+6DC0 text0 CODE >239:/home/david/MPLABXProjects/lcd.X/main.c
+6DC4 text0 CODE >241:/home/david/MPLABXProjects/lcd.X/main.c
+6DD2 text0 CODE >242:/home/david/MPLABXProjects/lcd.X/main.c
+6E02 text0 CODE >244:/home/david/MPLABXProjects/lcd.X/main.c
+6E18 text0 CODE >248:/home/david/MPLABXProjects/lcd.X/main.c
+6EEE text0 CODE >249:/home/david/MPLABXProjects/lcd.X/main.c
+6F0E text0 CODE >252:/home/david/MPLABXProjects/lcd.X/main.c
+6F5C text0 CODE >254:/home/david/MPLABXProjects/lcd.X/main.c
+6F74 text0 CODE >255:/home/david/MPLABXProjects/lcd.X/main.c
+6F74 text0 CODE >257:/home/david/MPLABXProjects/lcd.X/main.c
+6F8C text0 CODE >249:/home/david/MPLABXProjects/lcd.X/main.c
+6FA0 text0 CODE >259:/home/david/MPLABXProjects/lcd.X/main.c
+6FA8 text0 CODE >261:/home/david/MPLABXProjects/lcd.X/main.c
+6FC8 text0 CODE >263:/home/david/MPLABXProjects/lcd.X/main.c
+6FDA text0 CODE >261:/home/david/MPLABXProjects/lcd.X/main.c
+6FE2 text0 CODE >265:/home/david/MPLABXProjects/lcd.X/main.c
+6FE6 text0 CODE >269:/home/david/MPLABXProjects/lcd.X/main.c
+6FEA text0 CODE >271:/home/david/MPLABXProjects/lcd.X/main.c
+6FEC text0 CODE >273:/home/david/MPLABXProjects/lcd.X/main.c
+6FF0 text0 CODE >274:/home/david/MPLABXProjects/lcd.X/main.c
+6FFE text0 CODE >275:/home/david/MPLABXProjects/lcd.X/main.c
+702E text0 CODE >277:/home/david/MPLABXProjects/lcd.X/main.c
+7044 text0 CODE >280:/home/david/MPLABXProjects/lcd.X/main.c
+711A text0 CODE >281:/home/david/MPLABXProjects/lcd.X/main.c
+713A text0 CODE >284:/home/david/MPLABXProjects/lcd.X/main.c
+7188 text0 CODE >286:/home/david/MPLABXProjects/lcd.X/main.c
+71A0 text0 CODE >287:/home/david/MPLABXProjects/lcd.X/main.c
+71A0 text0 CODE >289:/home/david/MPLABXProjects/lcd.X/main.c
+71B8 text0 CODE >281:/home/david/MPLABXProjects/lcd.X/main.c
+71CC text0 CODE >291:/home/david/MPLABXProjects/lcd.X/main.c
+71D4 text0 CODE >293:/home/david/MPLABXProjects/lcd.X/main.c
+71F4 text0 CODE >295:/home/david/MPLABXProjects/lcd.X/main.c
+7206 text0 CODE >293:/home/david/MPLABXProjects/lcd.X/main.c
+720E text0 CODE >297:/home/david/MPLABXProjects/lcd.X/main.c
+7212 text0 CODE >300:/home/david/MPLABXProjects/lcd.X/main.c
+726A text0 CODE >302:/home/david/MPLABXProjects/lcd.X/main.c
+728A text0 CODE >304:/home/david/MPLABXProjects/lcd.X/main.c
+72C6 text0 CODE >305:/home/david/MPLABXProjects/lcd.X/main.c
+72C8 text0 CODE >308:/home/david/MPLABXProjects/lcd.X/main.c
+72E8 text0 CODE >310:/home/david/MPLABXProjects/lcd.X/main.c
+72F2 text0 CODE >311:/home/david/MPLABXProjects/lcd.X/main.c
+7300 text0 CODE >314:/home/david/MPLABXProjects/lcd.X/main.c
+7304 text0 CODE >316:/home/david/MPLABXProjects/lcd.X/main.c
+730E text0 CODE >98:/home/david/MPLABXProjects/lcd.X/main.c
+731C text0 CODE >321:/home/david/MPLABXProjects/lcd.X/main.c
+7320 text0 CODE >323:/home/david/MPLABXProjects/lcd.X/main.c
+7322 text0 CODE >325:/home/david/MPLABXProjects/lcd.X/main.c
+7326 text0 CODE >327:/home/david/MPLABXProjects/lcd.X/main.c
+735E text0 CODE >330:/home/david/MPLABXProjects/lcd.X/main.c
+737E text0 CODE >333:/home/david/MPLABXProjects/lcd.X/main.c
+7382 text0 CODE >335:/home/david/MPLABXProjects/lcd.X/main.c
+7384 text0 CODE >337:/home/david/MPLABXProjects/lcd.X/main.c
+7388 text0 CODE >339:/home/david/MPLABXProjects/lcd.X/main.c
+7396 text0 CODE >340:/home/david/MPLABXProjects/lcd.X/main.c
+73CA text0 CODE >343:/home/david/MPLABXProjects/lcd.X/main.c
+73CE text0 CODE >346:/home/david/MPLABXProjects/lcd.X/main.c
+73EE text0 CODE >347:/home/david/MPLABXProjects/lcd.X/main.c
+73EE text0 CODE >348:/home/david/MPLABXProjects/lcd.X/main.c
+73F0 text0 CODE >351:/home/david/MPLABXProjects/lcd.X/main.c
+73F2 text0 CODE >355:/home/david/MPLABXProjects/lcd.X/main.c
+7424 text0 CODE >357:/home/david/MPLABXProjects/lcd.X/main.c
+7458 text0 CODE >362:/home/david/MPLABXProjects/lcd.X/main.c
+745A text0 CODE >346:/home/david/MPLABXProjects/lcd.X/main.c
+7462 text0 CODE >367:/home/david/MPLABXProjects/lcd.X/main.c
+7482 text0 CODE >369:/home/david/MPLABXProjects/lcd.X/main.c
+748E text0 CODE >370:/home/david/MPLABXProjects/lcd.X/main.c
+749A text0 CODE >371:/home/david/MPLABXProjects/lcd.X/main.c
+74A2 text0 CODE >372:/home/david/MPLABXProjects/lcd.X/main.c
+74A6 text0 CODE >373:/home/david/MPLABXProjects/lcd.X/main.c
+74AA text0 CODE >377:/home/david/MPLABXProjects/lcd.X/main.c
+74C6 text0 CODE >378:/home/david/MPLABXProjects/lcd.X/main.c
+74D0 text0 CODE >381:/home/david/MPLABXProjects/lcd.X/main.c
+7524 text0 CODE >382:/home/david/MPLABXProjects/lcd.X/main.c
+7544 text0 CODE >384:/home/david/MPLABXProjects/lcd.X/main.c
+7580 text0 CODE >385:/home/david/MPLABXProjects/lcd.X/main.c
+7582 text0 CODE >388:/home/david/MPLABXProjects/lcd.X/main.c
+75A2 text0 CODE >396:/home/david/MPLABXProjects/lcd.X/main.c
+75AC text0 CODE >398:/home/david/MPLABXProjects/lcd.X/main.c
+75B6 text0 CODE >399:/home/david/MPLABXProjects/lcd.X/main.c
+75BC text0 CODE >400:/home/david/MPLABXProjects/lcd.X/main.c
+75C2 text0 CODE >401:/home/david/MPLABXProjects/lcd.X/main.c
+75CC text0 CODE >402:/home/david/MPLABXProjects/lcd.X/main.c
+75CE text0 CODE >404:/home/david/MPLABXProjects/lcd.X/main.c
+7690 text0 CODE >405:/home/david/MPLABXProjects/lcd.X/main.c
+76B6 text0 CODE >407:/home/david/MPLABXProjects/lcd.X/main.c
+76D4 text0 CODE >408:/home/david/MPLABXProjects/lcd.X/main.c
+76E6 text0 CODE >410:/home/david/MPLABXProjects/lcd.X/main.c
+770C text0 CODE >412:/home/david/MPLABXProjects/lcd.X/main.c
+772A text0 CODE >413:/home/david/MPLABXProjects/lcd.X/main.c
+773C text0 CODE >416:/home/david/MPLABXProjects/lcd.X/main.c
+7756 text0 CODE >417:/home/david/MPLABXProjects/lcd.X/main.c
+775C text0 CODE >402:/home/david/MPLABXProjects/lcd.X/main.c
+7772 text0 CODE >421:/home/david/MPLABXProjects/lcd.X/main.c
+77BE text0 CODE >423:/home/david/MPLABXProjects/lcd.X/main.c
+7806 text0 CODE >426:/home/david/MPLABXProjects/lcd.X/main.c
+7826 text0 CODE >428:/home/david/MPLABXProjects/lcd.X/main.c
+7846 text0 CODE >429:/home/david/MPLABXProjects/lcd.X/main.c
+7848 text0 CODE >432:/home/david/MPLABXProjects/lcd.X/main.c
+7890 text0 CODE >435:/home/david/MPLABXProjects/lcd.X/main.c
+789A text0 CODE >436:/home/david/MPLABXProjects/lcd.X/main.c
+78A8 text0 CODE >439:/home/david/MPLABXProjects/lcd.X/main.c
+78C8 text0 CODE >441:/home/david/MPLABXProjects/lcd.X/main.c
+78DC text0 CODE >446:/home/david/MPLABXProjects/lcd.X/main.c
+78E6 text0 CODE >447:/home/david/MPLABXProjects/lcd.X/main.c
+78F4 text0 CODE >449:/home/david/MPLABXProjects/lcd.X/main.c
+791C text0 CODE >451:/home/david/MPLABXProjects/lcd.X/main.c
+792A text0 CODE >449:/home/david/MPLABXProjects/lcd.X/main.c
+793E text0 CODE >87:/home/david/MPLABXProjects/lcd.X/main.c
+37CC cinit CODE >2743:/tmp/xcXPY329q
+37CC cinit CODE >2745:/tmp/xcXPY329q
+37CC cinit CODE >2748:/tmp/xcXPY329q
+37CC cinit CODE >2770:/tmp/xcXPY329q
+37D0 cinit CODE >2771:/tmp/xcXPY329q
+37D4 cinit CODE >2772:/tmp/xcXPY329q
+37D4 cinit CODE >2773:/tmp/xcXPY329q
+37D6 cinit CODE >2774:/tmp/xcXPY329q
+37D8 cinit CODE >2775:/tmp/xcXPY329q
+37DA cinit CODE >2776:/tmp/xcXPY329q
+37DC cinit CODE >2777:/tmp/xcXPY329q
+37DE cinit CODE >2778:/tmp/xcXPY329q
+37E0 cinit CODE >2781:/tmp/xcXPY329q
+37E4 cinit CODE >2782:/tmp/xcXPY329q
+37E6 cinit CODE >2783:/tmp/xcXPY329q
+37E6 cinit CODE >2784:/tmp/xcXPY329q
+37E8 cinit CODE >2785:/tmp/xcXPY329q
+37EA cinit CODE >2786:/tmp/xcXPY329q
+37EC cinit CODE >2792:/tmp/xcXPY329q
+37EC cinit CODE >2795:/tmp/xcXPY329q
+37EE cinit CODE >2796:/tmp/xcXPY329q
+37F0 cinit CODE >2797:/tmp/xcXPY329q
+37F2 cinit CODE >2798:/tmp/xcXPY329q
+# %SYMTAB Section
+# An enumeration of all symbols in the program.
+# The beginning of the section is indicated by %SYMTAB.
+# Each line describes a single symbol as follows:
+#    <label> <value> [-]<load-adj> <class> <space> <psect> <file-name>
+# The value and load-adj are both in unqualified hexadecimal.
+# All other numeric values are in decimal.  The load-adj is the
+# quantity one needs to add to the symbol value in order to obtain the load
+# address of the symbol.  This value may be signed. If the symbol
+# was defined in a psect then <psect> will be "-". File-name
+# is the name of the object file in which the symbol was defined.
+%SYMTAB
+___awdiv@counter B 0 COMRAM 1 cstackCOMRAM dist/default/debug/lcd.X.debug.obj
+__Lmediumconst 7942 0 MEDIUMCONST 0 mediumconst dist/default/debug/lcd.X.debug.obj
+__Hspace_0 30000E 0 ABS 0 - dist/default/debug/lcd.X.debug.obj
+__Hspace_1 800 0 ABS 0 - dist/default/debug/lcd.X.debug.obj
+__Hspace_2 0 0 ABS 0 - dist/default/debug/lcd.X.debug.obj
+main@delta_370 203 0 BANK2 1 cstackBANK2 dist/default/debug/lcd.X.debug.obj
+__end_of__tdiv_to_l_ 43FE 0 CODE 0 text10 dist/default/debug/lcd.X.debug.obj
+__size_of_lcdplotpixel2 0 0 ABS 0 - dist/default/debug/lcd.X.debug.obj
+___ftdiv@exp 26 0 COMRAM 1 cstackCOMRAM dist/default/debug/lcd.X.debug.obj
+__Hibigdata 0 0 CODE 0 ibigdata dist/default/debug/lcd.X.debug.obj
+__mediumconst 7942 0 MEDIUMCONST 0 mediumconst /tmp/xcXJfpqUK.obj
+___awtoft@sign 18 0 COMRAM 1 cstackCOMRAM dist/default/debug/lcd.X.debug.obj
+__Heeprom_data 0 0 EEDATA 0 eeprom_data dist/default/debug/lcd.X.debug.obj
+__end_of_LCDcmd 36B6 0 CODE 0 text39 dist/default/debug/lcd.X.debug.obj
+?_abs 1 0 COMRAM 1 cstackCOMRAM dist/default/debug/lcd.X.debug.obj
+main@a 22E 0 BANK2 1 cstackBANK2 dist/default/debug/lcd.X.debug.obj
+main@i 20E 0 BANK2 1 cstackBANK2 dist/default/debug/lcd.X.debug.obj
+main@j F8 0 BANK0 1 cstackBANK0 dist/default/debug/lcd.X.debug.obj
+main@y DD 0 BANK0 1 cstackBANK0 dist/default/debug/lcd.X.debug.obj
+__Lsmallconst 0 0 SMALLCONST 0 smallconst dist/default/debug/lcd.X.debug.obj
+main@buf_371 D1 0 BANK0 1 cstackBANK0 dist/default/debug/lcd.X.debug.obj
+main@buf_384 79 0 BANK0 1 cstackBANK0 dist/default/debug/lcd.X.debug.obj
+_LCDy 39DC 0 CODE 0 text35 dist/default/debug/lcd.X.debug.obj
+___sp 0 0 STACK 2 stack /tmp/xcXJfpqUK.obj
+_main 6380 0 CODE 0 text0 dist/default/debug/lcd.X.debug.obj
+abs@a 1 0 COMRAM 1 cstackCOMRAM dist/default/debug/lcd.X.debug.obj
+LCDclear@i_556 23 0 COMRAM 1 cstackCOMRAM dist/default/debug/lcd.X.debug.obj
+___ftadd@f1 32 0 COMRAM 1 cstackCOMRAM dist/default/debug/lcd.X.debug.obj
+___ftadd@f2 35 0 COMRAM 1 cstackCOMRAM dist/default/debug/lcd.X.debug.obj
+__HbssBIGRAM 0 0 ABS 0 bssBIGRAM dist/default/debug/lcd.X.debug.obj
+start 0 0 CODE 0 init /tmp/xcXJfpqUK.obj
+__size_of___awdiv 0 0 ABS 0 - dist/default/debug/lcd.X.debug.obj
+__size_of___awmod 0 0 ABS 0 - dist/default/debug/lcd.X.debug.obj
+__size_of___ftadd 0 0 ABS 0 - dist/default/debug/lcd.X.debug.obj
+__size_of___ftdiv 0 0 ABS 0 - dist/default/debug/lcd.X.debug.obj
+__size_of___ftmul 0 0 ABS 0 - dist/default/debug/lcd.X.debug.obj
+__size_of___ftneg 0 0 ABS 0 - dist/default/debug/lcd.X.debug.obj
+__size_of___ftsub 0 0 ABS 0 - dist/default/debug/lcd.X.debug.obj
+__size_of___fttol 0 0 ABS 0 - dist/default/debug/lcd.X.debug.obj
+__size_of_LCDy 0 0 ABS 0 - dist/default/debug/lcd.X.debug.obj
+__size_of_main 0 0 ABS 0 - dist/default/debug/lcd.X.debug.obj
+__size_of___lldiv 0 0 ABS 0 - dist/default/debug/lcd.X.debug.obj
+__size_of___llmod 0 0 ABS 0 - dist/default/debug/lcd.X.debug.obj
+_curr_page 247 0 BANK2 1 bssBANK2 dist/default/debug/lcd.X.debug.obj
+?___wmul F 0 COMRAM 1 cstackCOMRAM dist/default/debug/lcd.X.debug.obj
+__end_of__lcd_status 39DC 0 CODE 0 text38 dist/default/debug/lcd.X.debug.obj
+__size_of_LCDchar 0 0 ABS 0 - dist/default/debug/lcd.X.debug.obj
+__size_of_LCDinit 0 0 ABS 0 - dist/default/debug/lcd.X.debug.obj
+__size_of_LCDpage 0 0 ABS 0 - dist/default/debug/lcd.X.debug.obj
+___ftdiv@f1 19 0 COMRAM 1 cstackCOMRAM dist/default/debug/lcd.X.debug.obj
+___ftdiv@f2 1C 0 COMRAM 1 cstackCOMRAM dist/default/debug/lcd.X.debug.obj
+___ftdiv@f3 23 0 COMRAM 1 cstackCOMRAM dist/default/debug/lcd.X.debug.obj
+__end_of_lcdplotpixel2 453E 0 CODE 0 text2 dist/default/debug/lcd.X.debug.obj
+_LCDclear 3C6C 0 CODE 0 text32 dist/default/debug/lcd.X.debug.obj
+__Hpowerup 0 0 CODE 0 powerup dist/default/debug/lcd.X.debug.obj
+_LCDreset 36F2 0 CODE 0 text30 dist/default/debug/lcd.X.debug.obj
+lcdplotpixel2@rx 25 0 COMRAM 1 cstackCOMRAM dist/default/debug/lcd.X.debug.obj
+lcdplotpixel2@ry F 0 COMRAM 1 cstackCOMRAM dist/default/debug/lcd.X.debug.obj
+___awmod@sign 6 0 COMRAM 1 cstackCOMRAM dist/default/debug/lcd.X.debug.obj
+___ftge@ff1 1 0 COMRAM 1 cstackCOMRAM dist/default/debug/lcd.X.debug.obj
+___ftge@ff2 4 0 COMRAM 1 cstackCOMRAM dist/default/debug/lcd.X.debug.obj
+__end_of__npowers_ 7F7C 0 MEDIUMCONST 0 mediumconst dist/default/debug/lcd.X.debug.obj
+__LbssBIGRAM 0 0 ABS 0 bssBIGRAM dist/default/debug/lcd.X.debug.obj
+_sprintf$1215 60 0 BANK0 1 cstackBANK0 dist/default/debug/lcd.X.debug.obj
+__accesstop 60 0 ABS 0 - /tmp/xcXJfpqUK.obj
+intlevel0 0 0 CODE 0 text /tmp/xcXJfpqUK.obj
+intlevel1 0 0 CODE 0 text /tmp/xcXJfpqUK.obj
+intlevel2 0 0 CODE 0 text /tmp/xcXJfpqUK.obj
+intlevel3 0 0 CODE 0 text /tmp/xcXJfpqUK.obj
+__end_of_LCDclear 3CFC 0 CODE 0 text32 dist/default/debug/lcd.X.debug.obj
+__size_of__div_to_l_ 0 0 ABS 0 - dist/default/debug/lcd.X.debug.obj
+__end_of_LCDreset 3712 0 CODE 0 text30 dist/default/debug/lcd.X.debug.obj
+main@s_val_363 F6 0 BANK0 1 cstackBANK0 dist/default/debug/lcd.X.debug.obj
+strcat@from 3 0 COMRAM 1 cstackCOMRAM dist/default/debug/lcd.X.debug.obj
+main@cur1_x_new 212 0 BANK2 1 cstackBANK2 dist/default/debug/lcd.X.debug.obj
+main@cur1_y_new 20A 0 BANK2 1 cstackBANK2 dist/default/debug/lcd.X.debug.obj
+__LnvFARRAM 0 0 FARRAM 0 nvFARRAM dist/default/debug/lcd.X.debug.obj
+___llmod@divisor 12 0 COMRAM 1 cstackCOMRAM dist/default/debug/lcd.X.debug.obj
+?_fround 28 0 COMRAM 1 cstackCOMRAM dist/default/debug/lcd.X.debug.obj
+__Hifardata 0 0 CODE 0 ifardata dist/default/debug/lcd.X.debug.obj
+lcdplotpixel2@data 14 0 COMRAM 1 cstackCOMRAM dist/default/debug/lcd.X.debug.obj
+lcdplotpixel2@page 1D 0 COMRAM 1 cstackCOMRAM dist/default/debug/lcd.X.debug.obj
+lcdplotpixel2@side 22 0 COMRAM 1 cstackCOMRAM dist/default/debug/lcd.X.debug.obj
+?__div_to_l_ 1 0 COMRAM 1 cstackCOMRAM dist/default/debug/lcd.X.debug.obj
+___awdiv@sign C 0 COMRAM 1 cstackCOMRAM dist/default/debug/lcd.X.debug.obj
+__Hclrtext 0 0 ABS 0 clrtext dist/default/debug/lcd.X.debug.obj
+__npowers_ 7F55 0 MEDIUMCONST 0 mediumconst dist/default/debug/lcd.X.debug.obj
+___ftmul@f1 19 0 COMRAM 1 cstackCOMRAM dist/default/debug/lcd.X.debug.obj
+___ftmul@f2 1C 0 COMRAM 1 cstackCOMRAM dist/default/debug/lcd.X.debug.obj
+___ftneg@f1 1 0 COMRAM 1 cstackCOMRAM dist/default/debug/lcd.X.debug.obj
+_emptycolumn 3D8C 0 CODE 0 text27 dist/default/debug/lcd.X.debug.obj
+___wmul@multiplicand 11 0 COMRAM 1 cstackCOMRAM dist/default/debug/lcd.X.debug.obj
+_ADCON0 FC2 0 ABS 0 - dist/default/debug/lcd.X.debug.obj
+_ADRESH FC4 0 ABS 0 - dist/default/debug/lcd.X.debug.obj
+_ADRESL FC3 0 ABS 0 - dist/default/debug/lcd.X.debug.obj
+_scale$1214 2B 0 COMRAM 1 cstackCOMRAM dist/default/debug/lcd.X.debug.obj
+___awdiv@dividend 7 0 COMRAM 1 cstackCOMRAM dist/default/debug/lcd.X.debug.obj
+___inthi_sp 0 0 STACK 2 stack /tmp/xcXJfpqUK.obj
+___intlo_sp 0 0 STACK 2 stack /tmp/xcXJfpqUK.obj
+__size_of___awtoft 0 0 ABS 0 - dist/default/debug/lcd.X.debug.obj
+__Hintcode_body 0 0 ABS 0 intcode_body dist/default/debug/lcd.X.debug.obj
+__end_of___ftge 3D8C 0 CODE 0 text19 dist/default/debug/lcd.X.debug.obj
+__end_of___wmul 37A4 0 CODE 0 text34 dist/default/debug/lcd.X.debug.obj
+__size_of__lcd_enable 0 0 ABS 0 - dist/default/debug/lcd.X.debug.obj
+?__tdiv_to_l_ 1 0 COMRAM 1 cstackCOMRAM dist/default/debug/lcd.X.debug.obj
+__Lintsave_regs 0 0 BIGRAM 1 intsave_regs dist/default/debug/lcd.X.debug.obj
+___ftsub@f1 3E 0 COMRAM 1 cstackCOMRAM dist/default/debug/lcd.X.debug.obj
+___ftsub@f2 41 0 COMRAM 1 cstackCOMRAM dist/default/debug/lcd.X.debug.obj
+main@Vpp EE 0 BANK0 1 cstackBANK0 dist/default/debug/lcd.X.debug.obj
+main@buf C7 0 BANK0 1 cstackBANK0 dist/default/debug/lcd.X.debug.obj
+main@div 21F 0 BANK2 1 cstackBANK2 dist/default/debug/lcd.X.debug.obj
+main@max FC 0 BANK0 1 cstackBANK0 dist/default/debug/lcd.X.debug.obj
+main@min FA 0 BANK0 1 cstackBANK0 dist/default/debug/lcd.X.debug.obj
+main@str A1 0 BANK0 1 cstackBANK0 dist/default/debug/lcd.X.debug.obj
+main@tmp 206 0 BANK2 1 cstackBANK2 dist/default/debug/lcd.X.debug.obj
+___fttol@f1 3E 0 COMRAM 1 cstackCOMRAM dist/default/debug/lcd.X.debug.obj
+__size_of_sprintf 0 0 ABS 0 - dist/default/debug/lcd.X.debug.obj
+__Hmediumconst 8000 0 MEDIUMCONST 0 mediumconst dist/default/debug/lcd.X.debug.obj
+__Hintcodelo 0 0 CODE 0 intcodelo dist/default/debug/lcd.X.debug.obj
+LCDpage@page 5 0 COMRAM 1 cstackCOMRAM dist/default/debug/lcd.X.debug.obj
+LCDpage@side 6 0 COMRAM 1 cstackCOMRAM dist/default/debug/lcd.X.debug.obj
+___awdiv@divisor 9 0 COMRAM 1 cstackCOMRAM dist/default/debug/lcd.X.debug.obj
+__size_of___ftpack 0 0 ABS 0 - dist/default/debug/lcd.X.debug.obj
+__end_of___awdiv 3C6C 0 CODE 0 text28 dist/default/debug/lcd.X.debug.obj
+__end_of___awmod 3B66 0 CODE 0 text9 dist/default/debug/lcd.X.debug.obj
+__end_of___ftadd 4836 0 CODE 0 text17 dist/default/debug/lcd.X.debug.obj
+__end_of___ftdiv 3FBC 0 CODE 0 text22 dist/default/debug/lcd.X.debug.obj
+__end_of___ftmul 41A4 0 CODE 0 text8 dist/default/debug/lcd.X.debug.obj
+__end_of___ftneg 377E 0 CODE 0 text18 dist/default/debug/lcd.X.debug.obj
+__end_of___ftsub 38A8 0 CODE 0 text16 dist/default/debug/lcd.X.debug.obj
+__end_of___fttol 40B0 0 CODE 0 text15 dist/default/debug/lcd.X.debug.obj
+__end_of___lldiv 3BE8 0 CODE 0 text14 dist/default/debug/lcd.X.debug.obj
+__end_of___llmod 3AF6 0 CODE 0 text13 dist/default/debug/lcd.X.debug.obj
+__size_of_isdigit 0 0 ABS 0 - dist/default/debug/lcd.X.debug.obj
+__lcd_status@cs1 2 0 COMRAM 1 cstackCOMRAM dist/default/debug/lcd.X.debug.obj
+__lcd_status@cs2 3 0 COMRAM 1 cstackCOMRAM dist/default/debug/lcd.X.debug.obj
+_selected_side 245 0 BANK2 1 bssBANK2 dist/default/debug/lcd.X.debug.obj
+?_strlen 1 0 COMRAM 1 cstackCOMRAM dist/default/debug/lcd.X.debug.obj
+__end_of_LCDchar 532C 0 CODE 0 text33 dist/default/debug/lcd.X.debug.obj
+__end_of_LCDinit 3934 0 CODE 0 text29 dist/default/debug/lcd.X.debug.obj
+__end_of_LCDpage 3984 0 CODE 0 text36 dist/default/debug/lcd.X.debug.obj
+_dpowers 7F2D 0 MEDIUMCONST 0 mediumconst dist/default/debug/lcd.X.debug.obj
+__size_of_LCDon 0 0 ABS 0 - dist/default/debug/lcd.X.debug.obj
+__size_of__tdiv_to_l_ 0 0 ABS 0 - dist/default/debug/lcd.X.debug.obj
+__end_of_fround 4A7C 0 CODE 0 text7 dist/default/debug/lcd.X.debug.obj
+_LCDcmd 36AA 0 CODE 0 text39 dist/default/debug/lcd.X.debug.obj
+__size_of_scale 0 0 ABS 0 - dist/default/debug/lcd.X.debug.obj
+__size_of___lltoft 0 0 ABS 0 - dist/default/debug/lcd.X.debug.obj
+__size_of___lwtoft 0 0 ABS 0 - dist/default/debug/lcd.X.debug.obj
+___lldiv@counter D 0 COMRAM 1 cstackCOMRAM dist/default/debug/lcd.X.debug.obj
+__Lintcodelo 0 0 CODE 0 intcodelo dist/default/debug/lcd.X.debug.obj
+start_initialization 37CC 0 CODE 0 cinit dist/default/debug/lcd.X.debug.obj
+__end_oflcdplotpixel2@F4573 7FAC 0 MEDIUMCONST 0 mediumconst dist/default/debug/lcd.X.debug.obj
+__HnvFARRAM 0 0 FARRAM 0 nvFARRAM dist/default/debug/lcd.X.debug.obj
+___awtoft 37F6 0 CODE 0 text23 dist/default/debug/lcd.X.debug.obj
+___lldiv@dividend 1 0 COMRAM 1 cstackCOMRAM dist/default/debug/lcd.X.debug.obj
+___rparam_used 1 0 ABS 0 - dist/default/debug/lcd.X.debug.obj
+fround@prec 31 0 COMRAM 1 cstackCOMRAM dist/default/debug/lcd.X.debug.obj
+__size_of__lcd_status 0 0 ABS 0 - dist/default/debug/lcd.X.debug.obj
+__end_of___awtoft 382E 0 CODE 0 text23 dist/default/debug/lcd.X.debug.obj
+__pcstackBANK0 60 0 BANK0 1 cstackBANK0 dist/default/debug/lcd.X.debug.obj
+__pcstackBANK1 100 0 BANK1 1 cstackBANK1 dist/default/debug/lcd.X.debug.obj
+__pcstackBANK2 200 0 BANK2 1 cstackBANK2 dist/default/debug/lcd.X.debug.obj
+___fttol@exp1 4C 0 COMRAM 1 cstackCOMRAM dist/default/debug/lcd.X.debug.obj
+___fttol@lval 48 0 COMRAM 1 cstackCOMRAM dist/default/debug/lcd.X.debug.obj
+___lltoft@c 9 0 COMRAM 1 cstackCOMRAM dist/default/debug/lcd.X.debug.obj
+___ftpack 3E28 0 CODE 0 text24 dist/default/debug/lcd.X.debug.obj
+__tdiv_to_l_@f1 1 0 COMRAM 1 cstackCOMRAM dist/default/debug/lcd.X.debug.obj
+__tdiv_to_l_@f2 4 0 COMRAM 1 cstackCOMRAM dist/default/debug/lcd.X.debug.obj
+___ftpack@arg 1 0 COMRAM 1 cstackCOMRAM dist/default/debug/lcd.X.debug.obj
+___ftpack@exp 4 0 COMRAM 1 cstackCOMRAM dist/default/debug/lcd.X.debug.obj
+_isdigit$869 2 0 COMRAM 1 cstackCOMRAM dist/default/debug/lcd.X.debug.obj
+__size_of_LCDcmd 0 0 ABS 0 - dist/default/debug/lcd.X.debug.obj
+lcdplotpixel2@F4573 7FA3 0 MEDIUMCONST 0 mediumconst dist/default/debug/lcd.X.debug.obj
+__end_of___ftpack 3ED6 0 CODE 0 text24 dist/default/debug/lcd.X.debug.obj
+__Hbank0 0 0 ABS 0 bank0 dist/default/debug/lcd.X.debug.obj
+__Hbank1 0 0 ABS 0 bank1 dist/default/debug/lcd.X.debug.obj
+__Hbank2 0 0 ABS 0 bank2 dist/default/debug/lcd.X.debug.obj
+__Hbank3 0 0 ABS 0 bank3 dist/default/debug/lcd.X.debug.obj
+__Hbank4 0 0 ABS 0 bank4 dist/default/debug/lcd.X.debug.obj
+__Hbank5 0 0 ABS 0 bank5 dist/default/debug/lcd.X.debug.obj
+__Hbank6 0 0 ABS 0 bank6 dist/default/debug/lcd.X.debug.obj
+__Hbank7 0 0 ABS 0 bank7 dist/default/debug/lcd.X.debug.obj
+__Hcinit 0 0 ABS 0 cinit dist/default/debug/lcd.X.debug.obj
+__Hconst 0 0 CONST 0 const dist/default/debug/lcd.X.debug.obj
+__end_of_strcat 38EA 0 CODE 0 text3 dist/default/debug/lcd.X.debug.obj
+__end_of_strlen 3868 0 CODE 0 text26 dist/default/debug/lcd.X.debug.obj
+__Hidata 0 0 CODE 0 idata dist/default/debug/lcd.X.debug.obj
+__Hidloc 200008 0 IDLOC 0 idloc dist/default/debug/lcd.X.debug.obj
+__Hnvbit 0 0 COMRAM 1 nvbit dist/default/debug/lcd.X.debug.obj
+__Hparam 0 0 COMRAM 1 rparam dist/default/debug/lcd.X.debug.obj
+__Hrdata 0 0 COMRAM 1 rdata dist/default/debug/lcd.X.debug.obj
+lcdplotpixel2@blank 10 0 COMRAM 1 cstackCOMRAM dist/default/debug/lcd.X.debug.obj
+__Hstack 0 0 STACK 2 stack dist/default/debug/lcd.X.debug.obj
+__Htext0 0 0 ABS 0 text0 dist/default/debug/lcd.X.debug.obj
+__Htext1 0 0 ABS 0 text1 dist/default/debug/lcd.X.debug.obj
+__Htext2 0 0 ABS 0 text2 dist/default/debug/lcd.X.debug.obj
+__Htext3 0 0 ABS 0 text3 dist/default/debug/lcd.X.debug.obj
+__Htext4 0 0 ABS 0 text4 dist/default/debug/lcd.X.debug.obj
+__Htext5 0 0 ABS 0 text5 dist/default/debug/lcd.X.debug.obj
+__Htext6 0 0 ABS 0 text6 dist/default/debug/lcd.X.debug.obj
+__Htext7 0 0 ABS 0 text7 dist/default/debug/lcd.X.debug.obj
+__Htext8 0 0 ABS 0 text8 dist/default/debug/lcd.X.debug.obj
+__Htext9 0 0 ABS 0 text9 dist/default/debug/lcd.X.debug.obj
+_main$1209 238 0 BANK2 1 cstackBANK2 dist/default/debug/lcd.X.debug.obj
+_main$1210 23B 0 BANK2 1 cstackBANK2 dist/default/debug/lcd.X.debug.obj
+_main$1211 F1 0 BANK0 1 cstackBANK0 dist/default/debug/lcd.X.debug.obj
+lcdplotpixel2@index 23 0 COMRAM 1 cstackCOMRAM dist/default/debug/lcd.X.debug.obj
+lcdplotpixel2@pixel 1F 0 COMRAM 1 cstackCOMRAM dist/default/debug/lcd.X.debug.obj
+lcdplotpixel2@value 20 0 COMRAM 1 cstackCOMRAM dist/default/debug/lcd.X.debug.obj
+__Hbigbss 0 0 BIGRAM 1 bigbss dist/default/debug/lcd.X.debug.obj
+__Hbigram 0 0 ABS 0 bigram dist/default/debug/lcd.X.debug.obj
+LCDon@on 5 0 COMRAM 1 cstackCOMRAM dist/default/debug/lcd.X.debug.obj
+__smallconst 0 0 SMALLCONST 0 smallconst /tmp/xcXJfpqUK.obj
+__end_of_sprintf 6380 0 CODE 0 text4 dist/default/debug/lcd.X.debug.obj
+___lltoft 3A34 0 CODE 0 text12 dist/default/debug/lcd.X.debug.obj
+__Hcomram 0 0 ABS 0 comram dist/default/debug/lcd.X.debug.obj
+__Hconfig 30000E 0 CONFIG 0 config dist/default/debug/lcd.X.debug.obj
+___lwtoft 3736 0 CODE 0 text21 dist/default/debug/lcd.X.debug.obj
+LCDclear@i 21 0 COMRAM 1 cstackCOMRAM dist/default/debug/lcd.X.debug.obj
+LCDclear@j 25 0 COMRAM 1 cstackCOMRAM dist/default/debug/lcd.X.debug.obj
+main@cur2_x_new 214 0 BANK2 1 cstackBANK2 dist/default/debug/lcd.X.debug.obj
+main@cur2_y_new 20C 0 BANK2 1 cstackBANK2 dist/default/debug/lcd.X.debug.obj
+__Lbank0 0 0 ABS 0 bank0 dist/default/debug/lcd.X.debug.obj
+__Lbank1 0 0 ABS 0 bank1 dist/default/debug/lcd.X.debug.obj
+__Lbank2 0 0 ABS 0 bank2 dist/default/debug/lcd.X.debug.obj
+__Lbank3 0 0 ABS 0 bank3 dist/default/debug/lcd.X.debug.obj
+__Lbank4 0 0 ABS 0 bank4 dist/default/debug/lcd.X.debug.obj
+__Lbank5 0 0 ABS 0 bank5 dist/default/debug/lcd.X.debug.obj
+__Lbank6 0 0 ABS 0 bank6 dist/default/debug/lcd.X.debug.obj
+__Lbank7 0 0 ABS 0 bank7 dist/default/debug/lcd.X.debug.obj
+__end_of_isdigit 36F2 0 CODE 0 text6 dist/default/debug/lcd.X.debug.obj
+__Lcinit 0 0 ABS 0 cinit dist/default/debug/lcd.X.debug.obj
+__Lconst 0 0 CONST 0 const dist/default/debug/lcd.X.debug.obj
+__Lidata 0 0 CODE 0 idata dist/default/debug/lcd.X.debug.obj
+__Lidloc 200000 0 IDLOC 0 idloc dist/default/debug/lcd.X.debug.obj
+___ftadd@exp1 3D 0 COMRAM 1 cstackCOMRAM dist/default/debug/lcd.X.debug.obj
+___ftadd@exp2 3C 0 COMRAM 1 cstackCOMRAM dist/default/debug/lcd.X.debug.obj
+___ftadd@sign 3B 0 COMRAM 1 cstackCOMRAM dist/default/debug/lcd.X.debug.obj
+__Lnvbit 0 0 COMRAM 1 nvbit dist/default/debug/lcd.X.debug.obj
+__Lparam 0 0 COMRAM 1 rparam dist/default/debug/lcd.X.debug.obj
+__Lrdata 0 0 COMRAM 1 rdata dist/default/debug/lcd.X.debug.obj
+__Lstack 0 0 STACK 2 stack dist/default/debug/lcd.X.debug.obj
+__Ltext0 0 0 ABS 0 text0 dist/default/debug/lcd.X.debug.obj
+__Ltext1 0 0 ABS 0 text1 dist/default/debug/lcd.X.debug.obj
+__Ltext2 0 0 ABS 0 text2 dist/default/debug/lcd.X.debug.obj
+__Ltext3 0 0 ABS 0 text3 dist/default/debug/lcd.X.debug.obj
+__Ltext4 0 0 ABS 0 text4 dist/default/debug/lcd.X.debug.obj
+__Ltext5 0 0 ABS 0 text5 dist/default/debug/lcd.X.debug.obj
+__Ltext6 0 0 ABS 0 text6 dist/default/debug/lcd.X.debug.obj
+__Ltext7 0 0 ABS 0 text7 dist/default/debug/lcd.X.debug.obj
+__Ltext8 0 0 ABS 0 text8 dist/default/debug/lcd.X.debug.obj
+__Ltext9 0 0 ABS 0 text9 dist/default/debug/lcd.X.debug.obj
+__Hfarbss 0 0 FARRAM 0 farbss dist/default/debug/lcd.X.debug.obj
+__end_of_xyaxis 468A 0 CODE 0 text1 dist/default/debug/lcd.X.debug.obj
+__end_of___lltoft 3A90 0 CODE 0 text12 dist/default/debug/lcd.X.debug.obj
+__Lintcode_body 0 0 ABS 0 intcode_body dist/default/debug/lcd.X.debug.obj
+__end_of___lwtoft 375A 0 CODE 0 text21 dist/default/debug/lcd.X.debug.obj
+_PORTBbits F81 0 ABS 0 - dist/default/debug/lcd.X.debug.obj
+__Habs1 0 0 ABS 0 abs1 dist/default/debug/lcd.X.debug.obj
+__Hdata 0 0 ABS 0 data dist/default/debug/lcd.X.debug.obj
+__Hinit 0 0 CODE 0 init dist/default/debug/lcd.X.debug.obj
+__Hrbit 0 0 COMRAM 1 rbit dist/default/debug/lcd.X.debug.obj
+__Hrbss 0 0 COMRAM 1 rbss dist/default/debug/lcd.X.debug.obj
+__Htemp 0 0 COMRAM 1 temp dist/default/debug/lcd.X.debug.obj
+__Htext 0 0 ABS 0 text dist/default/debug/lcd.X.debug.obj
+__Labs1 0 0 ABS 0 abs1 dist/default/debug/lcd.X.debug.obj
+__Ldata 0 0 ABS 0 data dist/default/debug/lcd.X.debug.obj
+__Linit 0 0 CODE 0 init dist/default/debug/lcd.X.debug.obj
+__Lrbit 0 0 COMRAM 1 rbit dist/default/debug/lcd.X.debug.obj
+__Lrbss 0 0 COMRAM 1 rbss dist/default/debug/lcd.X.debug.obj
+__Ltemp 0 0 COMRAM 1 temp dist/default/debug/lcd.X.debug.obj
+__Ltext 0 0 ABS 0 text dist/default/debug/lcd.X.debug.obj
+___ftge 3CFC 0 CODE 0 text19 dist/default/debug/lcd.X.debug.obj
+___wmul 377E 0 CODE 0 text34 dist/default/debug/lcd.X.debug.obj
+__LcstackBANK0 0 0 ABS 0 cstackBANK0 dist/default/debug/lcd.X.debug.obj
+__LcstackBANK1 0 0 ABS 0 cstackBANK1 dist/default/debug/lcd.X.debug.obj
+__LcstackBANK2 0 0 ABS 0 cstackBANK2 dist/default/debug/lcd.X.debug.obj
+__HcstackCOMRAM 0 0 ABS 0 cstackCOMRAM dist/default/debug/lcd.X.debug.obj
+__Hintret 0 0 ABS 0 intret dist/default/debug/lcd.X.debug.obj
+__Hirdata 0 0 CODE 0 irdata dist/default/debug/lcd.X.debug.obj
+__S0 30000E 0 ABS 0 - dist/default/debug/lcd.X.debug.obj
+__S1 800 0 ABS 0 - dist/default/debug/lcd.X.debug.obj
+__S2 0 0 ABS 0 - dist/default/debug/lcd.X.debug.obj
+_abs 37A4 0 CODE 0 text20 dist/default/debug/lcd.X.debug.obj
+_pic 7D43 0 MEDIUMCONST 0 mediumconst dist/default/debug/lcd.X.debug.obj
+__lcd_waitbusy 36C4 0 CODE 0 text37 dist/default/debug/lcd.X.debug.obj
+__lcd_status@status 1 0 COMRAM 1 cstackCOMRAM dist/default/debug/lcd.X.debug.obj
+__CFG_PBADEN$OFF 0 0 ABS 0 - dist/default/debug/lcd.X.debug.obj
+___awtoft@c 15 0 COMRAM 1 cstackCOMRAM dist/default/debug/lcd.X.debug.obj
+__Lbigdata 0 0 BIGRAM 1 bigdata dist/default/debug/lcd.X.debug.obj
+xyaxis@i 26 0 COMRAM 1 cstackCOMRAM dist/default/debug/lcd.X.debug.obj
+__Hnvrram 0 0 COMRAM 1 nvrram dist/default/debug/lcd.X.debug.obj
+sprintf@exp 71 0 BANK0 1 cstackBANK0 dist/default/debug/lcd.X.debug.obj
+sprintf@val 67 0 BANK0 1 cstackBANK0 dist/default/debug/lcd.X.debug.obj
+strcat@cp 5 0 COMRAM 1 cstackCOMRAM dist/default/debug/lcd.X.debug.obj
+strcat@to 1 0 COMRAM 1 cstackCOMRAM dist/default/debug/lcd.X.debug.obj
+_fround 4836 0 CODE 0 text7 dist/default/debug/lcd.X.debug.obj
+__end_of_abs 37CC 0 CODE 0 text20 dist/default/debug/lcd.X.debug.obj
+__end_of_pic 7F2D 0 MEDIUMCONST 0 mediumconst dist/default/debug/lcd.X.debug.obj
+__Lintentry 0 0 ABS 0 intentry dist/default/debug/lcd.X.debug.obj
+xyaxis@i_585 28 0 COMRAM 1 cstackCOMRAM dist/default/debug/lcd.X.debug.obj
+___lldiv@divisor 5 0 COMRAM 1 cstackCOMRAM dist/default/debug/lcd.X.debug.obj
+__lcd_enable 36B6 0 CODE 0 text40 dist/default/debug/lcd.X.debug.obj
+__Hramtop 800 0 RAM 0 ramtop dist/default/debug/lcd.X.debug.obj
+strlen@s 1 0 COMRAM 1 cstackCOMRAM dist/default/debug/lcd.X.debug.obj
+__Hrparam 0 0 COMRAM 1 rparam dist/default/debug/lcd.X.debug.obj
+__powers_ 7F7C 0 MEDIUMCONST 0 mediumconst dist/default/debug/lcd.X.debug.obj
+__activetblptr 2 0 ABS 0 - dist/default/debug/lcd.X.debug.obj
+__Hstruct 0 0 COMRAM 1 struct dist/default/debug/lcd.X.debug.obj
+__size_of___ftge 0 0 ABS 0 - dist/default/debug/lcd.X.debug.obj
+__size_of___wmul 0 0 ABS 0 - dist/default/debug/lcd.X.debug.obj
+__LbssBANK2 0 0 ABS 0 bssBANK2 dist/default/debug/lcd.X.debug.obj
+__end_of_emptycolumn 3E28 0 CODE 0 text27 dist/default/debug/lcd.X.debug.obj
+LCDcmd@data 1 0 COMRAM 1 cstackCOMRAM dist/default/debug/lcd.X.debug.obj
+__Htext10 0 0 ABS 0 text10 dist/default/debug/lcd.X.debug.obj
+__Htext11 0 0 ABS 0 text11 dist/default/debug/lcd.X.debug.obj
+__Htext12 0 0 ABS 0 text12 dist/default/debug/lcd.X.debug.obj
+__Htext13 0 0 ABS 0 text13 dist/default/debug/lcd.X.debug.obj
+__Htext14 0 0 ABS 0 text14 dist/default/debug/lcd.X.debug.obj
+__Htext15 0 0 ABS 0 text15 dist/default/debug/lcd.X.debug.obj
+__Htext16 0 0 ABS 0 text16 dist/default/debug/lcd.X.debug.obj
+__Htext17 0 0 ABS 0 text17 dist/default/debug/lcd.X.debug.obj
+__Htext18 0 0 ABS 0 text18 dist/default/debug/lcd.X.debug.obj
+__Htext19 0 0 ABS 0 text19 dist/default/debug/lcd.X.debug.obj
+__Htext20 0 0 ABS 0 text20 dist/default/debug/lcd.X.debug.obj
+__Htext21 0 0 ABS 0 text21 dist/default/debug/lcd.X.debug.obj
+__Htext22 0 0 ABS 0 text22 dist/default/debug/lcd.X.debug.obj
+__Htext23 0 0 ABS 0 text23 dist/default/debug/lcd.X.debug.obj
+__Htext24 0 0 ABS 0 text24 dist/default/debug/lcd.X.debug.obj
+__Htext25 0 0 ABS 0 text25 dist/default/debug/lcd.X.debug.obj
+__Htext26 0 0 ABS 0 text26 dist/default/debug/lcd.X.debug.obj
+__Htext27 0 0 ABS 0 text27 dist/default/debug/lcd.X.debug.obj
+__Htext28 0 0 ABS 0 text28 dist/default/debug/lcd.X.debug.obj
+__Htext29 0 0 ABS 0 text29 dist/default/debug/lcd.X.debug.obj
+__Htext30 0 0 ABS 0 text30 dist/default/debug/lcd.X.debug.obj
+__Htext31 0 0 ABS 0 text31 dist/default/debug/lcd.X.debug.obj
+__Htext32 0 0 ABS 0 text32 dist/default/debug/lcd.X.debug.obj
+__Htext33 0 0 ABS 0 text33 dist/default/debug/lcd.X.debug.obj
+__Htext34 0 0 ABS 0 text34 dist/default/debug/lcd.X.debug.obj
+__Htext35 0 0 ABS 0 text35 dist/default/debug/lcd.X.debug.obj
+__Htext36 0 0 ABS 0 text36 dist/default/debug/lcd.X.debug.obj
+__Htext37 0 0 ABS 0 text37 dist/default/debug/lcd.X.debug.obj
+__Htext38 0 0 ABS 0 text38 dist/default/debug/lcd.X.debug.obj
+__Htext39 0 0 ABS 0 text39 dist/default/debug/lcd.X.debug.obj
+__Htext40 0 0 ABS 0 text40 dist/default/debug/lcd.X.debug.obj
+?___awtoft 15 0 COMRAM 1 cstackCOMRAM dist/default/debug/lcd.X.debug.obj
+LCDstring@a 2C 0 COMRAM 1 cstackCOMRAM dist/default/debug/lcd.X.debug.obj
+LCDstring@i 2A 0 COMRAM 1 cstackCOMRAM dist/default/debug/lcd.X.debug.obj
+LCDstring@l 31 0 COMRAM 1 cstackCOMRAM dist/default/debug/lcd.X.debug.obj
+LCDstring@n 2D 0 COMRAM 1 cstackCOMRAM dist/default/debug/lcd.X.debug.obj
+___awmod@counter 5 0 COMRAM 1 cstackCOMRAM dist/default/debug/lcd.X.debug.obj
+__end_of_LCDstring 58B0 0 CODE 0 text25 dist/default/debug/lcd.X.debug.obj
+_curr_y_pos 243 0 BANK2 1 bssBANK2 dist/default/debug/lcd.X.debug.obj
+__end_of__powers_ 7FA3 0 MEDIUMCONST 0 mediumconst dist/default/debug/lcd.X.debug.obj
+__tdiv_to_l_@cntr E 0 COMRAM 1 cstackCOMRAM dist/default/debug/lcd.X.debug.obj
+__tdiv_to_l_@exp1 F 0 COMRAM 1 cstackCOMRAM dist/default/debug/lcd.X.debug.obj
+__tdiv_to_l_@quot A 0 COMRAM 1 cstackCOMRAM dist/default/debug/lcd.X.debug.obj
+sprintf@flag 65 0 BANK0 1 cstackBANK0 dist/default/debug/lcd.X.debug.obj
+sprintf@fval 73 0 BANK0 1 cstackBANK0 dist/default/debug/lcd.X.debug.obj
+sprintf@prec 76 0 BANK0 1 cstackBANK0 dist/default/debug/lcd.X.debug.obj
+__size_of_LCDstring 0 0 ABS 0 - dist/default/debug/lcd.X.debug.obj
+__ptext10 42CC 0 CODE 0 text10 dist/default/debug/lcd.X.debug.obj
+__ptext11 41A4 0 CODE 0 text11 dist/default/debug/lcd.X.debug.obj
+__ptext12 3A34 0 CODE 0 text12 dist/default/debug/lcd.X.debug.obj
+__ptext13 3A90 0 CODE 0 text13 dist/default/debug/lcd.X.debug.obj
+__ptext14 3B66 0 CODE 0 text14 dist/default/debug/lcd.X.debug.obj
+__ptext15 3FBC 0 CODE 0 text15 dist/default/debug/lcd.X.debug.obj
+__ptext16 3868 0 CODE 0 text16 dist/default/debug/lcd.X.debug.obj
+__ptext17 468A 0 CODE 0 text17 dist/default/debug/lcd.X.debug.obj
+__ptext18 375A 0 CODE 0 text18 dist/default/debug/lcd.X.debug.obj
+__ptext19 3CFC 0 CODE 0 text19 dist/default/debug/lcd.X.debug.obj
+__ptext20 37A4 0 CODE 0 text20 dist/default/debug/lcd.X.debug.obj
+__ptext21 3736 0 CODE 0 text21 dist/default/debug/lcd.X.debug.obj
+__ptext22 3ED6 0 CODE 0 text22 dist/default/debug/lcd.X.debug.obj
+__ptext23 37F6 0 CODE 0 text23 dist/default/debug/lcd.X.debug.obj
+__ptext24 3E28 0 CODE 0 text24 dist/default/debug/lcd.X.debug.obj
+__ptext25 532C 0 CODE 0 text25 dist/default/debug/lcd.X.debug.obj
+__ptext26 382E 0 CODE 0 text26 dist/default/debug/lcd.X.debug.obj
+__ptext27 3D8C 0 CODE 0 text27 dist/default/debug/lcd.X.debug.obj
+__ptext28 3BE8 0 CODE 0 text28 dist/default/debug/lcd.X.debug.obj
+__ptext29 38EA 0 CODE 0 text29 dist/default/debug/lcd.X.debug.obj
+__ptext30 36F2 0 CODE 0 text30 dist/default/debug/lcd.X.debug.obj
+__ptext31 3712 0 CODE 0 text31 dist/default/debug/lcd.X.debug.obj
+__ptext32 3C6C 0 CODE 0 text32 dist/default/debug/lcd.X.debug.obj
+__ptext33 4E6C 0 CODE 0 text33 dist/default/debug/lcd.X.debug.obj
+__ptext34 377E 0 CODE 0 text34 dist/default/debug/lcd.X.debug.obj
+__ptext35 39DC 0 CODE 0 text35 dist/default/debug/lcd.X.debug.obj
+__ptext36 3934 0 CODE 0 text36 dist/default/debug/lcd.X.debug.obj
+__ptext37 36C4 0 CODE 0 text37 dist/default/debug/lcd.X.debug.obj
+__ptext38 3984 0 CODE 0 text38 dist/default/debug/lcd.X.debug.obj
+__ptext39 36AA 0 CODE 0 text39 dist/default/debug/lcd.X.debug.obj
+__ptext40 36B6 0 CODE 0 text40 dist/default/debug/lcd.X.debug.obj
+___awdiv 3BE8 0 CODE 0 text28 dist/default/debug/lcd.X.debug.obj
+___awmod 3AF6 0 CODE 0 text9 dist/default/debug/lcd.X.debug.obj
+___ftadd 468A 0 CODE 0 text17 dist/default/debug/lcd.X.debug.obj
+___ftdiv 3ED6 0 CODE 0 text22 dist/default/debug/lcd.X.debug.obj
+___ftmul 40B0 0 CODE 0 text8 dist/default/debug/lcd.X.debug.obj
+___ftneg 375A 0 CODE 0 text18 dist/default/debug/lcd.X.debug.obj
+___ftsub 3868 0 CODE 0 text16 dist/default/debug/lcd.X.debug.obj
+___fttol 3FBC 0 CODE 0 text15 dist/default/debug/lcd.X.debug.obj
+__tdiv_to_l_ 42CC 0 CODE 0 text10 dist/default/debug/lcd.X.debug.obj
+___lldiv 3B66 0 CODE 0 text14 dist/default/debug/lcd.X.debug.obj
+___llmod 3A90 0 CODE 0 text13 dist/default/debug/lcd.X.debug.obj
+strlen@cp 5 0 COMRAM 1 cstackCOMRAM dist/default/debug/lcd.X.debug.obj
+__Lbigbss 0 0 BIGRAM 1 bigbss dist/default/debug/lcd.X.debug.obj
+__Lbigram 0 0 ABS 0 bigram dist/default/debug/lcd.X.debug.obj
+_pixels 3FF 0 BIGRAM 1 bssBIGRAM dist/default/debug/lcd.X.debug.obj
+__Lcomram 0 0 ABS 0 comram dist/default/debug/lcd.X.debug.obj
+__Lconfig 300000 0 CONFIG 0 config dist/default/debug/lcd.X.debug.obj
+?___ftpack 1 0 COMRAM 1 cstackCOMRAM dist/default/debug/lcd.X.debug.obj
+LCDstring@dim 33 0 COMRAM 1 cstackCOMRAM dist/default/debug/lcd.X.debug.obj
+_LCDchar 4E6C 0 CODE 0 text33 dist/default/debug/lcd.X.debug.obj
+_LCDinit 38EA 0 CODE 0 text29 dist/default/debug/lcd.X.debug.obj
+_LCDpage 3934 0 CODE 0 text36 dist/default/debug/lcd.X.debug.obj
+___wmul@multiplier F 0 COMRAM 1 cstackCOMRAM dist/default/debug/lcd.X.debug.obj
+_LATCbits F8B 0 ABS 0 - dist/default/debug/lcd.X.debug.obj
+_LATEbits F8D 0 ABS 0 - dist/default/debug/lcd.X.debug.obj
+__size_of_fround 0 0 ABS 0 - dist/default/debug/lcd.X.debug.obj
+_LCDstring 532C 0 CODE 0 text25 dist/default/debug/lcd.X.debug.obj
+LCDy@value 5 0 COMRAM 1 cstackCOMRAM dist/default/debug/lcd.X.debug.obj
+main@buf2 B6 0 BANK0 1 cstackBANK0 dist/default/debug/lcd.X.debug.obj
+main@data 100 0 BANK1 1 cstackBANK1 dist/default/debug/lcd.X.debug.obj
+main@old1 B0 0 BANK0 1 cstackBANK0 dist/default/debug/lcd.X.debug.obj
+main@old2 B3 0 BANK0 1 cstackBANK0 dist/default/debug/lcd.X.debug.obj
+__Lfarbss 0 0 FARRAM 0 farbss dist/default/debug/lcd.X.debug.obj
+main@val1 23E 0 BANK2 1 cstackBANK2 dist/default/debug/lcd.X.debug.obj
+main@val2 E9 0 BANK0 1 cstackBANK0 dist/default/debug/lcd.X.debug.obj
+main@a_348 222 0 BANK2 1 cstackBANK2 dist/default/debug/lcd.X.debug.obj
+main@a_351 224 0 BANK2 1 cstackBANK2 dist/default/debug/lcd.X.debug.obj
+main@a_359 22A 0 BANK2 1 cstackBANK2 dist/default/debug/lcd.X.debug.obj
+main@a_365 226 0 BANK2 1 cstackBANK2 dist/default/debug/lcd.X.debug.obj
+main@a_368 228 0 BANK2 1 cstackBANK2 dist/default/debug/lcd.X.debug.obj
+main@count 5C 0 COMRAM 1 cstackCOMRAM dist/default/debug/lcd.X.debug.obj
+main@delta 200 0 BANK2 1 cstackBANK2 dist/default/debug/lcd.X.debug.obj
+main@i_353 210 0 BANK2 1 cstackBANK2 dist/default/debug/lcd.X.debug.obj
+main@i_366 216 0 BANK2 1 cstackBANK2 dist/default/debug/lcd.X.debug.obj
+main@i_369 218 0 BANK2 1 cstackBANK2 dist/default/debug/lcd.X.debug.obj
+main@i_377 21A 0 BANK2 1 cstackBANK2 dist/default/debug/lcd.X.debug.obj
+main@i_388 22C 0 BANK2 1 cstackBANK2 dist/default/debug/lcd.X.debug.obj
+main@i_398 FE 0 BANK0 1 cstackBANK0 dist/default/debug/lcd.X.debug.obj
+main@max_y E8 0 BANK0 1 cstackBANK0 dist/default/debug/lcd.X.debug.obj
+main@min_y E7 0 BANK0 1 cstackBANK0 dist/default/debug/lcd.X.debug.obj
+_strcat 38A8 0 CODE 0 text3 dist/default/debug/lcd.X.debug.obj
+_strlen 382E 0 CODE 0 text26 dist/default/debug/lcd.X.debug.obj
+main@s_val F4 0 BANK0 1 cstackBANK0 dist/default/debug/lcd.X.debug.obj
+__Lfardata 0 0 FARRAM 0 fardata dist/default/debug/lcd.X.debug.obj
+main@y_352 DF 0 BANK0 1 cstackBANK0 dist/default/debug/lcd.X.debug.obj
+main@y_360 EC 0 BANK0 1 cstackBANK0 dist/default/debug/lcd.X.debug.obj
+main@y_364 E1 0 BANK0 1 cstackBANK0 dist/default/debug/lcd.X.debug.obj
+main@y_367 E3 0 BANK0 1 cstackBANK0 dist/default/debug/lcd.X.debug.obj
+main@y_393 208 0 BANK2 1 cstackBANK2 dist/default/debug/lcd.X.debug.obj
+main@y_div 21C 0 BANK2 1 cstackBANK2 dist/default/debug/lcd.X.debug.obj
+lcdplotpixel2@x 1E 0 COMRAM 1 cstackCOMRAM dist/default/debug/lcd.X.debug.obj
+___lwtoft@c 9 0 COMRAM 1 cstackCOMRAM dist/default/debug/lcd.X.debug.obj
+stackhi 3FE 0 ABS 0 - /tmp/xcXJfpqUK.obj
+stacklo 249 0 ABS 0 - /tmp/xcXJfpqUK.obj
+__Lintcode 0 0 CODE 0 intcode dist/default/debug/lcd.X.debug.obj
+?___lltoft 9 0 COMRAM 1 cstackCOMRAM dist/default/debug/lcd.X.debug.obj
+__Lintret 0 0 ABS 0 intret dist/default/debug/lcd.X.debug.obj
+LCDchar@position 15 0 COMRAM 1 cstackCOMRAM dist/default/debug/lcd.X.debug.obj
+__lcd_status 3984 0 CODE 0 text38 dist/default/debug/lcd.X.debug.obj
+__Lirdata 0 0 CODE 0 irdata dist/default/debug/lcd.X.debug.obj
+?___lwtoft 9 0 COMRAM 1 cstackCOMRAM dist/default/debug/lcd.X.debug.obj
+_ADCON0bits FC2 0 ABS 0 - dist/default/debug/lcd.X.debug.obj
+_ADCON1bits FC1 0 ABS 0 - dist/default/debug/lcd.X.debug.obj
+_ADCON2bits FC0 0 ABS 0 - dist/default/debug/lcd.X.debug.obj
+__CFG_LVP$OFF 0 0 ABS 0 - dist/default/debug/lcd.X.debug.obj
+__div_to_l_ 41A4 0 CODE 0 text11 dist/default/debug/lcd.X.debug.obj
+__pbssBIGRAM 3FF 0 BIGRAM 1 bssBIGRAM dist/default/debug/lcd.X.debug.obj
+__size_of__lcd_waitbusy 0 0 ABS 0 - dist/default/debug/lcd.X.debug.obj
+__Lspace_0 0 0 ABS 0 - dist/default/debug/lcd.X.debug.obj
+__Lspace_1 0 0 ABS 0 - dist/default/debug/lcd.X.debug.obj
+__Lspace_2 0 0 ABS 0 - dist/default/debug/lcd.X.debug.obj
+main@y1 5E 0 COMRAM 1 cstackCOMRAM dist/default/debug/lcd.X.debug.obj
+main@y2 DB 0 BANK0 1 cstackBANK0 dist/default/debug/lcd.X.debug.obj
+___ftmul@cntr 26 0 COMRAM 1 cstackCOMRAM dist/default/debug/lcd.X.debug.obj
+___ftmul@sign 27 0 COMRAM 1 cstackCOMRAM dist/default/debug/lcd.X.debug.obj
+main@cur1_x 234 0 BANK2 1 cstackBANK2 dist/default/debug/lcd.X.debug.obj
+main@cur1_y 230 0 BANK2 1 cstackBANK2 dist/default/debug/lcd.X.debug.obj
+main@cur2_x 236 0 BANK2 1 cstackBANK2 dist/default/debug/lcd.X.debug.obj
+main@cur2_y 232 0 BANK2 1 cstackBANK2 dist/default/debug/lcd.X.debug.obj
+_xyaxis 453E 0 CODE 0 text1 dist/default/debug/lcd.X.debug.obj
+__HcstackBANK0 0 0 ABS 0 cstackBANK0 dist/default/debug/lcd.X.debug.obj
+__HcstackBANK1 0 0 ABS 0 cstackBANK1 dist/default/debug/lcd.X.debug.obj
+__HcstackBANK2 0 0 ABS 0 cstackBANK2 dist/default/debug/lcd.X.debug.obj
+__Lend_init 0 0 CODE 0 end_init dist/default/debug/lcd.X.debug.obj
+__LcstackCOMRAM 0 0 ABS 0 cstackCOMRAM dist/default/debug/lcd.X.debug.obj
+__div_to_l_@f1 1 0 COMRAM 1 cstackCOMRAM dist/default/debug/lcd.X.debug.obj
+__div_to_l_@f2 4 0 COMRAM 1 cstackCOMRAM dist/default/debug/lcd.X.debug.obj
+end_of_initialization 37EC 0 CODE 0 cinit dist/default/debug/lcd.X.debug.obj
+main@freeze E5 0 BANK0 1 cstackBANK0 dist/default/debug/lcd.X.debug.obj
+__Lnvrram 0 0 COMRAM 1 nvrram dist/default/debug/lcd.X.debug.obj
+__Hintentry 0 0 ABS 0 intentry dist/default/debug/lcd.X.debug.obj
+LCDchar@a 1F 0 COMRAM 1 cstackCOMRAM dist/default/debug/lcd.X.debug.obj
+LCDchar@c 1B 0 COMRAM 1 cstackCOMRAM dist/default/debug/lcd.X.debug.obj
+LCDchar@k 1C 0 COMRAM 1 cstackCOMRAM dist/default/debug/lcd.X.debug.obj
+LCDchar@l 1E 0 COMRAM 1 cstackCOMRAM dist/default/debug/lcd.X.debug.obj
+___awdiv@quotient D 0 COMRAM 1 cstackCOMRAM dist/default/debug/lcd.X.debug.obj
+?___awdiv 7 0 COMRAM 1 cstackCOMRAM dist/default/debug/lcd.X.debug.obj
+?___awmod 1 0 COMRAM 1 cstackCOMRAM dist/default/debug/lcd.X.debug.obj
+?___ftadd 32 0 COMRAM 1 cstackCOMRAM dist/default/debug/lcd.X.debug.obj
+?___ftdiv 19 0 COMRAM 1 cstackCOMRAM dist/default/debug/lcd.X.debug.obj
+?___ftmul 19 0 COMRAM 1 cstackCOMRAM dist/default/debug/lcd.X.debug.obj
+?___ftneg 1 0 COMRAM 1 cstackCOMRAM dist/default/debug/lcd.X.debug.obj
+?___ftsub 3E 0 COMRAM 1 cstackCOMRAM dist/default/debug/lcd.X.debug.obj
+?___fttol 3E 0 COMRAM 1 cstackCOMRAM dist/default/debug/lcd.X.debug.obj
+?___lldiv 1 0 COMRAM 1 cstackCOMRAM dist/default/debug/lcd.X.debug.obj
+?___llmod E 0 COMRAM 1 cstackCOMRAM dist/default/debug/lcd.X.debug.obj
+__Hreset_vec 0 0 CODE 0 reset_vec dist/default/debug/lcd.X.debug.obj
+__HbssBANK2 0 0 ABS 0 bssBANK2 dist/default/debug/lcd.X.debug.obj
+___awmod@dividend 1 0 COMRAM 1 cstackCOMRAM dist/default/debug/lcd.X.debug.obj
+__Lramtop 800 0 RAM 0 ramtop dist/default/debug/lcd.X.debug.obj
+__size_of_strcat 0 0 ABS 0 - dist/default/debug/lcd.X.debug.obj
+__size_of_strlen 0 0 ABS 0 - dist/default/debug/lcd.X.debug.obj
+__Lrparam 0 0 COMRAM 1 rparam dist/default/debug/lcd.X.debug.obj
+__pcinit 37CC 0 CODE 0 cinit dist/default/debug/lcd.X.debug.obj
+___lltoft@exp 11 0 COMRAM 1 cstackCOMRAM dist/default/debug/lcd.X.debug.obj
+__ptext0 6380 0 CODE 0 text0 dist/default/debug/lcd.X.debug.obj
+__ptext1 453E 0 CODE 0 text1 dist/default/debug/lcd.X.debug.obj
+__ptext2 43FE 0 CODE 0 text2 dist/default/debug/lcd.X.debug.obj
+__ptext3 38A8 0 CODE 0 text3 dist/default/debug/lcd.X.debug.obj
+__ptext4 58B0 0 CODE 0 text4 dist/default/debug/lcd.X.debug.obj
+__ptext5 4A7C 0 CODE 0 text5 dist/default/debug/lcd.X.debug.obj
+__ptext6 36D4 0 CODE 0 text6 dist/default/debug/lcd.X.debug.obj
+__ptext7 4836 0 CODE 0 text7 dist/default/debug/lcd.X.debug.obj
+__ptext8 40B0 0 CODE 0 text8 dist/default/debug/lcd.X.debug.obj
+__ptext9 3AF6 0 CODE 0 text9 dist/default/debug/lcd.X.debug.obj
+__end_of__lcd_waitbusy 36D4 0 CODE 0 text37 dist/default/debug/lcd.X.debug.obj
+__Lstruct 0 0 COMRAM 1 struct dist/default/debug/lcd.X.debug.obj
+__Ltext10 0 0 ABS 0 text10 dist/default/debug/lcd.X.debug.obj
+__Ltext11 0 0 ABS 0 text11 dist/default/debug/lcd.X.debug.obj
+__Ltext12 0 0 ABS 0 text12 dist/default/debug/lcd.X.debug.obj
+__Ltext13 0 0 ABS 0 text13 dist/default/debug/lcd.X.debug.obj
+__Ltext14 0 0 ABS 0 text14 dist/default/debug/lcd.X.debug.obj
+__Ltext15 0 0 ABS 0 text15 dist/default/debug/lcd.X.debug.obj
+__Ltext16 0 0 ABS 0 text16 dist/default/debug/lcd.X.debug.obj
+__Ltext17 0 0 ABS 0 text17 dist/default/debug/lcd.X.debug.obj
+__Ltext18 0 0 ABS 0 text18 dist/default/debug/lcd.X.debug.obj
+__Ltext19 0 0 ABS 0 text19 dist/default/debug/lcd.X.debug.obj
+__Ltext20 0 0 ABS 0 text20 dist/default/debug/lcd.X.debug.obj
+__Ltext21 0 0 ABS 0 text21 dist/default/debug/lcd.X.debug.obj
+__Ltext22 0 0 ABS 0 text22 dist/default/debug/lcd.X.debug.obj
+__Ltext23 0 0 ABS 0 text23 dist/default/debug/lcd.X.debug.obj
+__Ltext24 0 0 ABS 0 text24 dist/default/debug/lcd.X.debug.obj
+__Ltext25 0 0 ABS 0 text25 dist/default/debug/lcd.X.debug.obj
+__Ltext26 0 0 ABS 0 text26 dist/default/debug/lcd.X.debug.obj
+__Ltext27 0 0 ABS 0 text27 dist/default/debug/lcd.X.debug.obj
+__Ltext28 0 0 ABS 0 text28 dist/default/debug/lcd.X.debug.obj
+__Ltext29 0 0 ABS 0 text29 dist/default/debug/lcd.X.debug.obj
+__Ltext30 0 0 ABS 0 text30 dist/default/debug/lcd.X.debug.obj
+__Ltext31 0 0 ABS 0 text31 dist/default/debug/lcd.X.debug.obj
+__Ltext32 0 0 ABS 0 text32 dist/default/debug/lcd.X.debug.obj
+__Ltext33 0 0 ABS 0 text33 dist/default/debug/lcd.X.debug.obj
+__Ltext34 0 0 ABS 0 text34 dist/default/debug/lcd.X.debug.obj
+__Ltext35 0 0 ABS 0 text35 dist/default/debug/lcd.X.debug.obj
+__Ltext36 0 0 ABS 0 text36 dist/default/debug/lcd.X.debug.obj
+__Ltext37 0 0 ABS 0 text37 dist/default/debug/lcd.X.debug.obj
+__Ltext38 0 0 ABS 0 text38 dist/default/debug/lcd.X.debug.obj
+__Ltext39 0 0 ABS 0 text39 dist/default/debug/lcd.X.debug.obj
+__Ltext40 0 0 ABS 0 text40 dist/default/debug/lcd.X.debug.obj
+__ramtop 800 0 RAM 0 ramtop /tmp/xcXJfpqUK.obj
+_sprintf 58B0 0 CODE 0 text4 dist/default/debug/lcd.X.debug.obj
+LCDinit@i 28 0 COMRAM 1 cstackCOMRAM dist/default/debug/lcd.X.debug.obj
+__Lpowerup 0 0 CODE 0 powerup dist/default/debug/lcd.X.debug.obj
+__Leeprom_data 0 0 EEDATA 0 eeprom_data dist/default/debug/lcd.X.debug.obj
+sprintf@ap 63 0 BANK0 1 cstackBANK0 dist/default/debug/lcd.X.debug.obj
+sprintf@sp 4D 0 COMRAM 1 cstackCOMRAM dist/default/debug/lcd.X.debug.obj
+_isdigit 36D4 0 CODE 0 text6 dist/default/debug/lcd.X.debug.obj
+__size_of_xyaxis 0 0 ABS 0 - dist/default/debug/lcd.X.debug.obj
+__Lreset_vec 0 0 CODE 0 reset_vec dist/default/debug/lcd.X.debug.obj
+scale@scl 2E 0 COMRAM 1 cstackCOMRAM dist/default/debug/lcd.X.debug.obj
+__CFG_FOSC$HS 0 0 ABS 0 - dist/default/debug/lcd.X.debug.obj
+_lcdplotpixel2 43FE 0 CODE 0 text2 dist/default/debug/lcd.X.debug.obj
+__end_of__div_to_l_ 42CC 0 CODE 0 text11 dist/default/debug/lcd.X.debug.obj
+___param_bank 10 0 ABS 0 - dist/default/debug/lcd.X.debug.obj
+__CFG_WDT$OFF 0 0 ABS 0 - dist/default/debug/lcd.X.debug.obj
+__Hbigdata 0 0 BIGRAM 1 bigdata dist/default/debug/lcd.X.debug.obj
+___ftmul@exp 22 0 COMRAM 1 cstackCOMRAM dist/default/debug/lcd.X.debug.obj
+__end_of__initialization 37EC 0 CODE 0 cinit dist/default/debug/lcd.X.debug.obj
+___awmod@divisor 3 0 COMRAM 1 cstackCOMRAM dist/default/debug/lcd.X.debug.obj
+__Libigdata 0 0 CODE 0 ibigdata dist/default/debug/lcd.X.debug.obj
+__size_of_emptycolumn 0 0 ABS 0 - dist/default/debug/lcd.X.debug.obj
+?_scale 28 0 COMRAM 1 cstackCOMRAM dist/default/debug/lcd.X.debug.obj
+__Lclrtext 0 0 ABS 0 clrtext dist/default/debug/lcd.X.debug.obj
+___ftpack@sign 5 0 COMRAM 1 cstackCOMRAM dist/default/debug/lcd.X.debug.obj
+sprintf@tmpval 6D 0 BANK0 1 cstackBANK0 dist/default/debug/lcd.X.debug.obj
+___lldiv@quotient 9 0 COMRAM 1 cstackCOMRAM dist/default/debug/lcd.X.debug.obj
+__pcstackCOMRAM 1 0 COMRAM 1 cstackCOMRAM dist/default/debug/lcd.X.debug.obj
+___ftdiv@cntr 22 0 COMRAM 1 cstackCOMRAM dist/default/debug/lcd.X.debug.obj
+___ftdiv@sign 27 0 COMRAM 1 cstackCOMRAM dist/default/debug/lcd.X.debug.obj
+__pmediumconst 7942 0 MEDIUMCONST 0 mediumconst dist/default/debug/lcd.X.debug.obj
+__Hend_init 4 0 CODE 0 end_init dist/default/debug/lcd.X.debug.obj
+___llmod@dividend E 0 COMRAM 1 cstackCOMRAM dist/default/debug/lcd.X.debug.obj
+___llmod@counter 16 0 COMRAM 1 cstackCOMRAM dist/default/debug/lcd.X.debug.obj
+sprintf@c 78 0 BANK0 1 cstackBANK0 dist/default/debug/lcd.X.debug.obj
+sprintf@f 4F 0 COMRAM 1 cstackCOMRAM dist/default/debug/lcd.X.debug.obj
+__end_of_LCDy 3A34 0 CODE 0 text35 dist/default/debug/lcd.X.debug.obj
+__end_of_main 7942 0 CODE 0 text0 dist/default/debug/lcd.X.debug.obj
+isdigit@c 3 0 COMRAM 1 cstackCOMRAM dist/default/debug/lcd.X.debug.obj
+__end_of_LCDon 3736 0 CODE 0 text31 dist/default/debug/lcd.X.debug.obj
+__end_of_dpowers 7F55 0 MEDIUMCONST 0 mediumconst dist/default/debug/lcd.X.debug.obj
+_LCDon 3712 0 CODE 0 text31 dist/default/debug/lcd.X.debug.obj
+?_sprintf 4D 0 COMRAM 1 cstackCOMRAM dist/default/debug/lcd.X.debug.obj
+__end_of_image 7D43 0 MEDIUMCONST 0 mediumconst dist/default/debug/lcd.X.debug.obj
+_PORTC F82 0 ABS 0 - dist/default/debug/lcd.X.debug.obj
+_PORTD F83 0 ABS 0 - dist/default/debug/lcd.X.debug.obj
+_PORTE F84 0 ABS 0 - dist/default/debug/lcd.X.debug.obj
+_TRISA F92 0 ABS 0 - dist/default/debug/lcd.X.debug.obj
+_TRISB F93 0 ABS 0 - dist/default/debug/lcd.X.debug.obj
+_TRISC F94 0 ABS 0 - dist/default/debug/lcd.X.debug.obj
+_TRISD F95 0 ABS 0 - dist/default/debug/lcd.X.debug.obj
+_TRISE F96 0 ABS 0 - dist/default/debug/lcd.X.debug.obj
+__end_of_scale 4E6C 0 CODE 0 text5 dist/default/debug/lcd.X.debug.obj
+__HRAM 0 0 ABS 0 - dist/default/debug/lcd.X.debug.obj
+__Hbss 0 0 RAM 1 bss dist/default/debug/lcd.X.debug.obj
+__Hram 0 0 ABS 0 ram dist/default/debug/lcd.X.debug.obj
+__Hsfr 0 0 ABS 0 sfr dist/default/debug/lcd.X.debug.obj
+__LRAM 1 0 ABS 0 - dist/default/debug/lcd.X.debug.obj
+__Lbss 0 0 RAM 1 bss dist/default/debug/lcd.X.debug.obj
+__Lram 0 0 ABS 0 ram dist/default/debug/lcd.X.debug.obj
+__Lsfr 0 0 ABS 0 sfr dist/default/debug/lcd.X.debug.obj
+_image 7943 0 MEDIUMCONST 0 mediumconst dist/default/debug/lcd.X.debug.obj
+LCDy@side 6 0 COMRAM 1 cstackCOMRAM dist/default/debug/lcd.X.debug.obj
+_scale 4A7C 0 CODE 0 text5 dist/default/debug/lcd.X.debug.obj
+_fround$1212 2E 0 COMRAM 1 cstackCOMRAM dist/default/debug/lcd.X.debug.obj
+_fround$1213 2B 0 COMRAM 1 cstackCOMRAM dist/default/debug/lcd.X.debug.obj
+___fttol@sign1 47 0 COMRAM 1 cstackCOMRAM dist/default/debug/lcd.X.debug.obj
+sprintf@width 6B 0 BANK0 1 cstackBANK0 dist/default/debug/lcd.X.debug.obj
+__size_of_abs 0 0 ABS 0 - dist/default/debug/lcd.X.debug.obj
+__initialization 37CC 0 CODE 0 cinit dist/default/debug/lcd.X.debug.obj
+__end_of__lcd_enable 36C4 0 CODE 0 text40 dist/default/debug/lcd.X.debug.obj
+__pbssBANK2 241 0 BANK2 1 bssBANK2 dist/default/debug/lcd.X.debug.obj
+LCDstring@mem1 2F 0 COMRAM 1 cstackCOMRAM dist/default/debug/lcd.X.debug.obj
+LCDstring@mem2 28 0 COMRAM 1 cstackCOMRAM dist/default/debug/lcd.X.debug.obj
+__Hfardata 0 0 FARRAM 0 fardata dist/default/debug/lcd.X.debug.obj
+___wmul@product 13 0 COMRAM 1 cstackCOMRAM dist/default/debug/lcd.X.debug.obj
+__Hsmallconst 0 0 SMALLCONST 0 smallconst dist/default/debug/lcd.X.debug.obj
+__Lifardata 0 0 CODE 0 ifardata dist/default/debug/lcd.X.debug.obj
+__size_of_LCDclear 0 0 ABS 0 - dist/default/debug/lcd.X.debug.obj
+__div_to_l_@cntr B 0 COMRAM 1 cstackCOMRAM dist/default/debug/lcd.X.debug.obj
+__div_to_l_@exp1 C 0 COMRAM 1 cstackCOMRAM dist/default/debug/lcd.X.debug.obj
+__div_to_l_@quot 7 0 COMRAM 1 cstackCOMRAM dist/default/debug/lcd.X.debug.obj
+__size_of_LCDreset 0 0 ABS 0 - dist/default/debug/lcd.X.debug.obj
+_char_index 241 0 BANK2 1 bssBANK2 dist/default/debug/lcd.X.debug.obj
+__Hintsave_regs 0 0 BIGRAM 1 intsave_regs dist/default/debug/lcd.X.debug.obj
+__Hintcode 0 0 CODE 0 intcode dist/default/debug/lcd.X.debug.obj
+___ftmul@f3_as_product 23 0 COMRAM 1 cstackCOMRAM dist/default/debug/lcd.X.debug.obj
+LCDstring@buffer 21 0 COMRAM 1 cstackCOMRAM dist/default/debug/lcd.X.debug.obj
+# %SPLITSTAB Section
+# This section enumerates all the psect splits performed by the assembler.
+# The beginning of the section is indicated by %SPLITSTAB.
+# Each line is a record a particular split, where the parent psect is on
+# the left and the child on the right.  Note that a child psect is always
+# split form the top of the parent psect. All splits from a given parent
+# are listed in the order in which they occurred.
+%SPLITSTAB
+# %DABS Section
+# This section contains a table of all usuage of the assember
+# directive DABS in the program. Each line has the following format:
+#   <name> <space> <address> <size>
+# If the DABS was originally labelled then that shall be <name>,
+# otherwise name will be "-".  The <space> number is in decimal.
+# <address> and <size> are in byte units as unqaulified hexadecimal
+%DABS
+# %SEGMENTS Section
+# This sections enumerates the segments of the program.  Each segment
+# is described on a single line as follows:
+#    <name> <space> <link address> <file address> <size> <delta>
+# Addresses and size are in unqualified hexadecimal.  The link address
+# and size are in units of delta. The file address is in units of bytes.
+# All other numeric quantities are in decimal.
+%SEGMENTS
+cinit 0 37CC 37CC 2A 1
+idloc 0 200000 200000 8 1
+text0 0 6380 6380 15C2 1
+text1 0 453E 453E 14C 1
+text2 0 43FE 43FE 140 1
+text3 0 38A8 38A8 42 1
+text4 0 58B0 58B0 AD0 1
+text5 0 4A7C 4A7C 3F0 1
+text6 0 36D4 36D4 1E 1
+text7 0 4836 4836 246 1
+text8 0 40B0 40B0 F4 1
+text9 0 3AF6 3AF6 70 1
+text10 0 42CC 42CC 132 1
+text11 0 41A4 41A4 128 1
+text12 0 3A34 3A34 5C 1
+text13 0 3A90 3A90 66 1
+text14 0 3B66 3B66 82 1
+text15 0 3FBC 3FBC F4 1
+text16 0 3868 3868 40 1
+text17 0 468A 468A 1AC 1
+text18 0 375A 375A 24 1
+text19 0 3CFC 3CFC 90 1
+text20 0 37A4 37A4 28 1
+text21 0 3736 3736 24 1
+text22 0 3ED6 3ED6 E6 1
+text23 0 37F6 37F6 38 1
+text24 0 3E28 3E28 AE 1
+text25 0 532C 532C 584 1
+text26 0 382E 382E 3A 1
+text27 0 3D8C 3D8C 9C 1
+text28 0 3BE8 3BE8 84 1
+text29 0 38EA 38EA 4A 1
+text30 0 36F2 36F2 20 1
+text31 0 3712 3712 24 1
+text32 0 3C6C 3C6C 90 1
+text33 0 4E6C 4E6C 4C0 1
+text34 0 377E 377E 26 1
+text35 0 39DC 39DC 58 1
+text36 0 3934 3934 50 1
+text37 0 36C4 36C4 10 1
+text38 0 3984 3984 58 1
+text39 0 36AA 36AA C 1
+text40 0 36B6 36B6 E 1
+cstackCOMRAM 1 1 1 5F 1
+cstackBANK0 1 60 60 A0 1
+cstackBANK1 1 100 100 100 1
+cstackBANK2 1 200 200 49 1
+reset_vec 0 0 0 4 1
+bssBIGRAM 1 3FF 3FF 401 1
+mediumconst 0 7942 7942 6BE 1
+config 0 300000 300000 E 1
