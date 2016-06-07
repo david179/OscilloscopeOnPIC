@@ -63,7 +63,7 @@ bssBANK2 BANK2 1 229 229 2 1
 bssBIGRAM BIGRAM 1 3FF 3FF 401 1
 bssCOMRAM COMRAM 1 5C 5C 4 1
 mediumconst MEDIUMCONST 0 795A 795A 6A6 1
-$/tmp/xcXEhM6Q2.obj
+$/tmp/xcXxla6kZ.obj
 idloc IDLOC 0 200000 200000 8 1
 end_init CODE 0 0 0 4 1
 config CONFIG 0 300000 300000 E 1
@@ -1081,30 +1081,30 @@ $bin/lcd.X.production.obj
 7934 text0 CODE >563:/home/david/Documents/college/lab informatica/TSINA/kmk/Oscilloscope/src/main.c
 7942 text0 CODE >561:/home/david/Documents/college/lab informatica/TSINA/kmk/Oscilloscope/src/main.c
 7956 text0 CODE >184:/home/david/Documents/college/lab informatica/TSINA/kmk/Oscilloscope/src/main.c
-39A8 cinit CODE >2716:/tmp/xcXEf7byV
-39A8 cinit CODE >2718:/tmp/xcXEf7byV
-39A8 cinit CODE >2721:/tmp/xcXEf7byV
-39A8 cinit CODE >2744:/tmp/xcXEf7byV
-39AC cinit CODE >2745:/tmp/xcXEf7byV
-39B0 cinit CODE >2746:/tmp/xcXEf7byV
-39B0 cinit CODE >2747:/tmp/xcXEf7byV
-39B2 cinit CODE >2748:/tmp/xcXEf7byV
-39B4 cinit CODE >2749:/tmp/xcXEf7byV
-39B6 cinit CODE >2750:/tmp/xcXEf7byV
-39B8 cinit CODE >2751:/tmp/xcXEf7byV
-39BA cinit CODE >2752:/tmp/xcXEf7byV
-39BC cinit CODE >2755:/tmp/xcXEf7byV
-39BE cinit CODE >2756:/tmp/xcXEf7byV
-39C0 cinit CODE >2757:/tmp/xcXEf7byV
-39C2 cinit CODE >2760:/tmp/xcXEf7byV
-39C4 cinit CODE >2761:/tmp/xcXEf7byV
-39C6 cinit CODE >2762:/tmp/xcXEf7byV
-39C8 cinit CODE >2763:/tmp/xcXEf7byV
-39CA cinit CODE >2769:/tmp/xcXEf7byV
-39CA cinit CODE >2772:/tmp/xcXEf7byV
-39CC cinit CODE >2773:/tmp/xcXEf7byV
-39CE cinit CODE >2774:/tmp/xcXEf7byV
-39D0 cinit CODE >2775:/tmp/xcXEf7byV
+39A8 cinit CODE >2716:/tmp/xcXLHAkwc
+39A8 cinit CODE >2718:/tmp/xcXLHAkwc
+39A8 cinit CODE >2721:/tmp/xcXLHAkwc
+39A8 cinit CODE >2744:/tmp/xcXLHAkwc
+39AC cinit CODE >2745:/tmp/xcXLHAkwc
+39B0 cinit CODE >2746:/tmp/xcXLHAkwc
+39B0 cinit CODE >2747:/tmp/xcXLHAkwc
+39B2 cinit CODE >2748:/tmp/xcXLHAkwc
+39B4 cinit CODE >2749:/tmp/xcXLHAkwc
+39B6 cinit CODE >2750:/tmp/xcXLHAkwc
+39B8 cinit CODE >2751:/tmp/xcXLHAkwc
+39BA cinit CODE >2752:/tmp/xcXLHAkwc
+39BC cinit CODE >2755:/tmp/xcXLHAkwc
+39BE cinit CODE >2756:/tmp/xcXLHAkwc
+39C0 cinit CODE >2757:/tmp/xcXLHAkwc
+39C2 cinit CODE >2760:/tmp/xcXLHAkwc
+39C4 cinit CODE >2761:/tmp/xcXLHAkwc
+39C6 cinit CODE >2762:/tmp/xcXLHAkwc
+39C8 cinit CODE >2763:/tmp/xcXLHAkwc
+39CA cinit CODE >2769:/tmp/xcXLHAkwc
+39CA cinit CODE >2772:/tmp/xcXLHAkwc
+39CC cinit CODE >2773:/tmp/xcXLHAkwc
+39CE cinit CODE >2774:/tmp/xcXLHAkwc
+39D0 cinit CODE >2775:/tmp/xcXLHAkwc
 # %SYMTAB Section
 # An enumeration of all symbols in the program.
 # The beginning of the section is indicated by %SYMTAB.
@@ -1127,7 +1127,7 @@ __end_of__tdiv_to_l_ 45BA 0 CODE 0 text11 bin/lcd.X.production.obj
 __size_of_lcdplotpixel2 0 0 ABS 0 - bin/lcd.X.production.obj
 ___ftdiv@exp 26 0 COMRAM 1 cstackCOMRAM bin/lcd.X.production.obj
 __Hibigdata 0 0 CODE 0 ibigdata bin/lcd.X.production.obj
-__mediumconst 795A 0 MEDIUMCONST 0 mediumconst /tmp/xcXEhM6Q2.obj
+__mediumconst 795A 0 MEDIUMCONST 0 mediumconst /tmp/xcXxla6kZ.obj
 ___awtoft@sign 18 0 COMRAM 1 cstackCOMRAM bin/lcd.X.production.obj
 __Heeprom_data 0 0 EEDATA 0 eeprom_data bin/lcd.X.production.obj
 main@s_time_pot_348 D4 0 BANK0 1 cstackBANK0 bin/lcd.X.production.obj
@@ -1141,7 +1141,7 @@ __Lsmallconst 0 0 SMALLCONST 0 smallconst bin/lcd.X.production.obj
 main@buf_344 B6 0 BANK0 1 cstackBANK0 bin/lcd.X.production.obj
 main@buf_360 9F 0 BANK0 1 cstackBANK0 bin/lcd.X.production.obj
 _LCDy 3BB4 0 CODE 0 text36 bin/lcd.X.production.obj
-___sp 0 0 STACK 2 stack /tmp/xcXEhM6Q2.obj
+___sp 0 0 STACK 2 stack /tmp/xcXxla6kZ.obj
 _main 63EE 0 CODE 0 text0 bin/lcd.X.production.obj
 abs@a 1 0 COMRAM 1 cstackCOMRAM bin/lcd.X.production.obj
 write_image@i_567 26 0 COMRAM 1 cstackCOMRAM bin/lcd.X.production.obj
@@ -1153,7 +1153,7 @@ ___ftadd@f1 32 0 COMRAM 1 cstackCOMRAM bin/lcd.X.production.obj
 ___ftadd@f2 35 0 COMRAM 1 cstackCOMRAM bin/lcd.X.production.obj
 __HbssBIGRAM 0 0 ABS 0 bssBIGRAM bin/lcd.X.production.obj
 LCDchar@tmp 2A 0 COMRAM 1 cstackCOMRAM bin/lcd.X.production.obj
-start 0 0 CODE 0 init /tmp/xcXEhM6Q2.obj
+start 0 0 CODE 0 init /tmp/xcXxla6kZ.obj
 __size_of___awdiv 0 0 ABS 0 - bin/lcd.X.production.obj
 __size_of___awmod 0 0 ABS 0 - bin/lcd.X.production.obj
 __size_of___ftadd 0 0 ABS 0 - bin/lcd.X.production.obj
@@ -1190,11 +1190,11 @@ ___ftge@ff2 4 0 COMRAM 1 cstackCOMRAM bin/lcd.X.production.obj
 __end_of__npowers_ 7B85 0 MEDIUMCONST 0 mediumconst bin/lcd.X.production.obj
 __LbssBIGRAM 0 0 ABS 0 bssBIGRAM bin/lcd.X.production.obj
 _sprintf$1201 60 0 BANK0 1 cstackBANK0 bin/lcd.X.production.obj
-__accesstop 60 0 ABS 0 - /tmp/xcXEhM6Q2.obj
-intlevel0 0 0 CODE 0 text /tmp/xcXEhM6Q2.obj
-intlevel1 0 0 CODE 0 text /tmp/xcXEhM6Q2.obj
-intlevel2 0 0 CODE 0 text /tmp/xcXEhM6Q2.obj
-intlevel3 0 0 CODE 0 text /tmp/xcXEhM6Q2.obj
+__accesstop 60 0 ABS 0 - /tmp/xcXxla6kZ.obj
+intlevel0 0 0 CODE 0 text /tmp/xcXxla6kZ.obj
+intlevel1 0 0 CODE 0 text /tmp/xcXxla6kZ.obj
+intlevel2 0 0 CODE 0 text /tmp/xcXxla6kZ.obj
+intlevel3 0 0 CODE 0 text /tmp/xcXxla6kZ.obj
 __end_of_LCDclear 3F54 0 CODE 0 text33 bin/lcd.X.production.obj
 __LbssCOMRAM 0 0 ABS 0 bssCOMRAM bin/lcd.X.production.obj
 __size_of__div_to_l_ 0 0 ABS 0 - bin/lcd.X.production.obj
@@ -1224,8 +1224,8 @@ _ADRESH FC4 0 ABS 0 - bin/lcd.X.production.obj
 _ADRESL FC3 0 ABS 0 - bin/lcd.X.production.obj
 _scale$1200 2B 0 COMRAM 1 cstackCOMRAM bin/lcd.X.production.obj
 ___awdiv@dividend 7 0 COMRAM 1 cstackCOMRAM bin/lcd.X.production.obj
-___inthi_sp 0 0 STACK 2 stack /tmp/xcXEhM6Q2.obj
-___intlo_sp 0 0 STACK 2 stack /tmp/xcXEhM6Q2.obj
+___inthi_sp 0 0 STACK 2 stack /tmp/xcXxla6kZ.obj
+___intlo_sp 0 0 STACK 2 stack /tmp/xcXxla6kZ.obj
 __size_of___awtoft 0 0 ABS 0 - bin/lcd.X.production.obj
 __Hintcode_body 0 0 ABS 0 intcode_body bin/lcd.X.production.obj
 __end_of___ftge 3FE4 0 CODE 0 text20 bin/lcd.X.production.obj
@@ -1339,7 +1339,7 @@ lcdplotpixel2@value 20 0 COMRAM 1 cstackCOMRAM bin/lcd.X.production.obj
 __Hbigbss 0 0 BIGRAM 1 bigbss bin/lcd.X.production.obj
 __Hbigram 0 0 ABS 0 bigram bin/lcd.X.production.obj
 LCDon@on 5 0 COMRAM 1 cstackCOMRAM bin/lcd.X.production.obj
-__smallconst 0 0 SMALLCONST 0 smallconst /tmp/xcXEhM6Q2.obj
+__smallconst 0 0 SMALLCONST 0 smallconst /tmp/xcXxla6kZ.obj
 __end_of_sprintf 63EE 0 CODE 0 text5 bin/lcd.X.production.obj
 ___lltoft 3C0A 0 CODE 0 text13 bin/lcd.X.production.obj
 __Hcomram 0 0 ABS 0 comram bin/lcd.X.production.obj
@@ -1584,8 +1584,8 @@ main@y_340 CA 0 BANK0 1 cstackBANK0 bin/lcd.X.production.obj
 main@y_359 F0 0 BANK0 1 cstackBANK0 bin/lcd.X.production.obj
 main@y_div 204 0 BANK2 1 cstackBANK2 bin/lcd.X.production.obj
 ___lwtoft@c 9 0 COMRAM 1 cstackCOMRAM bin/lcd.X.production.obj
-stackhi 3FE 0 ABS 0 - /tmp/xcXEhM6Q2.obj
-stacklo 22B 0 ABS 0 - /tmp/xcXEhM6Q2.obj
+stackhi 3FE 0 ABS 0 - /tmp/xcXxla6kZ.obj
+stacklo 22B 0 ABS 0 - /tmp/xcXxla6kZ.obj
 __Lintcode 0 0 CODE 0 intcode bin/lcd.X.production.obj
 ?___lltoft 9 0 COMRAM 1 cstackCOMRAM bin/lcd.X.production.obj
 __Lintret 0 0 ABS 0 intret bin/lcd.X.production.obj
@@ -1701,7 +1701,7 @@ __Ltext38 0 0 ABS 0 text38 bin/lcd.X.production.obj
 __Ltext39 0 0 ABS 0 text39 bin/lcd.X.production.obj
 __Ltext40 0 0 ABS 0 text40 bin/lcd.X.production.obj
 __Ltext41 0 0 ABS 0 text41 bin/lcd.X.production.obj
-__ramtop 800 0 RAM 0 ramtop /tmp/xcXEhM6Q2.obj
+__ramtop 800 0 RAM 0 ramtop /tmp/xcXxla6kZ.obj
 _sprintf 5C32 0 CODE 0 text5 bin/lcd.X.production.obj
 LCDinit@i 34 0 COMRAM 1 cstackCOMRAM bin/lcd.X.production.obj
 __Lpowerup 0 0 CODE 0 powerup bin/lcd.X.production.obj
