@@ -24,7 +24,7 @@ CLEAN_SUBPROJECTS=${CLEAN_SUBPROJECTS_${SUBPROJECTS}}
 
 
 # Project Name
-PROJECTNAME=lcd.X
+PROJECTNAME=Oscilloscope
 
 # Active Configuration
 DEFAULTCONF=default
